@@ -1,0 +1,58 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:s="http://jboss.com/products/seam/taglib"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:rich="http://richfaces.org/rich"
+    template="template.xhtml">
+
+	<ui:define name="mainMenu">
+		<div id="mainMenu">
+			<ul>
+				<li id="home"><a href="home.seam">Inicio&nbsp;</a>
+				</li>
+				<li id="empty">&nbsp;</li>
+			</ul>
+		</div>
+	</ui:define>
+	
+<ui:define name="body">
+
+    <h:form id="loginForm">
+
+        <rich:panel>
+            <h1>
+            Ingreso
+			</h1>
+			<h2>
+            <p>Por favor ingrese sus datos</p>
+			</h2>
+            <div class="dialog">
+                <h:panelGrid columns="2" rowClasses="prop" columnClasses="name,value">
+                    <h:outputLabel for="username">Usuario</h:outputLabel>
+                    <h:inputText id="username"
+                              value="#{credentials.username}" styleClass="#txtApeNom"/>
+                    <h:outputLabel for="password">Contrasena</h:outputLabel>
+                    <h:inputSecret id="password"
+                                value="#{credentials.password}"/>
+                    <h:outputLabel for="rememberMe">Recordarme</h:outputLabel>
+                    <h:selectBooleanCheckbox id="rememberMe"
+                                          value="#{rememberMe.enabled}"/>
+                </h:panelGrid>
+            </div>
+
+        </rich:panel>
+		<br/>
+        <div class="actionButtons">
+            <h:commandLink id="submit" value="Login" action="#{identity.login}" >
+            	<img src="img/spacer.gif" width="5"	height="15" />
+				<img src="img/arrowbutt.gif" width="16" height="15" />
+            </h:commandLink>
+        </div>
+
+    </h:form>
+
+ </ui:define>
+</ui:composition>

@@ -1,0 +1,340 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="body">
+		<a4j:form>
+			<h1>Consulta de Comprobante</h1>
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+				
+					<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Cuit"/>
+						<h:inputText id="txtCuit"
+							value="#{feCompConsultarController.cuit}" required="true"
+							requiredMessage="El cuit es obligatorio.">
+							<s:validate />
+						</h:inputText>
+						<h:outputText value="Numero de Factura"/>
+						<h:inputText  
+						value="#{feCompConsultarController.nroFactura}" required="true"
+						requiredMessage="El nroFactura es obligatorio.">
+						<s:validate />
+						</h:inputText>
+						<h:outputText value="Tipo de Comprobante"/>
+						<h:inputText  
+						value="#{feCompConsultarController.cbteTipo}" required="true"
+						requiredMessage="El Tipo Cbte es obligatorio.">
+						<s:validate />
+						</h:inputText>
+
+						<h:outputText value="Punto de Venta"/>
+						<h:inputText  
+						value="#{feCompConsultarController.ptoVta}" required="true"
+						requiredMessage="El Punto de Venta es obligatorio.">
+						<s:validate />
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{feCompConsultarController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta" reRender="resultado,tblFeErrores,tblEventos"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Tipo Comprobante"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.cbteTipo}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Punto de Venta"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.ptoVta}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Nro de Comprobante"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.cbteDesde}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Fecha"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.cbteFch}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Cod de Autorizacion"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.codAutorizacion}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Resultado"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.resultado}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Concepto"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.concepto}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Tipo Documento"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.docTipo}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Nro Documento"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.docNro}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Tipo de Emision"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.emisionTipo}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe Total"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.impTotal}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe Total Otros Conc"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.impTotConc}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe Neto"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.impNeto}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe Op Exentas"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.impOpEx}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe Iva"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.impIVA}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe Otros Tributos"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.impTrib}" disabled="true"
+							>
+						</h:inputText>
+						
+						<h:outputText value="Fecha de Proceso"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.fchProceso}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Fecha de Vencimiento"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.fchVto}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Fecha de Vencimiento de Pago"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.fchVtoPago}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Fecha de Servicio Desde"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.fchServDesde}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Fecha de Servicio Hasta"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.fchServHasta}" disabled="true"
+							>
+						</h:inputText>
+
+						<h:outputText value="Moneda"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.monId}" disabled="true"
+							>
+						</h:inputText>
+						
+						<h:outputText value="Cotización"/>
+						<h:inputText 
+							value="#{feCompConsultaResponse.resultGet.monCotiz}" disabled="true"
+							>
+						</h:inputText>
+
+				</h:panelGrid>
+				<br />
+				<rich:panel>
+					<f:facet name="header">Alícuotas de IVA</f:facet>
+					<rich:dataTable id="tblAlicuotas" value="#{feCompConsultaResponse.resultGet.iva.alicIva}" var="iva" style="width: 100%">
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Base Imp" />
+						</f:facet>
+						<h:outputText value="#{iva.baseImp}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Id" />
+						</f:facet>
+							<h:outputText value="#{iva.id}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Importe" />
+						</f:facet>
+							<h:outputText value="#{iva.importe}" />
+						</rich:column>
+					</rich:dataTable>
+				</rich:panel>
+				<br />
+				<rich:panel>
+					<f:facet name="header">Tributos</f:facet>
+					<rich:dataTable id="tblTributos" value="#{feCompConsultaResponse.resultGet.tributos.tributo}" var="trib" style="width: 100%">
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Alic" />
+						</f:facet>
+						<h:outputText value="#{trib.alic}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Base Imp" />
+						</f:facet>
+						<h:outputText value="#{trib.baseImp}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Id" />
+						</f:facet>
+							<h:outputText value="#{trib.id}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Importe" />
+						</f:facet>
+							<h:outputText value="#{trib.importe}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Descripcion" />
+						</f:facet>
+						<h:outputText value="#{trib.desc}" />
+						</rich:column>
+					</rich:dataTable>
+				</rich:panel>
+				<br />
+				<rich:panel>
+					<f:facet name="header">Comprobantes Asociados</f:facet>
+					<rich:dataTable id="tblComprobantes" value="#{feCompConsultaResponse.resultGet.cbtesAsoc.cbteAsoc}" var="_cbteAsoc" style="width: 100%">
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Tipo de Comprobante" />
+						</f:facet>
+						<h:outputText value="#{_cbteAsoc.tipo}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Punto de Venta" />
+						</f:facet>
+						<h:outputText value="#{_cbteAsoc.ptoVta}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Numero" />
+						</f:facet>
+						<h:outputText value="#{_cbteAsoc.nro}" />
+						</rich:column>
+					</rich:dataTable>
+				</rich:panel>
+				<br />
+				<rich:panel>
+					<f:facet name="header">Opcionales</f:facet>
+					<rich:dataTable id="tblOpcionales" value="#{feCompConsultaResponse.resultGet.opcionales.opcional}" var="opcional" style="width: 100%">
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Id" />
+						</f:facet>
+						<h:outputText value="#{opcional.id}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Valor" />
+						</f:facet>
+							<h:outputText value="#{opcional.valor}" />
+						</rich:column>
+					</rich:dataTable>
+				</rich:panel>
+				<br />
+				<rich:panel>
+					<f:facet name="header">Observaciones</f:facet>
+					<rich:dataTable id="tblObservaciones" value="#{feCompConsultaResponse.resultGet.observaciones.obs}" var="obs" style="width: 100%">
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Codigo" />
+						</f:facet>
+						<h:outputText value="#{obs.code}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Mensaje" />
+						</f:facet>
+							<h:outputText value="#{obs.msg}" />
+						</rich:column>
+					</rich:dataTable>
+				</rich:panel>
+			</rich:panel>
+			<br />
+			<rich:panel>
+				<f:facet name="header">Errores de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblFeErrores" value="#{feCompConsultaResponse.errors.err}" var="error" style="width: 100%">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{error.code}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{error.msg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+			<br />
+			<rich:panel>
+				<f:facet name="header">Eventos de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblEventos" value="#{feCompConsultaResponse.events.evt}" var="evento" style="width: 100%">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{evt.code}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{evt.msg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		</a4j:form>
+	</ui:define>
+</ui:composition>

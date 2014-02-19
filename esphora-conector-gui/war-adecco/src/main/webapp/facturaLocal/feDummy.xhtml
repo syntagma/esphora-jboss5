@@ -1,0 +1,80 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="titulo">
+		<h1>Factura Local - Control de funcionamiento</h1>
+	</ui:define>
+
+	<ui:define name="ayuda">
+		<div class="ayuda">Ingrese los datos para realizar la prueba de funcionamiento.
+		<br />
+		<s:link styleClass="textoayuda" value="">
+			<h:outputText value="ver mas >>" />
+		</s:link></div>
+	</ui:define>
+
+	<ui:define name="body">
+
+		<h:form id="feDummy" styleClass="edit">
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+
+				<s:decorate id="cuitField" template="../layout/edit.xhtml">
+					<ui:define name="label">Cuit</ui:define>
+					<h:inputText style=" width : 100px;" id="cuit"
+						value="#{feDummyController.cuit}" required="true"
+						requiredMessage="El cuit es obligatorio.">
+						<a4j:support event="onblur" reRender="cuitField"
+							bypassUpdates="true" ajaxSingle="true" />
+						<s:validate />
+					</h:inputText>
+				</s:decorate>
+							
+				<div style="clear: both"><span class="required">*</span>
+				campos requeridos</div>
+
+			</rich:panel>
+				
+		</h:form>
+			
+			<div class="actionButtons">
+    			<h:commandButton action="#{feDummyController.ejecutarConsulta}" 
+    			value="Ejecutar consulta" id="ejecutarConsulta"  />
+    		<br />	
+        	</div>
+    		<br/>
+			<rich:panel>
+				<f:facet name="header">Resultado de la consulta</f:facet>
+
+				<s:decorate id="appserver" template="../layout/display.xhtml">
+					<ui:define name="label">app server</ui:define>
+					<h:outputText value="#{dummyResponse.appserver}" />
+				</s:decorate>
+
+				<s:decorate id="dbserver" template="../layout/display.xhtml">
+					<ui:define name="label">db server</ui:define>
+					<h:outputText value="#{dummyResponse.dbserver}" />
+				</s:decorate>
+				
+				<s:decorate id="authserver" template="../layout/display.xhtml">
+					<ui:define name="label">auth server</ui:define>
+					<h:outputText value="#{dummyResponse.authserver}" />
+				</s:decorate>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+			</rich:panel>
+
+	</ui:define>
+</ui:composition>

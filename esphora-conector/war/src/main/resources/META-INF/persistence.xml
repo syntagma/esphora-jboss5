@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- Persistence deployment descriptor for dev profile -->
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+	version="1.0">
+<!-- 
+	<persistence-unit name="esphora-facturaelectronica-conector" transaction-type="JTA">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<jta-data-source>java:/esphoraDS</jta-data-source>
+		<class>ar.com.syntagma.esphora.dominio.administracion.AlicuotaIva</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.Parametro</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.Moneda</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.TipoDocumento</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.Pais</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.Provincia</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.Empresa</class>
+		<class>ar.com.syntagma.esphora.dominio.afip.TicketAfip</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.CondicionIva</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.CondicionVenta</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.UnidadMedida</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.TipoMovimiento</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.ItemFacturaVentaLocal</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.Cliente</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.TipoComprobante</class>
+		<class>ar.com.syntagma.esphora.dominio.afip.MotivoRechazo</class>
+		<class>ar.com.syntagma.esphora.dominio.administracion.Percepcion</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.PermisoFacturaVentaExportacion</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.ComprobanteFacturaVentaExportacion</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.ItemFacturaVentaExportacion</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.PuntoVenta</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.FacturaVentaLocal</class>
+		<class>ar.com.syntagma.esphora.dominio.facturacion.FacturaVentaExportacion</class>
+		
+		<properties>
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQLInnoDBDialect"/>
+			
+			<property name="hibernate.cache.use_second_level_cache"
+				value="false" />
+			<property name="hibernate.transaction.manager_lookup_class"
+				value="org.hibernate.transaction.JBossTransactionManagerLookup" />
+
+		   <property name="hibernate.ejb.event.post-insert"
+		             value="org.hibernate.ejb.event.EJB3PostInsertEventListener,org.hibernate.envers.event.AuditEventListener" />
+		   <property name="hibernate.ejb.event.post-update"
+		             value="org.hibernate.ejb.event.EJB3PostUpdateEventListener,org.hibernate.envers.event.AuditEventListener" />
+		   <property name="hibernate.ejb.event.post-delete"
+		             value="org.hibernate.ejb.event.EJB3PostDeleteEventListener,org.hibernate.envers.event.AuditEventListener" />
+		   <property name="hibernate.ejb.event.pre-collection-update"
+		             value="org.hibernate.envers.event.AuditEventListener" />
+		   <property name="hibernate.ejb.event.pre-collection-remove"
+		             value="org.hibernate.envers.event.AuditEventListener" />
+		   <property name="hibernate.ejb.event.post-collection-recreate"
+		             value="org.hibernate.envers.event.AuditEventListener" />
+
+		</properties>
+	</persistence-unit>
+ -->			
+</persistence>

@@ -1,0 +1,98 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="body">
+		<a4j:form>
+			<h1>Cotizaciones</h1>
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+				
+					<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Cuit"/>
+						<h:inputText id="txtCuit"
+							value="#{fexGetPARAM_CtzController.cuit}" required="true"
+							requiredMessage="El cuit es obligatorio.">
+							<s:validate />
+						</h:inputText>
+						<h:outputText value="Código de Moneda"/>
+						<h:inputText id="txtCodMoneda"
+							value="#{fexGetPARAM_CtzController.idMoneda}" required="true"
+							requiredMessage="El Codigo de Moneda es obligatorio.">
+							<s:validate />
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{fexGetPARAM_CtzController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta" reRender="resultado,tblFeErrores,tblEventos"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Fecha de Cotizacion"/>
+						<h:inputText 
+							value="#{fexResponseCtz.FEXResultGet.monFecha}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe de Cotizacion"/>
+						<h:inputText 
+							value="#{fexResponseCtz.FEXResultGet.monCtz}" disabled="true"
+							>
+						</h:inputText>
+				</h:panelGrid>
+			</rich:panel>
+		
+			<rich:panel>
+				<f:facet name="header">Errores de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblFeErrores" value="#{fexResponseCtz.FEXErr}" var="error">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{error.errCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{error.errMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+			
+			<rich:panel>
+				<f:facet name="header">Eventos de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblEventos" value="#{fexResponseCtz.FEXEvents}" var="evento">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{evt.eventCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{evt.eventMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		</a4j:form>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,87 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="../#{pageFolder}/template.xhtml">
+	
+	<ui:define name="body">
+		<style type="text/css">
+			.titleColumn{
+				width: 30%;
+			}
+			.iconColumn{
+				width: 10%;
+			}
+			.messageColumn{
+				width: 60%;
+			}
+		</style>
+		<a4j:form>
+			<a4j:poll interval="10000" reRender="resultado" />
+			
+			<h1>Prueba de Funcionamiento del Servicio</h1>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<h:panelGrid columns="3" style="width: 100%" columnClasses="titleColumn,iconColumn,messageColumn">
+						<h:outputText value="Servidor de Aplicaciones"/>
+						<h:column>
+							<h:graphicImage value="../images/ok.jpg" rendered="#{pageController.dummyResponse.appServer=='OK'}" style="width:32px;height:32px;border:0px" />
+							<h:graphicImage value="../images/error.jpg" rendered="#{pageController.dummyResponse.appServer=='Error'}" style="width:32px;height:32px;border:0px" />
+						</h:column>
+						<h:column>
+							<h:outputText value="#{pageController.dummyResponse.errorMsg}" rendered="#{pageController.dummyResponse.appServer=='Error'}" style="color: red" />
+						</h:column>
+						
+						<h:outputText value="Servidor de Autorizacion"/>
+						<h:column>
+							<h:graphicImage value="../images/ok.jpg" rendered="#{pageController.dummyResponse.authServer=='OK'}" style="width:32px;height:32px;border:0px" />
+							<h:graphicImage value="../images/na.jpg" rendered="#{pageController.dummyResponse.authServer=='NA'}" style="width:32px;height:32px;border:0px" />
+							<h:graphicImage value="../images/error.jpg" rendered="#{pageController.dummyResponse.authServer=='Error'}" style="width:32px;height:32px;border:0px" />
+						</h:column>
+						<h:column>
+							<h:outputText value="#{pageController.dummyResponse.errorMsg}" rendered="#{pageController.dummyResponse.authServer=='Error'}" style="color: red" />
+							<h:outputText value="No evaluado" rendered="#{pageController.dummyResponse.authServer=='NA'}" style="color: red" />
+						</h:column>
+						
+						<h:outputText value="Certificado AFIP"/>
+						<h:column>
+							<h:graphicImage value="../images/ok.jpg" rendered="#{pageController.dummyResponse.authServer!='NA' and not empty pageController.dummyResponse.fechaVencimientoCertificado and pageController.diasHastaVencimiento ge 0 and not pageController.vencimientoProximo}" style="width:32px;height:32px;border:0px" />
+							<h:graphicImage value="../images/na.jpg" rendered="#{pageController.dummyResponse.authServer=='NA' or (not empty pageController.dummyResponse.fechaVencimientoCertificado and pageController.diasHastaVencimiento ge 0 and pageController.vencimientoProximo)}" style="width:32px;height:32px;border:0px" />
+							<h:graphicImage value="../images/error.jpg" rendered="#{pageController.dummyResponse.authServer!='NA' and empty pageController.dummyResponse.fechaVencimientoCertificado or pageController.diasHastaVencimiento lt 0}" style="width:32px;height:32px;border:0px" />
+						</h:column>
+						<h:column>
+							<h:panelGroup rendered="#{pageController.dummyResponse.authServer!='NA' and not empty pageController.dummyResponse.fechaVencimientoCertificado and pageController.diasHastaVencimiento ge 0}">
+								<h:outputText value="El certificado vence en #{pageController.diasHastaVencimiento} #{pageController.diasHastaVencimiento == 1 ? 'día' : 'días' }" 
+									style="color: red" rendered="#{pageController.vencimientoProximo}" />
+								<h:outputText value="El certificado vence el día #{pageController.fechaVencimientoCertificado}" 
+									rendered="#{not pageController.vencimientoProximo}" />
+							</h:panelGroup>
+							<h:panelGroup rendered="#{pageController.dummyResponse.authServer!='NA' and (empty pageController.dummyResponse.fechaVencimientoCertificado or pageController.diasHastaVencimiento lt 0)}">
+								<h:outputText value="#{pageController.dummyResponse.errorMsg}" style="color: red" />
+							</h:panelGroup>
+							<h:outputText value="No evaluado" rendered="#{pageController.dummyResponse.authServer=='NA'}" style="color: red" />
+						</h:column>
+						
+						<h:outputText value="Servidor de Base de Datos"/>
+						<h:column>
+							<h:graphicImage value="../images/ok.jpg" rendered="#{pageController.dummyResponse.dbServer=='OK'}" style="width:32px;height:32px;border:0px" />
+							<h:graphicImage value="../images/na.jpg" rendered="#{pageController.dummyResponse.dbServer=='NA'}" style="width:32px;height:32px;border:0px" />
+							<h:graphicImage value="../images/error.jpg" rendered="#{pageController.dummyResponse.dbServer=='Error'}" style="width:32px;height:32px;border:0px" />
+						</h:column>
+						<h:column>
+							<h:outputText value="#{pageController.dummyResponse.errorMsg}" rendered="#{pageController.dummyResponse.dbServer=='Error'}" style="color: red" />
+							<h:outputText value="No evaluado" rendered="#{pageController.dummyResponse.dbServer=='NA'}" style="color: red" />
+						</h:column>
+					</h:panelGrid>
+			</rich:panel>
+					
+		</a4j:form>
+	</ui:define>
+	
+</ui:composition>

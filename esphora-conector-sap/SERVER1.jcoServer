@@ -1,0 +1,22 @@
+#for tests only !
+#Thu Jun 03 08:04:10 ACT 2010
+#QA
+jco.server.connection_count=10
+jco.server.gwhost=10.55.11.140
+jco.server.progid=QR3
+jco.server.gwserv=sapgw00
+jco.server.repository_destination=ABAP_AS_WITH_POOL
+
+#DEV
+#jco.server.connection_count=10
+#jco.server.gwhost=10.55.11.132
+#jco.server.progid=DR3
+#jco.server.gwserv=sapgw00
+#jco.server.repository_destination=ABAP_AS_WITH_POOL
+
+#PROD
+#jco.server.connection_count=10
+#jco.server.gwhost=10.55.11.138
+#jco.server.progid=PR3
+#jco.server.gwserv=sapgw10
+#jco.server.repository_destination=ABAP_AS_WITH_POOL

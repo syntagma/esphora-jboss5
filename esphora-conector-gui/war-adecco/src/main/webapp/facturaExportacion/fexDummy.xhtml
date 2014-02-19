@@ -1,0 +1,60 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="body">
+		<a4j:form>
+			<h1>Prueba de Funcionamiento del Servicio</h1>
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+				
+					<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Cuit"/>
+						<h:inputText id="txtCuit"
+							value="#{fexDummyController.cuit}" required="true"
+							requiredMessage="El cuit es obligatorio.">
+							<s:validate />
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{fexDummyController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta" reRender="resultado,tblFeErrores,tblEventos"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Servidor de Aplicaciones"/>
+						<h:inputText 
+							value="#{dummyResponse.appServer}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Servidor de Autorizacion"/>
+						<h:inputText 
+							value="#{dummyResponse.authServer}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Servidor de Base de Datos"/>
+						<h:inputText 
+							value="#{dummyResponse.dbServer}" disabled="true"
+							>
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+					
+		</a4j:form>
+	</ui:define>
+</ui:composition>

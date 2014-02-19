@@ -1,0 +1,107 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="titulo">
+		<h1>Factura Local - Consulta de Comprobante por ID</h1>
+	</ui:define>
+
+	<ui:define name="ayuda">
+		<div class="ayuda">Ingrese los datos para realizar la consulta.
+		<br />
+		<s:link styleClass="textoayuda" value="">
+			<h:outputText value="ver mas >>" />
+		</s:link></div>
+	</ui:define>
+
+	<ui:define name="body">
+
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+
+				<s:decorate id="cuitField" template="../layout/edit.xhtml">
+					<ui:define name="label">Cuit</ui:define>
+					<h:inputText id="txtCuit"
+						value="#{feAutRequestController.cuit}" required="true"
+						requiredMessage="El cuit es obligatorio.">
+						<s:validate />
+					</h:inputText>
+				</s:decorate>
+				
+				<s:decorate id="idField" template="../layout/edit.xhtml">
+					<ui:define name="label">ID de Afip</ui:define>
+					<h:inputText  id="txtId"
+						value="#{feAutRequestController.id}" required="true"
+						requiredMessage="El id es obligatorio.">
+						<s:validate />
+					</h:inputText>
+				</s:decorate>
+				
+				<div style="clear: both"><span class="required">*</span>
+				campos requeridos</div>
+
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{feAutRequestController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsultaAjax"
+    			styleClass="wpAfg_button" reRender="tblFeDetalle,percode,perrmsg">
+    			</a4j:commandButton>
+    			<h:commandButton action="#{feAutRequestController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel>
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				
+				<rich:dataTable id="tblFeDetalle" value="#{feResponse.fedResp.FEDetalleResponse}" var="item">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Numero de Factura" />
+					</f:facet>
+					<h:outputText value="#{item.cbtDesde}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Importe Total" />
+					</f:facet>
+					<h:outputText value="#{item.impTotal}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Fecha Cbte" />
+					</f:facet>
+					<h:outputText value="#{item.fechaCbte}" />
+					</rich:column>
+
+				</rich:dataTable>
+
+				<s:decorate id="percode" template="../layout/display.xhtml">
+					<ui:define name="label">Codigo de error</ui:define>
+					<h:outputText value="#{feResponse.RError.percode}" />
+				</s:decorate>
+				
+				<s:decorate id="perrmsg" template="../layout/display.xhtml">
+					<ui:define name="label">Mensaje de error</ui:define>
+					<h:outputText value="#{feResponse.RError.perrmsg}" />
+				</s:decorate>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+			</rich:panel>
+
+	</ui:define>
+</ui:composition>

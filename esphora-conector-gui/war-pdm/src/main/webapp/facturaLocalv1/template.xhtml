@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:rich="http://richfaces.org/rich" contentType="text/html">
+
+	<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Esphora Conector Interfaz Grafica</title>
+<link rel="shortcut icon" href="favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="../stylesheet/pmaizGral.css"></link>
+
+
+<ui:insert name="head" />
+</head>
+
+<body>
+	<div id="contentGral">
+		<div id="col1">
+			<div id="logoSWF">
+				<img src="../images/ingredion-logo.png" width="141" height="93"
+					alt="Productos de Maiz S.A." />
+			</div>
+		</div>
+
+		<div id="limpiar">
+					<div id="ctl00_topLvlNav" class="topLvlNav">
+						<div class="topLvlNav">			
+						 <h:form>
+							<ui:include src="../layout/menu.xhtml" />
+						</h:form>														
+						</div>
+					</div>					
+		</div>
+		<div id="col2">
+
+			<div id="content">
+				<a4j:region id="regionajax">
+					<rich:modalPanel id="ajaxLoadingModalBox" width="150" height="100" style="background-color:#D0D0D0; text-align:center">
+						<div style="text-align: center; font-style: italic;"><h:outputText
+							value="Por favor, espere unos instantes..." /> <br />
+						<br />
+						<img src="../images/ajax-loader.gif" /></div>
+					</rich:modalPanel>
+
+
+					<a4j:status for="regionajax" forceId="true" id="ajaxstatus"
+						onstart="#{rich:component('ajaxLoadingModalBox')}.show();"
+						onstop="Richfaces.hideModalPanel('ajaxLoadingModalBox');" />
+					<ui:insert name="body"/>
+			
+				</a4j:region>
+				
+			</div>
+		</div>
+		<div id="limpiar"></div>
+	</div>
+	<div id="pie">
+		<div id="colPie1">
+			<a href="http://www.pdm.com.ar/webmail.html"><img
+				src="../images/ingredion-logo.png" width="95" height="65"
+				alt="Webmail" />
+			</a>
+			<p>
+				Servicio de atención al cliente<br /> (54 11) 5544-8500
+			</p>
+		</div>
+		<div id="colPie2">
+			<p>
+				Ingredion Argentina<br /> &copy; Copyright 2012.
+				Todos los derechos reservados.
+			</p>
+		</div>
+	</div>
+	<br />
+
+</body>
+	</html>
+</f:view>

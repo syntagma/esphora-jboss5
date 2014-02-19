@@ -1,0 +1,107 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="body">
+		<a4j:form>
+			<h1>Tipos de Documento</h1>
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+				
+					<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Cuit"/>
+						<h:inputText id="txtCuit"
+							value="#{feParamGetTiposDoc.cuit}" required="true"
+							requiredMessage="El cuit es obligatorio.">
+							<s:validate />
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{feParamGetTiposDoc.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta" reRender="resultado,tblFeErrores,tblEventos"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblDatos" value="#{docTipoResponse.resultGet.docTipo}" var="item">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Id" />
+					</f:facet>
+					<h:outputText value="#{item.id}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Descripcion" />
+					</f:facet>
+					<h:outputText value="#{item.desc}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Fecha Desde" />
+					</f:facet>
+					<h:outputText value="#{item.fchDesde}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Fecha Hasta" />
+					</f:facet>
+					<h:outputText value="#{item.fchHasta}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		
+			<rich:panel>
+				<f:facet name="header">Errores de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblFeErrores" value="#{docTipoResponse.errors.err}" var="error">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{error.code}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{error.msg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+			
+			<rich:panel>
+				<f:facet name="header">Eventos de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblEventos" value="#{docTipoResponse.events.evt}" var="evento">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{evt.code}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{evt.msg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		</a4j:form>
+	</ui:define>
+</ui:composition>

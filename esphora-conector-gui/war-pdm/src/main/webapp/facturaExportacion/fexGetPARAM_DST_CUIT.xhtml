@@ -1,0 +1,95 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="body">
+		<a4j:form>
+			<h1>CUITs</h1>
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+				
+					<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Cuit"/>
+						<h:inputText id="txtCuit"
+							value="#{fexGetPARAM_DST_CUITController.cuit}" required="true"
+							requiredMessage="El cuit es obligatorio.">
+							<s:validate />
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{fexGetPARAM_DST_CUITController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta" reRender="resultado,tblFeErrores,tblEventos"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblDatos" value="#{fexResponseDSTCuit.FEXResultGet.clsFEXResponseDSTCuit}" var="item">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Cuit" />
+					</f:facet>
+					<h:outputText value="#{item.DSTCUIT}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Descripcion" />
+					</f:facet>
+					<h:outputText value="#{item.DSTDs}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		
+			<rich:panel>
+				<f:facet name="header">Errores de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblFeErrores" value="#{fexResponseDSTCuit.FEXErr}" var="error">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{error.errCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{error.errMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+			
+			<rich:panel>
+				<f:facet name="header">Eventos de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblEventos" value="#{fexResponseDSTCuit.FEXEvents}" var="evento">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{evt.eventCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{evt.eventMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		</a4j:form>
+	</ui:define>
+</ui:composition>

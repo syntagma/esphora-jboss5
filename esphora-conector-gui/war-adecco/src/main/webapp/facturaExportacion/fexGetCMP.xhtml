@@ -1,0 +1,269 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="body">
+		<a4j:form>
+			<h1>Consulta de Comprobante</h1>
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+				
+					<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Cuit"/>
+						<h:inputText id="txtCuit"
+							value="#{fexGetCMPController.cuit}" required="true"
+							requiredMessage="El cuit es obligatorio.">
+							<s:validate />
+						</h:inputText>
+						<h:outputText value="Numero de Comprobante"/>
+						<h:inputText id="txtNroCbte"
+							value="#{fexGetCMPController.cmp.cbteNro}" required="true"
+							requiredMessage="El Tipo de Comprobante es obligatorio.">
+							<s:validate />
+						</h:inputText>
+						<h:outputText value="Punto de Venta"/>
+						<h:inputText id="txtPuntoVenta"
+							value="#{fexGetCMPController.cmp.puntoVta}" required="true"
+							requiredMessage="El Punto de Venta es obligatorio.">
+							<s:validate />
+						</h:inputText>
+						<h:outputText value="Tipo de Comprobante"/>
+						<h:inputText id="txtTipoCbte"
+							value="#{fexGetCMPController.cmp.tipoCbte}" required="true"
+							requiredMessage="El Tipo de Comprobante es obligatorio.">
+							<s:validate />
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{fexGetCMPController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta" reRender="resultado,tblFeErrores,tblEventos"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Fecha"/>
+						<h:inputText 
+							value="#{fexResponseLastID.FEXResultGet.fechaCbte}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Numero"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.cbteNro}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Id"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.id}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Tipo de Comprobante"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.tipoCbte}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Tipo de Exportacion"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.tipoExpo}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Punto de Venta"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.puntoVta}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Permiso Existente"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.permisoExistente}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Destino"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.dstCmp}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Cliente"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.cliente}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Cuit Pais Cliente"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.cuitPaisCliente}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Domicilio Cliente"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.domicilioCliente}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Id Impositivo"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.idImpositivo}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Id Moneda"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.monedaId}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Cotizacion Moneda"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.monedaCtz}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Observaciones Comerciales"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.obsComerciales}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Importe Total"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.impTotal}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Observaciones"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.obs}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Forma de Pago"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.formaPago}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Incoterms"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.incoterms}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Descripcion de Incoterms"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.incotermsDs}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Idioma de Comprobante"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.idiomaCbte}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="CAE"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.cae}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Fecha de Vencimiento CAE"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.fechaCbteCae}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Resultado"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.resultado}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Motivos Obs"/>
+						<h:inputText 
+							value="#{clsFEXGetCMPResponse.FEXResultGet.motivosObs}" disabled="true"
+							>
+						</h:inputText>
+				</h:panelGrid>
+				
+				<br />
+				<rich:panel>
+					<f:facet name="header">Items</f:facet>
+					<rich:dataTable id="tblItems" value="#{clsFEXGetCMPResponse.FEXResultGet.items.item}" var="_item" style="width: 100%">
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Cantidad" />
+						</f:facet>
+						<h:outputText value="#{_item.proQty}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Codigo" />
+						</f:facet>
+						<h:outputText value="#{_item.proCodigo}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Descripciopn" />
+						</f:facet>
+						<h:outputText value="#{_item.proDs}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="U. Medida" />
+						</f:facet>
+						<h:outputText value="#{_item.proUmed}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="P. Unitario" />
+						</f:facet>
+						<h:outputText value="#{_item.proPrecioUni}" />
+						</rich:column>
+						<rich:column>
+						<f:facet name="header">
+							<h:outputText value="Total" />
+						</f:facet>
+						<h:outputText value="#{_item.proTotalItem}" />
+						</rich:column>
+					</rich:dataTable>
+				</rich:panel>
+								
+			</rich:panel>
+		
+			<rich:panel>
+				<f:facet name="header">Errores de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblFeErrores" value="#{clsFEXGetCMPResponse.FEXErr}" var="error">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{error.errCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{error.errMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+			
+			<rich:panel>
+				<f:facet name="header">Eventos de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblEventos" value="#{clsFEXGetCMPResponse.FEXEvents}" var="evento">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{evt.eventCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{evt.eventMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		</a4j:form>
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,17 @@
+#for tests only !
+#Thu Jun 03 08:04:10 ACT 2010
+#QA
+#jco.client.lang=ES
+#jco.client.client=100
+#jco.client.passwd=inicial1
+#jco.client.user=javatest
+#jco.client.sysnr=00
+#jco.client.ashost=10.55.11.140
+
+#DEV
+jco.client.lang=ES
+jco.client.client=020
+jco.client.passwd=javatest
+jco.client.user=javatest
+jco.client.sysnr=00
+jco.client.ashost=10.55.11.132

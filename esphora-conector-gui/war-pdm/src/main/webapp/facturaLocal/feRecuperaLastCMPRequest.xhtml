@@ -1,0 +1,94 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="titulo">
+		<h1>Factura Local - Consultar Ultimo Comprobante</h1>
+	</ui:define>
+
+	<ui:define name="ayuda">
+		<div class="ayuda">Ingrese los datos para realizar la consulta.
+		<br />
+		<s:link styleClass="textoayuda" value="">
+			<h:outputText value="ver mas >>" />
+		</s:link></div>
+	</ui:define>
+
+	<ui:define name="body">
+
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+
+				<s:decorate id="cuitField" template="../layout/edit.xhtml">
+					<ui:define name="label">Cuit</ui:define>
+					<h:inputText style=" width : 100px;" id="idCuit"
+						value="#{feRecuperaLastCMPRequestController.cuit}" required="true"
+						requiredMessage="El cuit es obligatorio.">
+						<s:validate />
+					</h:inputText>
+				</s:decorate>
+				
+				<s:decorate id="tipoCbteField" template="../layout/edit.xhtml">
+					<ui:define name="label">Tipo de comprobante</ui:define>
+					<h:inputText style=" width : 100px;" id="tipoCbte"
+						value="#{feRecuperaLastCMPRequestController.tipoComprobante}" required="true"
+						requiredMessage="El tipo de comprobante es obligatorio.">
+						<s:validate />
+					</h:inputText>
+				</s:decorate>
+
+				<s:decorate id="puntoVtaField" template="../layout/edit.xhtml">
+					<ui:define name="label">Punto de Venta</ui:define>
+					<h:inputText style=" width : 100px;" id="puntoVta"
+						value="#{feRecuperaLastCMPRequestController.puntoVenta}" required="true"
+						requiredMessage="El punto venta es obligatorio.">
+						<s:validate />
+					</h:inputText>
+				</s:decorate>
+				
+				<div style="clear: both"><span class="required">*</span>
+				campos requeridos</div>
+
+			</rich:panel>
+			<div class="actionButtons">
+    			<h:commandButton action="#{feRecuperaLastCMPRequestController.ejecutarConsulta}" 
+    			value="Ejecutar consulta" id="ejecutarConsulta"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel>
+				<f:facet name="header">Resultado de la consulta</f:facet>
+
+				<s:decorate id="cbteNro" template="../layout/display.xhtml">
+					<ui:define name="label">Nro de Comprobante</ui:define>
+					<h:outputText value="#{feRecuperaLastCMPResponse.cbteNro}" />
+				</s:decorate>
+
+				<s:decorate id="percode" template="../layout/display.xhtml">
+					<ui:define name="label">Codigo de error</ui:define>
+					<h:outputText value="#{feRecuperaLastCMPResponse.RError.percode}" />
+				</s:decorate>
+				
+				<s:decorate id="perrmsg" template="../layout/display.xhtml">
+					<ui:define name="label">Mensaje de error</ui:define>
+					<h:outputText value="#{feRecuperaLastCMPResponse.RError.perrmsg}" />
+				</s:decorate>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+			</rich:panel>
+
+	</ui:define>
+</ui:composition>

@@ -1,0 +1,86 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.ajax4jsf.org/rich">
+
+
+	<rich:toolBar>
+		<rich:dropDownMenu>
+			<f:facet name="label">
+				<h:panelGroup>
+					<h:outputText value="Factura Local v1" />
+				</h:panelGroup>
+			</f:facet>
+			<rich:menuItem submitMode="none" value="Consultar Comprobante"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feCompConsultar.seam'" />
+			<rich:menuItem submitMode="none" value="Ultimo Autorizado"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feCompUltimoAutorizado.seam'" />
+			<rich:menuItem submitMode="none" value="Cotizacion del Dia"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetCotizacion.seam'" />
+			<rich:menuItem submitMode="none" value="Puntos de Venta"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetPtosVenta.seam'" />
+			<rich:menuItem submitMode="none" value="Tipos de Comprobante"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetTiposCbte.seam'" />
+			<rich:menuItem submitMode="none" value="Tipos de Concepto"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetTiposConcepto.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Documento"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetTiposDoc.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Iva"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetTiposIva.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Moneda"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetTiposMoneda.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Opcional"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetTiposOpcional.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Tributo"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feParamGetTiposTributo.seam'" />
+			<rich:menuItem submitMode="none" value="Prueba de Servicio Activo"
+				onclick="document.location.href='/esphora-conector-gui/facturaLocalv1/feDummy.seam'" />
+		</rich:dropDownMenu>
+
+		<rich:dropDownMenu>
+			<f:facet name="label">
+				<h:panelGroup>
+					<h:outputText value="Factura de Exportaci&#243;n" />
+				</h:panelGroup>
+			</f:facet>
+			<rich:menuItem submitMode="none"
+				value="Consultar existencia de permiso"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexCheck_Permiso.seam'" />
+			<rich:menuItem submitMode="none" value="Consultar Comprobante"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetCMP.seam'" />
+			<rich:menuItem submitMode="none" value="Ultimo Autorizado"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetLast_CMP.seam'" />
+			<rich:menuItem submitMode="none" value="Ultimo id Enviado"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetLast_ID.seam'" />
+			<rich:menuItem submitMode="none"
+				value="Cotizacion de Moneda"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_Ctz.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Destino"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_DST_CUIT.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Pais"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_DST_pais.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Idioma"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_Idiomas.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Incoterms"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_Incoterms.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Moneda"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_MON.seam'" />
+			<rich:menuItem submitMode="none" value="Puntos de Venta"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_PtoVenta.seam'" />
+			<rich:menuItem submitMode="none"
+				value="Tipos de Comprobante"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_Tipo_Cbte.seam'" />
+			<rich:menuItem submitMode="none"
+				value="Codigos de Exportacion"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_Tipo_Expo.seam'" />
+			<rich:menuItem submitMode="none" value="Codigos de Unidad de Medida"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexGetPARAM_UMed.seam'" />
+			<rich:menuItem submitMode="none" value="Prueba de Servicio Activo"
+				onclick="document.location.href='/esphora-conector-gui/facturaExportacion/fexDummy.seam'" />
+
+		</rich:dropDownMenu>
+
+	</rich:toolBar>
+</ui:composition>

@@ -1,0 +1,146 @@
+ 
+/*
+  Corporate Red		#ea2026
+  Corporate Grey	#a9a18c
+  Grey tint 1		#b6af9d   
+  Grey tint 2		#c3bda3 (195,189,174)   Grey tint 1,  selected secondary menu
+  Grey tint 3		#d0cbbf highlight grey , used for the selected tab, graphics and sub heading
+  Grey tint 4		#ddd9d0   
+  Grey tint 5		#e9e7e1  
+*/
+
+
+/* remove all padding and spacing from tables */ 
+table  { border-collapse: collapse; border-spacing: 0; }
+td, th { padding: 5px 0px 5px 0px;}
+
+table{ font-size:1em;}
+
+td a
+{
+	font-family: Verdana, Arial, Sans-serif;
+	font-weight:normal;
+	color:#ea2026;
+	text-decoration: none;
+}
+
+td a:hover, a:active, a:focus
+{
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/************************** GridView Style *****************************/
+.gridStyle TABLE
+{
+    color:#333;
+	text-align:center;
+}
+
+/* Header Column Style */
+.gridStyle TR TH
+{
+    background-color:#d0cbbf;
+	text-align:center;
+	font-size: 0.95em;
+	font-weight: bold;
+	padding:5px;      
+}
+
+/* Item Style */
+.gridStyle TR
+{
+	text-align:center;
+	font-size: 0.90em;
+}
+
+/* Item Column Style */
+.gridStyle TR TD
+{
+	text-align:center;
+	border-bottom: 1px solid #d0cbbf;
+	padding:5px;
+}
+
+/* HyperLink Style inside an Item */
+.gridStyle TR TD A
+{  
+	font-size: 0.80em;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+/* Paging */
+.gridPager 
+{
+     display:block;
+	text-align:center;
+	margin:5px 140px 5px 5px;
+	font-family: Verdana, Arial, Sans-serif;
+	text-indent:5px;
+	padding-left:180px;
+	color: #000;
+	font-size: 0.95em;	
+}
+
+/* Underline the selected page */
+.gridPager span
+{
+      text-decoration: underline;
+}
+
+.gridPager a:hover{
+	text-decoration:underline;
+}
+
+/************************** GridView Style *****************************/
+
+/************************** GridView Style Curriculum *****************************/
+.gridStyleCV TABLE
+{
+    color:#333;
+	text-align:center;
+}
+
+/* Header Column Style */
+.gridStyleCV TR TH
+{
+    background-color:#d0cbbf;
+	text-align:center;
+	font-size: 0.95em;
+	font-weight: bold;
+	padding:5px;      
+}
+
+/* Item Style */
+.gridStyleCV TR
+{
+	text-align:center;
+	font-size: 0.90em;
+	font-family:Verdana, Arial, Sans-serif;
+}
+
+/* Item Column Style */
+.gridStyleCV TR TD
+{
+	text-align:center;
+	border-bottom: 1px solid #d0cbbf;
+	padding:2px;
+	height : 10px;
+	font-size: 0.90em;
+}
+
+/* HyperLink Style inside an Item */
+.gridStyleCV TR TD A
+{
+	font-size: 0.80em;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+/************************** GridView Style Curriculum*****************************/
+

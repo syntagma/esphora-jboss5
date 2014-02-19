@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:s="http://jboss.com/products/seam/taglib" 
+	xmlns:rich="http://richfaces.org/rich"
+	contentType="text/html">
+	
+	<html>
+		<head>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<title>Esphora Conector Interfaz Grafica</title>
+			<link rel="shortcut icon" href="favicon.ico" />
+
+			<link rel="stylesheet" type="text/css" href="stylesheet/Adecco.Master.css"></link>
+			
+			<a4j:loadScript src="js/menu.js" />
+			
+			<ui:insert name="head" />
+		</head>
+
+		<body>
+
+			<div id="TopOfContentDiv"></div>
+			<a name="linktop"></a>
+
+			<!-- Start mainContainer -->
+   			<div id="mainContainer" class="mainContainer">
+				<div id="topInfosContainer" class="topInfosContainer">
+					<div id="languageSelector" class="languageSelector"></div>
+					<div id="ctl00_worldwideLink" class="worldwideLink">
+						<ul class="horizontalList listItemSeparator">
+							<li id="ctl00_messageSite">Adecco Argentina</li>
+								<li class="lastItemSeparator">
+									<a id="ctl00_hlnkAdeccoWorld" class="world" href="http://www.adecco.com/AboutAdecco/Pages/AdeccoWorldwide.aspx">Adecco World</a>
+								</li>
+						</ul>
+					</div>
+				</div>
+				<!-- START container -->
+				<!-- Start Inside Container -->
+				<div id="insideContainer" class="insideContainer">
+					<!-- START header  -->
+					<div id="header" class="headerContainer">
+						<table width="100%">
+							<tr>
+								<td>
+									<h:outputText id="menuUserId" value="Bienvenido: #{credentials.username}" rendered="#{identity.loggedIn}" />
+								</td>
+								<td align="right" style="text-align: right">
+									<s:link id="menuLoginId" view="/login.xhtml" value="Login" rendered="#{not identity.loggedIn}" propagation="none" />
+									<s:link id="menuLogoutId" view="/home.xhtml" action="#{identity.logout}" value="Logout" rendered="#{identity.loggedIn}" propagation="none" />
+								</td>
+							</tr>
+						</table>
+						<br />
+						<br />
+						<!-- Start Header -->
+
+							<div id="ctl00_headerContainer" class="headerContainer">
+							<div id="leftHeader" class="leftHeader">
+								<a href="www.adecco.com.ar/es-AR/" id="ctl00_LinkLogo"> 
+									<img id="ctl00_SiteLogo" src="img/Logo.png" alt="Adecco Argentina" style="border-width: 0px;" />
+								</a>
+							</div>
+							<div id="middleHeader" class="middleHeader"></div>
+							<div id="rightHeader" class="rightHeader"></div>
+						</div>
+
+						<!-- End Header -->
+					</div>
+					<!-- END   header  --> 
+					<!-- START mainMenu  -->
+						
+					<div id="ctl00_topLvlNav" class="topLvlNav">
+						<div class="topLvlNav">			
+						 <h:form>
+							<ui:include src="layout/menu.xhtml" />
+						</h:form>														
+						</div>
+					</div>					
+					<rich:jQuery selector="#listaMenu" query="find(obtenerHREF()).addClass('current')" timing="onload" />
+					
+					<!-- END mainMenu  --> 
+					<!-- Start Breadcrumb containter -->
+					<div id="upperMainContent" class="upperMainContent">
+						<div id="breadcrumbContainer" class="breadcrumbContainer">
+							<ui:insert name="breadcrumb"/>
+						</div>
+					</div>
+					<!-- End Breadcrumb containter --> 
+					<!-- Start Main Content Container-->
+					<div id="mainContent" class="mainContent">
+						
+					</div>					
+					
+					<div style="display: none;">bckTop,ttlBdy,shrBtn&nbsp;</div>
+
+					
+
+					<div class="clear spanContainer-5">
+						<div class="span-5"></div>
+					</div>
+					<div class="clear spanContainer-1 minH">
+
+						<div class="span-1">
+
+
+							<div id="PlaceHolderLeftNavBar">
+								<div class="leftNavigation">
+									<ui:insert name="subMenu"/>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="span-1"></div>
+					</div>
+					<div class="spanContainer-4">
+						<a4j:region id="regionajax">
+							<rich:modalPanel id="ajaxLoadingModalBox" width="150" height="100" style="background-color:#D0D0D0; text-align:center">
+								<div style="text-align: center; font-style: italic;"><h:outputText
+									value="Por favor, espere unos instantes..." /> <br />
+								<br />
+								<img src="img/ajax-loader.gif" /></div>
+							</rich:modalPanel>
+		
+		
+							<a4j:status for="regionajax" forceId="true" id="ajaxstatus"
+								onstart="#{rich:component('ajaxLoadingModalBox')}.show();"
+								onstop="Richfaces.hideModalPanel('ajaxLoadingModalBox');" />
+							<ui:insert name="body"/>
+					
+						</a4j:region>
+						<div class="span-4"></div>
+					</div>
+					<div class="spanContainer-3">							
+					</div>
+					<!-- End Main Content Container --> 
+					<!-- Start Footer -->
+					<div id="footerContainer" class="footerContainer">
+						<ul class="horizontalList listItemSeparator">
+							<li><a>&#169; 2011 Adecco. All Rights Reserved</a></li>
+							<li><a title="Informaci&#243;n Legal de Adecco Argentina" href="www.adecco.com.ar/es-AR/Pages/informacion-legal.aspx">Informaci&#243;n Legal</a></li>
+							<li><a href="www.adecco.com.ar/es-AR/Pages/mapa-del-sitio.aspx">Mapa del Sitio</a></li>
+							<li class="lastItemSeparator">
+								<a href="www.adecco.com.ar/es-AR/contacto/Pages/contacto.aspx">Contacto</a>
+							</li>
+						</ul>
+					</div>
+					<!-- End Footer -->
+				</div>
+				<!-- End Inside Container -->
+			</div>
+		</body>
+	</html>
+</f:view>

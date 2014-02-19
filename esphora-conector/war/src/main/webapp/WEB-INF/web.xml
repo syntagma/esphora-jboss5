@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>Esphora 3.0 - Conector WS</display-name>
+  <context-param>
+    <param-name>javax.faces.DEFAULT_SUFFIX</param-name>
+    <param-value>.xhtml</param-value>
+  </context-param>
+  <context-param>
+    <param-name>facelets.DEVELOPMENT</param-name>
+    <param-value>false</param-value>
+  </context-param>
+  <filter>
+    <filter-name>Seam Filter</filter-name>
+    <filter-class>org.jboss.seam.servlet.SeamFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Seam Filter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <listener>
+    <listener-class>org.jboss.seam.servlet.SeamListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>wsfe</servlet-name>
+    <servlet-class>ar.com.syntagma.esphora.conector.servicios.Wsfe</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>wsfe</servlet-name>
+    <url-pattern>/ws/wsfe</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>wsfex</servlet-name>
+    <servlet-class>ar.com.syntagma.esphora.conector.servicios.Wsfex</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>wsfex</servlet-name>
+    <url-pattern>/ws/wsfex</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>wsfev1</servlet-name>
+    <servlet-class>ar.com.syntagma.esphora.conector.servicios.Wsfev1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>wsfev1</servlet-name>
+    <url-pattern>/ws/wsfev1</url-pattern>
+  </servlet-mapping>
+
+</web-app>

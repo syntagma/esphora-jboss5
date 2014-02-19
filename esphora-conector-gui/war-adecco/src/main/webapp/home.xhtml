@@ -1,0 +1,80 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:rich="http://richfaces.org/rich" template="template.xhtml">
+
+	<ui:define name="mainMenu">
+		<div id="ctl00_topLvlNav" class="topLvlNav">
+			<div class="topLvlNav">
+				<ul>
+					<li class="current"><a href="home.seam">Inicio</a></li>
+					<li><a href="envioManual.seam">Envio Manual</a></li>
+					<li><a href="envioReporte.seam">Envio Reporte</a></li>
+					<li><a href="historial.seam">Historial</a>
+					</li>
+					<li><a href="cuentasCobrar.seam">Cuentas a Cobrar</a></li>					
+					
+				</ul>
+			</div>
+		</div>
+
+	</ui:define>
+	
+	<ui:define name="breadcrumb">
+				<div class="breadcrumb">
+					<span class="breadcrumbCurrent">Inicio</span>
+					<!--
+					<span class="redChevron"><a href="home.seam">Inicio</a>
+					</span>
+					 <span class="breadcrumbCurrent">Búsqueda de Personal</span>  -->
+				</div>
+	</ui:define>
+	
+	<ui:define name="body">
+		<table>
+			<tr>
+					<td colspan="2">
+						<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+							codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0"
+							width="550px" height="200px">
+							<param name="movie" value="img/adecco_564x190.swf" />
+							<param name="quality" value="high" />
+							<embed src="img/adecco_564x190.swf" quality="high"
+								bgcolor="#ffffff" width="550" height="200"
+								type="application/x-shockwave-flash"
+								pluginspage="http://www.macromedia.com/go/getflashplayer">
+							</embed>
+						</object>
+						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div>
+							<a href="Buscas_Trabajo.asp"> <img src="img/h_candidatos.jpg"
+								style="border: 0" /> </a>
+						</div>
+					</td>
+					<!-- <td style="width: 10px"></td> -->
+					<td>
+						<div>
+							<a href="Buscas_Personal.asp"> <img src="img/h_empresas.jpg"
+								style="border: 0px" />
+							</a>
+						</div>
+					</td>
+				</tr>
+				<!-- <tr style="height: 10"></tr> -->
+				<tr>
+					<td colspan="3">
+						<div>
+							<img src="img/homeACC.jpg" style="border: 0" usemap="#m_00000001"/>
+						</div></td>
+				</tr>
+			</table>
+	</ui:define>
+</ui:composition>

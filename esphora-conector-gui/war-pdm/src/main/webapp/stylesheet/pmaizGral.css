@@ -1,0 +1,358 @@
+@charset "iso-8859-1";
+/* CSS Document */
+
+/*****************************************
+-- Productos de Maiz SA Argentina --
+-- Web Site Institucional --
+-- TGD Design www.tgd.com.ar--
+-- Maquetacion PARADOGMA | www.paradogma.com.ar --
+-- 2010 --
+*****************************************/
+@import url("botoneraGral.css");
+
+* {
+	margin:0;
+	padding:0;
+}
+img {
+	border:0;
+}
+body {
+	background:url(../images/backgroundGral_IMG.jpg) #e6e6e6 0 0 repeat-x;
+	font-family:Tahoma, Geneva, sans-serif;
+	text-align:left;
+}
+
+/*****************************************
+				GRAL
+*****************************************/
+
+#contentGral {
+	width:840px;
+	height:auto;
+	background:url(../images/backgroundGralContent_IMG.png) 0 0 no-repeat;
+}
+#col1 {
+	float:left;
+	width:146px;
+	height:auto;
+	margin-left:28px;
+	_margin-left:14px;
+}
+#logoSWF {
+	width:146px;
+	height:100px;
+	margin:10px 0 40px 0;
+}
+#botonera {
+	width:146px;
+	height:auto;
+	margin-bottom:10px;
+}
+#col2 {
+	float:right;
+	width:666px;
+	height:auto;
+}
+#limpiar {
+	clear:both;
+}
+#headerSWF {
+	width:666px;
+	height:180px;
+}
+#content {
+	width:626px;
+	height:auto;
+	margin-left:40px;
+	background:url(../images/backgroundGralContentTXT_IMG.png) 400px bottom no-repeat;
+}
+	
+#content h1{
+	width:565px;
+	font-size:14px;
+	color:#58585a;
+	font-weight:bold;
+	border-bottom:1px solid #c5bfc7;
+	margin:10px 0 20px 0;
+	letter-spacing:1px;
+}
+
+#content h2{
+	font-size:12px;
+	color:#007557;
+	font-weight:bold;
+	margin:10px 0 0 0;
+}
+
+#content p{
+	width:520px;
+	font-size:12px;
+	color:#58585a;
+	line-height:20px;
+	text-align:justify;
+	text-justify:auto;
+	margin-top:5px;
+}
+
+#content table p{
+	width:230px;
+	font-size:11px;
+	color:#58585a;
+	line-height:16px;
+	text-align:justify;
+	margin-top:5px;
+}
+
+#content table .tableTXT{
+	width:450px;
+	font-size:12px;
+	color:#58585a;
+	line-height:20px;
+	text-align:justify;
+	text-justify:auto;
+	margin-top:5px;
+}
+
+#content table .tableTXT2{
+	width:300px;
+	font-size:12px;
+	color:#58585a;
+	line-height:20px;
+	text-align:justify;
+	text-justify:auto;
+	margin-top:5px;
+}
+
+#nombres p{
+	font-size:11px;
+	line-height:15px;
+}
+
+#content a{
+	color:#58585a;
+}
+
+#content a:hover{
+	color:#007557;
+}
+
+#content ul{
+	width:480px;
+	margin-left:30px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	color:#58585a;
+}
+
+#content ul li{
+	margin:5px 0;
+	text-align:justify;
+}
+
+.high1{
+	color:#007557;
+	font-weight:bold;
+}
+
+.pImages{
+	margin:10px;
+}
+
+/*****************************************
+	BOTONERA INDUSTRIAS Y APLICACIONES
+*****************************************/
+
+#tblIndAplicaciones{
+	margin:10px 0;
+	width:550px;
+	border:0;
+}
+
+#tblIndAplicaciones img{
+	margin:17px 0 0 10px;
+	padding:0;
+}
+
+#tblIndAplicaciones td{
+	vertical-align:top;
+	width:275px;
+	height:150px;
+}
+
+.aplicacionesBtn01{
+	background:url(../images/btn_01OFF.png) 50% 0 no-repeat;
+}
+
+.aplicacionesBtn01:hover {
+	background:url(../images/btn_01ON.png) 50% 0 no-repeat;
+}
+
+.aplicacionesBtn02{
+	background:url(../images/btn_02OFF.png) 50% 0 no-repeat;
+}
+
+.aplicacionesBtn02:hover {
+	background:url(../images/btn_02ON.png) 50% 0 no-repeat;
+}
+
+.aplicacionesBtn03{
+	background:url(../images/btn_03OFF.png) 50% 0 no-repeat;
+}
+
+.aplicacionesBtn03:hover {
+	background:url(../images/btn_03ON.png) 50% 0 no-repeat;
+}
+.aplicacionesBtn04{
+	background:url(../images/btn_04OFF.png) 50% 0 no-repeat;
+}
+
+.aplicacionesBtn04:hover {
+	background:url(../images/btn_04ON.png) 50% 0 no-repeat;
+}
+
+#tblIndAplicaciones2{
+	width:500px;
+	margin:20px 0;
+}
+
+#tblIndAplicaciones2 td{
+	width:25%;
+	text-align:center;
+	font-weight:bold;
+	font-size:10px;
+	color:#36a97b;
+}
+
+#tblIndAplicaciones2 td a{
+	text-decoration:none;
+}
+
+#tblIndAplicaciones2 img{
+	margin:0;
+	padding:0;
+}
+#titH5{
+	width:500px;
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+#content h5{
+	font-size:12px;
+	color:#007557;
+	font-weight:bold;
+	padding:0 10px;
+}
+
+#titH5 td.col01{
+	width:20px;
+	background:url(../images/pix_Verde_h5.gif) 0 7px repeat-x;
+}
+#titH5 td.col02{
+	text-align:center;
+}
+#titH5 td.col03{
+	background:url(../images/pix_Verde_h5.gif) 0 7px repeat-x;
+}
+form {
+	font-weight:bold;
+}
+
+.fieldFRM{
+	/*background:url(../images/background_input_FRM.gif) 0 0 no-repeat;*/
+	border:1px solid #000;
+/*	width: 200px;*/
+	width:161px;
+	height:20px;
+}
+
+.fieldFRM2{
+	/*background:url(../images/background_input_FRM2.gif) 0 0 no-repeat;*/
+	width: 260px;
+/*	background:none;*/
+	border:1px solid #000;
+	height:20px;
+}
+
+.btnFRM{
+	margin-top:10px;
+	background:none;
+	border:0;
+	font-weight:bold;
+	text-align:left;
+}
+
+#btn_compromiso{
+	background:none;
+}
+
+/*****************************************
+				PIE
+*****************************************/
+
+#pie{
+	width:840px;
+	height:180px;
+	background:url(../images/backgroundGralPieCurva_IMG.png) no-repeat 0 0;
+	display:block;
+}
+
+#pie p{
+	font-size:9px;
+	color:#707172;
+}
+
+#colPie1{
+	float:left;
+	width:127px;
+	height:124px;
+	margin:57px 0px 0px 47px;
+	_margin:57px 0px 0px 23px;
+}
+
+#colPie2{
+	float:left;
+	width:320px;
+	height:25px;
+	margin:156px 0 0 150px;
+}
+
+#colPie3{
+	text-align:right;
+	float:right;
+	width:168px;
+	height:128px;
+	margin:53px 28px 0 0;
+	background:url(../images/iso-cornproductosLogo_IMG.png) bottom no-repeat;
+}
+
+#content .detalle{
+	font-size:11px;
+}
+
+#names{
+}
+
+#content #names p{
+	width:190px;
+	text-align:left;
+}
+
+.news{
+	line-height:18px;
+}
+
+.novedades {
+	padding:20px 0;
+}
+
+.boldGreen{
+	font-weight:bold;
+	color:#007557;
+}
+
+.demo h3{
+	cursor:pointer;
+}

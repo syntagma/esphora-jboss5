@@ -1,0 +1,199 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ar.com.syntagma.seam</groupId>
+		<artifactId>esphora-conector</artifactId>
+		<version>3.1</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>esphora-conector-jar</artifactId> <!-- m2eclipse does not like: ${app.context}-ear -->
+	<name>${project.artifactId} : ${project.version}</name>
+	<description>Modulo JAR de Esphora 3.1 - Facturacion Electronica - Modulo Conector</description>
+	<packaging>jar</packaging>
+
+	<repositories>
+		<repository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Repository Group</name>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+				<updatePolicy>never</updatePolicy>
+			</snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>jboss-public-repository-group</id>
+			<name>JBoss Public Repository Group</name>
+			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam</artifactId>
+			<version>${version.seam}</version>
+			<scope>compile</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>javax.el</groupId>
+					<artifactId>el-api</artifactId>
+				</exclusion>
+			</exclusions>
+
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcmail-jdk16</artifactId>
+			<version>1.45</version>
+		</dependency>
+		<dependency>
+			<groupId>bouncycastle</groupId>
+			<artifactId>bcprov-jdk16</artifactId>
+			<version>140</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.axis</groupId>
+			<artifactId>axis</artifactId>
+			<version>1.4</version>
+		</dependency>
+		<!-- 
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
+		</dependency>
+		 -->
+	</dependencies>
+
+	<profiles>
+		<!-- More than one profile can be active at once. Since profiles can contain 
+			the same types of configuration there can be clashes. If two profiles clash 
+			the last to be activated will override configurations in those activated 
+			earlier. Note: Any activeByDefault profile will be deactivated if you activate 
+			another profile. E.g. running "mvn install -Penv-dev" deactivates the "prod" 
+			profile. -->
+		<profile>
+			<id>env-dev</id>
+			<properties>
+				<env>dev</env>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>env-prod</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<properties>
+				<env>prod</env>
+			</properties>
+		</profile>
+		<profile>
+			<id>explode</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<version>1.6</version>
+						<executions>
+							<execution>
+								<id>ejb-process-classes</id>
+								<phase>process-classes</phase>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<configuration>
+									<tasks>
+										<property name="deploy-path" value="${as.deploy}/${app.context}-war.war" />
+										<copy todir="${deploy-path}/${project.build.finalName}.jar"
+											verbose="true">
+											<fileset dir="${project.build.outputDirectory}">
+												<include name="**/*.class" />
+											</fileset>
+										</copy>
+									</tasks>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<!-- Maven filter properties are ony visible to resources and can not be 
+			accessed from the POM. <filters> <filter>../src/main/filters/filter-${env}.properties</filter> 
+			</filters> -->
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering> <!-- filtering persistence.xml -->
+			</resource>
+		</resources>
+
+		<plugins>
+			<!-- Maven filter properties are ony visible to resources and can not 
+				be accessed from the POM. This is where the Properties Maven Plugin makes 
+				our life a little easier when dealing with properties that we need to access 
+				inside our POM. It provides goals to read and write properties from and to 
+				files, and also to set system properties. It's main use-case is loading properties 
+				from files instead of declaring them in pom.xml, something that comes in 
+				handy when dealing with different environments. The plugin is configured 
+				to read properties during the "validate" phase and the properties are then 
+				accessible from the pom. -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+					<encoding>ISO-8859-1</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>properties-maven-plugin</artifactId>
+				<version>1.0-alpha-2</version>
+				<executions>
+					<execution>
+						<configuration>
+							<files>
+								<file>${basedir}/../src/main/filters/filter-${env}.properties</file>
+							</files>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+
+		</plugins>
+	</build>
+
+</project>

@@ -1,0 +1,16 @@
+-1/@/1610/@/Campo Cmp.Importe_total debe ser igual a la suma de los camps Items.Pro_total_item /@/0/@/OK
+Entro
+Entro
+Entro
+Entro
+Entro
+Entro
+Entro
+Entro
+Entro
+-1/@/1610/@/Campo Cmp.Importe_total debe ser igual a la suma de los camps Items.Pro_total_item /@/0/@/OK
+-1/@/1535/@/El numero  de comprobante ingresado  no  coincide con el  proximo nro  a autorizar(00000002)/@/0/@/OK
+-1/@/1535/@/El numero  de comprobante ingresado  no  coincide con el  proximo nro  a autorizar(00000002)/@/0/@/OK
+-1/@/1535/@/El numero  de comprobante ingresado  no  coincide con el  proximo nro  a autorizar(00000002)/@/0/@/OK
+43/@/60269036370154/@/30629416249/@/20100624/@/20100704/@//@/N/@/A/@/0/@/OK/@/0/@/OK
+43/@/60269036370154/@/30629416249/@/20100624/@/20100704/@//@/S/@/A/@/0/@/OK/@/0/@/OK

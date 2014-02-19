@@ -1,0 +1,104 @@
+<!DOCTYPE composition PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	template="template.xhtml">
+
+	<ui:define name="body">
+		<a4j:form>
+			<h1>Último Comprobante Válido</h1>
+			<rich:panel>
+				<f:facet name="header">Datos necesarios para la consulta</f:facet>
+				
+					<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Cuit"/>
+						<h:inputText id="txtCuit"
+							value="#{fexGetLast_CMPController.cuit}" required="true"
+							requiredMessage="El cuit es obligatorio.">
+							<s:validate />
+						</h:inputText>
+						<h:outputText value="Punto de Venta"/>
+						<h:inputText id="txtPuntoVenta"
+							value="#{fexGetLast_CMPController.puntoVenta}" required="true"
+							requiredMessage="El Punto de Venta es obligatorio.">
+							<s:validate />
+						</h:inputText>
+						<h:outputText value="Tipo de Comprobante"/>
+						<h:inputText id="txtTipoCbte"
+							value="#{fexGetLast_CMPController.tipoComprobante}" required="true"
+							requiredMessage="El Tipo de Comprobante es obligatorio.">
+							<s:validate />
+						</h:inputText>
+					</h:panelGrid>
+			</rich:panel>
+			<div class="actionButtons">
+    			<a4j:commandButton action="#{FEXGetLast_IDController.ejecutarConsulta}" 
+    			value="Consultar" id="ejecutarConsulta" reRender="resultado,tblFeErrores,tblEventos"
+    			styleClass="wpAfg_button"/>
+    			<br/>
+        	</div>				
+
+
+	    	<br/>
+			<rich:panel id="resultado">
+				<f:facet name="header">Resultado de la consulta</f:facet>
+				<h:panelGrid columns="4" style="width: 100%">
+						<h:outputText value="Fecha"/>
+						<h:inputText 
+							value="#{fexResponseLastID.FEXResultLastCMP.cbteFecha}" disabled="true"
+							>
+						</h:inputText>
+						<h:outputText value="Numero"/>
+						<h:inputText 
+							value="#{fexResponseLastID.FEXResultLastCMP.cbteNro}" disabled="true"
+							>
+						</h:inputText>
+				</h:panelGrid>
+			</rich:panel>
+		
+			<rich:panel>
+				<f:facet name="header">Errores de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblFeErrores" value="#{fexResponseLastID.FEXErr}" var="error">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{error.errCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{error.errMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+			
+			<rich:panel>
+				<f:facet name="header">Eventos de la consulta</f:facet>
+				<rich:dataTable
+				 id="tblEventos" value="#{fexResponseLastID.FEXEvents}" var="evento">
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Codigo" />
+					</f:facet>
+					<h:outputText value="#{evt.eventCode}" />
+					</rich:column>
+					<rich:column>
+					<f:facet name="header">
+						<h:outputText value="Mensaje" />
+					</f:facet>
+					<h:outputText value="#{evt.eventMsg}" />
+					</rich:column>
+				</rich:dataTable>
+			</rich:panel>
+		</a4j:form>
+	</ui:define>
+</ui:composition>

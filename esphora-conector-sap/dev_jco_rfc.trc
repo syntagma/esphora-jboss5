@@ -1,0 +1,3578 @@
+
+**** Error file opened at 20100706 163453 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Tue Jul 06 16:34:53,109]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at client.Converter.makeAnswer(Converter.java:299)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:105)
+	at client.SAP_JCO.access$0(SAP_JCO.java:97)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:84)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100706 170535 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Error:  >Tue Jul 06 17:05:35,937<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1934
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1931
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1911
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1927
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1933
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1926
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1928
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1932
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1935
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1919
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1929
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:36,265<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1930
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:38,968<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1934
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [35] >Tue Jul 06 17:05:38,968<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1934
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1919
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [20] >Tue Jul 06 17:05:38,984<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1919
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1922
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1911
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [12] >Tue Jul 06 17:05:38,984<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1911
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1910
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1922
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [23] >Tue Jul 06 17:05:38,984<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1922
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1930
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [31] >Tue Jul 06 17:05:38,984<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1930
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1914
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1910
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [11] >Tue Jul 06 17:05:38,984<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1910
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1909
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1914
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [15] >Tue Jul 06 17:05:38,984<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1914
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1923
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:38,984<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1929
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [30] >Tue Jul 06 17:05:38,984<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1929
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1909
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [10] >Tue Jul 06 17:05:39,125<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1909
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     3
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1908
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1923
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [24] >Tue Jul 06 17:05:39,125<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:38 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1923
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1921
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1908
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [9] >Tue Jul 06 17:05:39,125<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1908
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     4
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1907
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1935
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [36] >Tue Jul 06 17:05:39,125<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1935
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1907
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [8] >Tue Jul 06 17:05:39,125<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1907
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1906
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,125<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1921
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [22] >Tue Jul 06 17:05:39,125<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1921
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     5
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1920
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1906
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [7] >Tue Jul 06 17:05:39,140<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1906
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1905
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     7
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1932
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [33] >Tue Jul 06 17:05:39,140<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1932
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1920
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [21] >Tue Jul 06 17:05:39,140<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1920
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     6
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1928
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [29] >Tue Jul 06 17:05:39,140<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1928
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1918
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     7
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1905
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     7
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [6] >Tue Jul 06 17:05:39,140<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1905
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     7
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1904
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     8
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1918
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     7
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [19] >Tue Jul 06 17:05:39,140<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1918
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     7
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1917
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     8
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,140<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1904
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     8
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [5] >Tue Jul 06 17:05:39,140<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1904
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     8
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1926
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1903
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     9
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [27] >Tue Jul 06 17:05:39,156<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1926
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1917
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     8
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [18] >Tue Jul 06 17:05:39,156<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1917
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     8
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1903
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     9
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [4] >Tue Jul 06 17:05:39,156<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1903
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     9
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1916
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     9
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1902
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     10
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1933
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [34] >Tue Jul 06 17:05:39,156<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1933
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1902
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     10
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [3] >Tue Jul 06 17:05:39,156<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.138:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.138:3310; L=0.0.0.0:1902
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     10
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1916
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     9
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [17] >Tue Jul 06 17:05:39,156<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1916
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     9
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1915
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     10
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error:  >Tue Jul 06 17:05:39,156<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1927
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [28] >Tue Jul 06 17:05:39,156<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1927
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,171<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1931
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [32] >Tue Jul 06 17:05:39,171<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.104:sapgw10' broken
+TIME        Tue Jul 06 17:05:35 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.104:3310; L=0.0.0.0:1931
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,171<    
+>RfcIoException:
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1915
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     10
+
+    Return code: RFCIO_ERROR_SYSERROR(5)<
+
+
+Error: [16] >Tue Jul 06 17:05:39,171<    
+RfcException: [System <empty>|null]
+    message: CPIC-CALL: SAP_CMACCPTP3 on convId:         
+
+ERROR       connection to partner '10.55.11.139:sapgw10' broken
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -6
+MODULE      nixxi.cpp
+LINE        4865
+DETAIL      NiIRead: P=10.55.11.139:3310; L=0.0.0.0:1915
+SYSTEM CALL recv
+ERRNO       10054
+ERRNO TEXT  WSAECONNRESET: Connection reset by peer
+COUNTER     10
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,984<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.138 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.138:sapgw10' not reached
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.138:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     1
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,984<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.104 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.104:sapgw10' not reached
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.104:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     2
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:39,984<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.139 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.139:sapgw10' not reached
+TIME        Tue Jul 06 17:05:39 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.139:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     3
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:42,031<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.138 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.138:sapgw10' not reached
+TIME        Tue Jul 06 17:05:42 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.138:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     4
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:42,046<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.104 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.104:sapgw10' not reached
+TIME        Tue Jul 06 17:05:42 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.104:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     5
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:42,046<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.139 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.139:sapgw10' not reached
+TIME        Tue Jul 06 17:05:42 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.139:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     6
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:44,062<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.138 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.138:sapgw10' not reached
+TIME        Tue Jul 06 17:05:44 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.138:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     7
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:44,062<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.104 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.104:sapgw10' not reached
+TIME        Tue Jul 06 17:05:44 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.104:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     8
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:44,078<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.139 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.139:sapgw10' not reached
+TIME        Tue Jul 06 17:05:44 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.139:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     9
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:48,093<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.138 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.138:sapgw10' not reached
+TIME        Tue Jul 06 17:05:48 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.138:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     10
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:48,109<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.104 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.104:sapgw10' not reached
+TIME        Tue Jul 06 17:05:48 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.104:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     11
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:48,125<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.139 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.139:sapgw10' not reached
+TIME        Tue Jul 06 17:05:48 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.139:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     12
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:56,140<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.138 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.138:sapgw10' not reached
+TIME        Tue Jul 06 17:05:56 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.138:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     13
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:56,171<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.104 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.104:sapgw10' not reached
+TIME        Tue Jul 06 17:05:56 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.104:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     14
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:05:56,171<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.139 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.139:sapgw10' not reached
+TIME        Tue Jul 06 17:05:56 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.139:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     15
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:06:12,187<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.138 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.138:sapgw10' not reached
+TIME        Tue Jul 06 17:06:12 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.138:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     16
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:06:12,203<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.104 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.104:sapgw10' not reached
+TIME        Tue Jul 06 17:06:12 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.104:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     17
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+Error:  >Tue Jul 06 17:06:12,203<    
+RfcException: [null]
+    message: Connect to SAP gateway failed
+Connect parameters: TPNAME=PR3 GWHOST=10.55.11.139 GWSERV=sapgw10
+
+ERROR       partner '10.55.11.139:sapgw10' not reached
+TIME        Tue Jul 06 17:06:12 201
+RELEASE     711
+COMPONENT   NI (network interface)
+VERSION     39
+RC          -10
+MODULE      nixxi.cpp
+LINE        3150
+DETAIL      NiPConnect2: 10.55.11.139:3310
+SYSTEM CALL connect
+ERRNO       10065
+ERRNO TEXT  WSAEHOSTUNREACH: No route to host
+COUNTER     18
+
+    Return code: RFC_FAILURE(1)
+    error group: 102
+    key: RFC_ERROR_COMMUNICATION
+
+**** Error file opened at 20100707 182056 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 07 18:20:56,531]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100707 182223 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 07 18:22:23,000]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 07 18:23:59,093]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100707 182713 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 07 18:27:13,078]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 07 18:30:31,250]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 07 18:31:33,937]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 07 18:35:24,734]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100712 102220 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Mon Jul 12 10:22:20,281]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 10:25:10,234]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 10:28:19,203]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 10:33:40,640]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 10:35:03,859]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 10:39:04,703]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100712 110858 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Mon Jul 12 11:08:58,265]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 11:09:37,343]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100712 112306 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Mon Jul 12 11:23:06,359]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 11:28:16,671]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100712 120236 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Mon Jul 12 12:02:36,671]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 12 12:15:50,156]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100713 112145 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Tue Jul 13 11:21:45,734]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100713 160018 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Tue Jul 13 16:00:18,984]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100713 172926 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Tue Jul 13 17:29:26,062]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Tue Jul 13 17:31:47,375]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Tue Jul 13 17:33:08,015]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Tue Jul 13 17:40:18,921]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Tue Jul 13 17:45:06,796]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:119)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100713 180104 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Tue Jul 13 18:01:04,921]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at client.Converter.makeAnswer(Converter.java:366)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:126)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100714 160748 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 14 16:07:48,265]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 16:13:46,265]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 16:14:15,953]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 16:20:47,250]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 16:24:15,156]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 16:28:40,671]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LOC was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 16:40:56,421]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1ARFCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 16:55:53,359]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 14 17:02:21,750]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100726 111223 French Guiana Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Mon Jul 26 11:12:23,984]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 11:27:13,671]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 11:39:11,265]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 11:39:45,218]:Exception thrown by application running in JCo Server
+java.lang.NullPointerException
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:83)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:14:42,062]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:15:54,703]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:25:31,046]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:25:46,765]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:25:50,609]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:26:22,203]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:28:05,484]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:28:28,375]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:31:27,218]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:34:40,593]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:35:08,609]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:39:52,250]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:43:01,406]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:44:05,390]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:54:54,765]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:56:03,171]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 14:58:50,093]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 15:06:20,109]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 15:17:30,296]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 15:26:53,359]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 15:30:24,609]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 15:47:52,625]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100726 155703 Argentine Time Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Mon Jul 26 15:57:03,406]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 16:34:17,812]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_RFC_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 16:38:25,437]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 16:59:21,968]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 17:22:54,078]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 17:26:46,515]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 17:27:13,296]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 17:34:59,078]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 17:35:29,437]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.converteTableComprobante(Converter.java:152)
+	at client.Converter.comprobanteMaker(Converter.java:128)
+	at client.SAP_JCO.sendComprobantes(SAP_JCO.java:121)
+	at client.SAP_JCO.access$0(SAP_JCO.java:118)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:86)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 17:36:15,734]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Mon Jul 26 17:56:54,031]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (105) JCO_ERROR_APPLICATION_EXCEPTION: handler for ZJ_1A_LCL was not installed
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:40)
+	at com.sap.conn.jco.server.DefaultServerHandlerFactory$FunctionHandlerFactory.getCallHandler(DefaultServerHandlerFactory.java:81)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:907)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100728 154537 GMT-03:00 Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 28 15:45:37,171]:Exception thrown by application running in JCo Server
+java.lang.IllegalStateException: Trying to access row values in a table which does not have any rows yet
+	at com.sap.conn.jco.rt.AbstractRecord.checkRowCapacity(AbstractRecord.java:777)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:1767)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.tableComprobanteLocalConverter(Converter.java:59)
+	at client.Converter.comprobanteLocalMaker(Converter.java:42)
+	at client.SAP_JCO.sendLocalComprobante(SAP_JCO.java:140)
+	at client.SAP_JCO.access$1(SAP_JCO.java:138)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:92)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 28 15:53:01,781]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field CBTE_DESDE not a member of ZFEDR
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:376)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.detalleConverter(Converter.java:95)
+	at client.Converter.getDetalles(Converter.java:79)
+	at client.Converter.comprobanteLocalMaker(Converter.java:45)
+	at client.SAP_JCO.sendLocalComprobante(SAP_JCO.java:140)
+	at client.SAP_JCO.access$1(SAP_JCO.java:138)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:92)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 28 16:12:01,125]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field CBTE_DESDE not a member of ZFEDR
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:376)
+	at com.sap.conn.jco.rt.AbstractRecord.getLong(AbstractRecord.java:2714)
+	at client.Converter.detalleConverter(Converter.java:95)
+	at client.Converter.getDetalles(Converter.java:79)
+	at client.Converter.comprobanteLocalMaker(Converter.java:45)
+	at client.SAP_JCO.sendLocalComprobante(SAP_JCO.java:140)
+	at client.SAP_JCO.access$1(SAP_JCO.java:138)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:92)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100728 165244 GMT-03:00 Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 28 16:52:44,921]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field  not a member of TABLES
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:376)
+	at com.sap.conn.jco.rt.AbstractRecord.getTable(AbstractRecord.java:2835)
+	at com.sap.conn.jco.rt.AbstractRecord.getTable(AbstractRecord.java:40)
+	at client.Converter.addDetalle(Converter.java:326)
+	at client.Converter.makeFacturaLocalAnswer(Converter.java:309)
+	at client.SAP_JCO.sendLocalComprobante(SAP_JCO.java:144)
+	at client.SAP_JCO.access$1(SAP_JCO.java:138)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:92)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+Exception thrown [Wed Jul 28 17:07:52,796]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field CBTE_DESDE not a member of ZFEDRESP
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:376)
+	at com.sap.conn.jco.rt.AbstractRecord.setValue(AbstractRecord.java:3693)
+	at client.Converter.addDetalle(Converter.java:332)
+	at client.Converter.makeFacturaLocalAnswer(Converter.java:309)
+	at client.SAP_JCO.sendLocalComprobante(SAP_JCO.java:144)
+	at client.SAP_JCO.access$1(SAP_JCO.java:138)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:92)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100728 172435 GMT-03:00 Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 28 17:24:35,281]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field IMPTO_LIQ_NRI not a member of ZFEDRESP
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:376)
+	at com.sap.conn.jco.rt.AbstractRecord.setValue(AbstractRecord.java:3705)
+	at client.Converter.addDetalle(Converter.java:344)
+	at client.Converter.makeFacturaLocalAnswer(Converter.java:309)
+	at client.SAP_JCO.sendLocalComprobante(SAP_JCO.java:144)
+	at client.SAP_JCO.access$1(SAP_JCO.java:138)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:92)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
+
+**** Error file opened at 20100728 174414 GMT-03:00 Rel 3.0.2 (2009-03-29) [711.34]
+Exception thrown [Wed Jul 28 17:44:14,718]:Exception thrown by application running in JCo Server
+com.sap.conn.jco.JCoRuntimeException: (127) JCO_ERROR_FIELD_NOT_FOUND : Field percode not a member of ZFECRESP
+	at com.sap.conn.jco.rt.AbstractMetaData.indexOf(AbstractMetaData.java:376)
+	at com.sap.conn.jco.rt.AbstractRecord.setValue(AbstractRecord.java:3680)
+	at client.Converter.makeFacturaLocalAnswer(Converter.java:313)
+	at client.SAP_JCO.sendLocalComprobante(SAP_JCO.java:144)
+	at client.SAP_JCO.access$1(SAP_JCO.java:138)
+	at client.SAP_JCO$JavaSAPHandler.handleRequest(SAP_JCO.java:92)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:953)
+	at com.sap.conn.jco.rt.DefaultServerWorker$FunctionDispatcher.handleRequest(DefaultServerWorker.java:882)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatchRequest(DefaultServerWorker.java:142)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.dispatchRequest(MiddlewareJavaRfc.java:2928)
+	at com.sap.conn.jco.rt.MiddlewareJavaRfc$JavaRfcServer.listen(MiddlewareJavaRfc.java:2224)
+	at com.sap.conn.jco.rt.DefaultServerWorker.dispatch(DefaultServerWorker.java:259)
+	at com.sap.conn.jco.rt.DefaultServerWorker.loop(DefaultServerWorker.java:322)
+	at com.sap.conn.jco.rt.DefaultServerWorker.run(DefaultServerWorker.java:220)
+	at java.lang.Thread.run(Thread.java:619)
+
