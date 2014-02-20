@@ -37,36 +37,43 @@ public class PropiedadesFactory {
 			path += "wsaa.properties";
 		}
 
-		is = Thread.currentThread().getContextClassLoader().getResourceAsStream(path);
+		is = Thread.currentThread().getContextClassLoader()
+				.getResourceAsStream(path);
 
 		try {
 			propiedades.load(is);
 		} catch (IOException e) {
-			throw new ConectorException(99999, "No se ha podido leer el archivo " + path, e);
+			throw new ConectorException(99999,
+					"No se ha podido leer el archivo " + path, e);
 		} catch (Exception e) {
-			throw new ConectorException(99999, "No se ha podido leer el archivo " + path, e);
+			throw new ConectorException(99999,
+					"No se ha podido leer el archivo " + path, e);
 		}
 		return propiedades;
 	}
 
-	//TODO: Las properties y los certificados, deberia sacarlos de la carpeta CONF
+	// TODO: Las properties y los certificados, deberia sacarlos de la carpeta
+	// CONF
 	public static Properties getArchivoAmbiente() throws ConectorException {
 		InputStream is = null;
 		Properties propiedades = new Properties();
 
-		is = Thread.currentThread().getContextClassLoader().getResourceAsStream(
-				"ambiente.properties");
+		is = Thread.currentThread().getContextClassLoader()
+				.getResourceAsStream("ambiente.properties");
 		try {
 			propiedades.load(is);
 		} catch (IOException e) {
-			throw new ConectorException(99999, "No se ha podido leer el archivo ambiente.properties", e);
+			throw new ConectorException(99999,
+					"No se ha podido leer el archivo ambiente.properties", e);
 		} catch (Exception e) {
-			throw new ConectorException(99999, "No se ha podido leer el archivo ambiente.properties", e);
+			throw new ConectorException(99999,
+					"No se ha podido leer el archivo ambiente.properties", e);
 		}
 		return propiedades;
 	}
 
-	public static Properties getArchivoCuit(Ambiente a, long cuit) throws ConectorException {
+	public static Properties getArchivoCuit(Ambiente a, long cuit)
+			throws ConectorException {
 		InputStream is = null;
 		String path = null;
 		Properties propiedades = new Properties();
@@ -79,15 +86,17 @@ public class PropiedadesFactory {
 			path = "prod/";
 		}
 		String fileName = path + cuit + ".properties";
-		is = Thread.currentThread().getContextClassLoader().getResourceAsStream(fileName);
+		is = Thread.currentThread().getContextClassLoader()
+				.getResourceAsStream(fileName);
 		try {
 			propiedades.load(is);
 		} catch (IOException e) {
-			throw new ConectorException(99999, "No se ha podido leer el archivo " + fileName, e);
+			throw new ConectorException(99999,
+					"No se ha podido leer el archivo " + fileName, e);
 		} catch (Exception e) {
-			throw new ConectorException(99999, "No se ha podido leer el archivo " + fileName, e);
+			throw new ConectorException(99999,
+					"No se ha podido leer el archivo " + fileName, e);
 		}
 		return propiedades;
 	}
-
 }
