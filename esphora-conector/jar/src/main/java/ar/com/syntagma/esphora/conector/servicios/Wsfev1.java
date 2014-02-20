@@ -1,7 +1,5 @@
 package ar.com.syntagma.esphora.conector.servicios;
 
-import java.net.UnknownHostException;
-
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
