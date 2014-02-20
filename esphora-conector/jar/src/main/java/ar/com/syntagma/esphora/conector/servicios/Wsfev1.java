@@ -1,5 +1,7 @@
 package ar.com.syntagma.esphora.conector.servicios;
 
+import java.net.UnknownHostException;
+
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
 import javax.jws.WebService;
@@ -128,8 +130,11 @@ public class Wsfev1 {
 		} catch (ConectorException e) {
 			resp = new fev1.dif.afip.gov.ar.DummyResponse();
 			resp.setAppServer("OK");
-			resp.setAuthServer((wsfev1 != null && wsfev1
-					.getFechaVencimientoCertificado() != null) ? "OK" : "Error");
+			resp.setAuthServer("Error");
+			if ((wsfev1 != null && wsfev1.getFechaVencimientoCertificado() != null)) {
+				resp.setFechaVencimientoCertificado(String.valueOf(wsfev1
+						.getFechaVencimientoCertificado().getTime()));
+			}
 
 			if ("Error".equals(resp.getAuthServer())) {
 				resp.setDbServer("NA");

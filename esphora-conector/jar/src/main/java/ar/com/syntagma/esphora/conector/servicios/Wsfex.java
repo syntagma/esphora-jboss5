@@ -129,8 +129,11 @@ public class Wsfex {
 		} catch (ConectorException e) {
 			dum = new fex.dif.afip.gov.ar.DummyResponse();
 			dum.setAppServer("OK");
-			dum.setAuthServer((wsfex != null && wsfex
-					.getFechaVencimientoCertificado() != null) ? "OK" : "Error");
+			dum.setAuthServer("Error");
+			if ((wsfex != null && wsfex.getFechaVencimientoCertificado() != null)) {
+				dum.setFechaVencimientoCertificado(String.valueOf(wsfex
+						.getFechaVencimientoCertificado().getTime()));
+			}
 
 			if ("Error".equals(dum.getAuthServer())) {
 				dum.setDbServer("NA");
