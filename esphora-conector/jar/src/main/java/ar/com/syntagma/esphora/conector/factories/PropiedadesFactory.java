@@ -49,7 +49,6 @@ public class PropiedadesFactory {
 		return propiedades;
 	}
 
-	//TODO: Las properties y los certificados, deberia sacarlos de la carpeta CONF
 	public static Properties getArchivoAmbiente() throws ConectorException {
 		InputStream is = null;
 		Properties propiedades = new Properties();
