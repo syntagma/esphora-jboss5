@@ -39,7 +39,7 @@ public class ClienteWSAA extends ClienteWS {
 				try {
 					response = serviceProd.getLoginCms().loginCms(in.getIn0());
 				} catch (LoginFault_Exception e) {
-					 throw new ConectorException(99999,
+					 throw new ConectorException(99998,
 							 "Error al intentar usar el servicio de autenficicacion de Afip: " + e.getMessage(), e);
 				} catch (Exception e) {
 					 throw new ConectorException(99999,
@@ -50,10 +50,10 @@ public class ClienteWSAA extends ClienteWS {
 				try {
 					response = serviceTest.getLoginCms().loginCms(in.getIn0());
 				} catch (https.wsaahomo_afip_gov_ar.ws.services.logincms.LoginFault_Exception e) {
-					 throw new ConectorException(99999,
+					 throw new ConectorException(99997,
 							 "Error al intentar usar el servicio autenficicacion de Afip: " + e.getMessage(), e);
 				} catch (Exception e) {
-					 throw new ConectorException(99999,
+					 throw new ConectorException(99996,
 							 "Error al intentar usar el certificado para conectarse a afip: " + e.getMessage(), e);					
 				}
 			}

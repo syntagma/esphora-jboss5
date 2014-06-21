@@ -74,9 +74,11 @@ public class TicketAfipBuilder {
 			return ticketAfip;
 		}
 		catch(ConectorException ce) {
+			ce.printStackTrace();
 			throw ce;
 		}
 		catch(Exception e) {
+			e.printStackTrace();
 			throw new ConectorException(
 					99999,
 					"No se ha podido conseguir el ticket de autorizacion para los servicios de AFIP",

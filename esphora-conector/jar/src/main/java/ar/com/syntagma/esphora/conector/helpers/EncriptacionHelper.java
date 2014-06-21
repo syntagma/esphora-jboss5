@@ -92,6 +92,7 @@ public class EncriptacionHelper {
 						"No se puede leer el certificado .p12", e4);
 			}
 			try {
+				System.out.println("Cerrando p12stream");
 				p12stream.close();
 			} catch (IOException e3) {
 				e3.printStackTrace();
@@ -103,7 +104,9 @@ public class EncriptacionHelper {
 
 			// Get Certificate & Private key from KeyStore
 			try {
+				System.out.println("Obtengo clave privada " + signer + " " + p12pass);
 				pKey = (PrivateKey) ks.getKey(signer, p12pass.toCharArray());
+				
 			} catch (UnrecoverableKeyException e2) {
 				throw new ConectorException(99999,
 						"No se puede recuperar la clave del certificado .p12", e2);
@@ -115,6 +118,7 @@ public class EncriptacionHelper {
 						"No se encuentra el algoritmo", e2);
 			}
 			try {
+				System.out.println("Obtengo certificado");
 				pCertificate = (X509Certificate) ks.getCertificate(signer);
 				fechaVencimientoCertificado = pCertificate.getNotAfter();
 			} catch (KeyStoreException e2) {
@@ -158,6 +162,7 @@ public class EncriptacionHelper {
 			// log.info("Key: " + pKey);
 			// log.info("Certificate: " + pCertificate);
 
+			
 			// Add the Certificate to the Message
 			try {
 				gen.addCertificatesAndCRLs(cstore);

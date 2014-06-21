@@ -70,6 +70,9 @@ public class AutorizacionHelper {
 			loginTicketRequestXmlCms = encriptacionHelper.crearCms(p12file,
 					p12pass, signer, dstDN, service, TicketTime);
 
+			
+			System.out.println("Fec. Vto. Cert. --> " + encriptacionHelper.getFechaVencimientoCertificado());
+			
 			ticketAfip.setFechaVencimientoCertificado(encriptacionHelper.getFechaVencimientoCertificado());
 			
 		ClienteWSAA ws = null;
