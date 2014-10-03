@@ -27,7 +27,6 @@ public class FEParamGetTiposConcepto implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private ConceptoTipoResponse conceptoTipoResponse;
 	

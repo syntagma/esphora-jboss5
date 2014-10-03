@@ -36,7 +36,6 @@ public class WsfeService
         try {
             URL baseUrl;
             baseUrl = ar.com.syntagma.esphora.conector.servicios.WsfeService.class.getResource(".");
-            //TODO: Sacar el server y puerto de un properties
             url = new URL(baseUrl, String.format("http://%s:%s/esphora-conector/ws/wsfe?wsdl",host,port));
         } catch (MalformedURLException e) {
             logger.warning("Failed to create URL for the wsdl Location: '"+String.format("http://%s:%s/esphora-conector/ws/wsfe?wsdl",host,port)+"', retrying as a local file");

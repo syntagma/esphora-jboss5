@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseTex;
 public class FEXGetPARAM_Tipo_ExpoController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseTex fexResponseTex;
 		

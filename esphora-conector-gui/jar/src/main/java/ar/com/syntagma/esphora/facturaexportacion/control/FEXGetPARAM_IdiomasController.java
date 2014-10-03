@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseIdi;
 public class FEXGetPARAM_IdiomasController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseIdi fexResponseIdi;
 		

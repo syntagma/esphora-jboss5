@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseMon;
 public class FEXGetPARAM_MONController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseMon fexResponseMon;
 		

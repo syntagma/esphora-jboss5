@@ -27,7 +27,6 @@ public class FEParamGetTiposMoneda implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private MonedaResponse monedaResponse;
 	

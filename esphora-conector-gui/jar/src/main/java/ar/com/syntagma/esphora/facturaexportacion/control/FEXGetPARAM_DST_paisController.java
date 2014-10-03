@@ -14,7 +14,6 @@ import fex.dif.afip.gov.ar.FEXResponseDSTPais;
 public class FEXGetPARAM_DST_paisController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseDSTPais fexResponseDSTPais;
 		

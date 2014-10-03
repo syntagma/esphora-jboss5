@@ -26,7 +26,6 @@ public class FEParamGetTiposOpcional implements Serializable{
 		this.cuit = cuit;
 	}
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private OpcionalTipoResponse opcionalTipoResponse;
 	

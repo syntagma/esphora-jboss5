@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseUmed;
 public class FEXGetPARAM_UMedController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseUmed fexResponseUmed;
 		

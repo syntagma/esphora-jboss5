@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseTipoCbte;
 public class FEXGetPARAM_Tipo_CbteController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseTipoCbte fexResponseTipoCbte;
 		

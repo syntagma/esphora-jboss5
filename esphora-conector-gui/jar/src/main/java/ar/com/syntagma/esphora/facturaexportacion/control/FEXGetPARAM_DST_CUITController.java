@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseDSTCuit;
 public class FEXGetPARAM_DST_CUITController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseDSTCuit fexResponseDSTCuit;
 		

@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseLastID;
 public class FEXGetLast_IDController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseLastID fexResponseLastID;
 		

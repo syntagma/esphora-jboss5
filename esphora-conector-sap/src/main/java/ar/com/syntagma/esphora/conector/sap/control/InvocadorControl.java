@@ -12,14 +12,12 @@ import ar.com.syntagma.esphora.conector.sap.proxy.WSFEv1Proxy;
 
 import com.sap.conn.jco.JCoFunction;
 
-import facturaelectronica.dif.afip.gov.ar.FERecuperaLastCMPResponse;
 import facturaelectronica.dif.afip.gov.ar.FERequest;
 import facturaelectronica.dif.afip.gov.ar.FEResponse;
 import fev1.dif.afip.gov.ar.FECAERequest;
 import fev1.dif.afip.gov.ar.FECAEResponse;
 import fex.dif.afip.gov.ar.ClsFEXRequest;
 import fex.dif.afip.gov.ar.FEXResponseAuthorize;
-import fex.dif.afip.gov.ar.FEXResponseLastCMP;
 
 public class InvocadorControl {
 	
@@ -95,8 +93,7 @@ public class InvocadorControl {
     	int pto_vta = function.getImportParameterList().getInt(SapParameter.RFC_PARAMETER_LOCAL_NCMP_PTO_VTA);
     	int tipo_cbte = function.getImportParameterList().getInt(SapParameter.RFC_PARAMETER_LOCAL_NCMP_TIPO_CBTE);
     	
-    	FERecuperaLastCMPResponse response = wsfe.getLastCMPLocal(pto_vta, tipo_cbte, cuit);
-    	
+    	wsfe.getLastCMPLocal(pto_vta, tipo_cbte, cuit);
     }
   
     /**
@@ -110,7 +107,7 @@ public class InvocadorControl {
     	short pto_vta = function.getImportParameterList().getShort(SapParameter.RFC_PARAMETER_EXPO_NCMP_PTO_VTA);
     	short tipo_cbte = function.getImportParameterList().getShort(SapParameter.RFC_PARAMETER_EXPO_NCMP_TIPO_CBTE);
     	
-    	FEXResponseLastCMP response = wsfex.getLastCMPExpo(pto_vta, tipo_cbte, cuit);
+    	wsfex.getLastCMPExpo(pto_vta, tipo_cbte, cuit);
     	
     }
 

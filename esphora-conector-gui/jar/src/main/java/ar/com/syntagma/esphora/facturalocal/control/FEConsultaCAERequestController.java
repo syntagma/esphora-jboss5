@@ -1,16 +1,13 @@
 package ar.com.syntagma.esphora.facturalocal.control;
 
 
-import ar.com.syntagma.esphora.conector.servicios.Wsfe;
-import ar.com.syntagma.esphora.conector.servicios.WsfeService;
-
-import org.jboss.seam.annotations.In;
 import org.jboss.seam.annotations.Name;
 import org.jboss.seam.annotations.Out;
 
+import ar.com.syntagma.esphora.conector.servicios.Wsfe;
+import ar.com.syntagma.esphora.conector.servicios.WsfeService;
 import facturaelectronica.dif.afip.gov.ar.FEConsultaCAEReq;
 import facturaelectronica.dif.afip.gov.ar.FEConsultaCAEResponse;
-import fex.dif.afip.gov.ar.ClsFEXGetCMP;
 
 @Name("feConsultaCAERequestController")
 public class FEConsultaCAERequestController {

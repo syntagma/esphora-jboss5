@@ -15,7 +15,6 @@ public class FEXCheck_PermisoController {
 	private String idPermiso;
 	private int dstMerc;
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseCheckPermiso fexResponseCheckPermiso;
 	

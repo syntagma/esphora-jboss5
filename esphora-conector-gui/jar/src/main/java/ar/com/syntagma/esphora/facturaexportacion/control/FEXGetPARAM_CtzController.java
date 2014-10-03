@@ -14,7 +14,6 @@ public class FEXGetPARAM_CtzController {
 	
 	private long cuit;
 	private String idMoneda;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseCtz fexResponseCtz;
 		

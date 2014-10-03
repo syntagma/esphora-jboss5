@@ -27,7 +27,6 @@ public class FEParamGetTiposTributo implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private FETributoResponse feTributoResponse;
 	

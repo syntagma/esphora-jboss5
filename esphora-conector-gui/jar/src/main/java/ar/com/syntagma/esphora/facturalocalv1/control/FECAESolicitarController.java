@@ -23,7 +23,7 @@ public class FECAESolicitarController implements Serializable{
 	private int cbteTipo;
 	private int ptoVta;
 	private long nroFactura;
-	@SuppressWarnings("unused")
+	
 	@Out(required = false)
 	private FECAEResponse feResponse;
 	

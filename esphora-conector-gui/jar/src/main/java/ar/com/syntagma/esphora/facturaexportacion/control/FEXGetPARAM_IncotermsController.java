@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponseInc;
 public class FEXGetPARAM_IncotermsController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseInc fexResponseInc;
 		

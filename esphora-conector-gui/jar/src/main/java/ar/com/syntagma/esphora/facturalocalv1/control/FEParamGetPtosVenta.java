@@ -27,7 +27,6 @@ public class FEParamGetPtosVenta implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private FEPtoVentaResponse fePtoVentaResponse;
 	

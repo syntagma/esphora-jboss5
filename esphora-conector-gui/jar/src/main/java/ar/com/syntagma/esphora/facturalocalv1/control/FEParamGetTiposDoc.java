@@ -27,7 +27,6 @@ public class FEParamGetTiposDoc implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private DocTipoResponse docTipoResponse;
 	

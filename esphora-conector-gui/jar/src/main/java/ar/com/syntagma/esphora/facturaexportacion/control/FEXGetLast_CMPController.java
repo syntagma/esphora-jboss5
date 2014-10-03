@@ -15,7 +15,6 @@ public class FEXGetLast_CMPController {
 	private short tipoComprobante;
 	private short puntoVenta;
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponseLastCMP fexResponseLastCMP;
 		

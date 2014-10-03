@@ -13,7 +13,6 @@ import fex.dif.afip.gov.ar.FEXResponsePtoVenta;
 public class FEXGetPARAM_PtoVentaController {
 	
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private FEXResponsePtoVenta fexResponsePtoVenta;
 		

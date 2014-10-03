@@ -27,7 +27,6 @@ public class FEParamGetTiposIva implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private IvaTipoResponse ivaTipoResponse;
 	

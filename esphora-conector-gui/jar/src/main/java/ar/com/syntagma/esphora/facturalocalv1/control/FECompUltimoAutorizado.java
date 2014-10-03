@@ -44,7 +44,6 @@ public class FECompUltimoAutorizado implements Serializable{
 		this.ptoVta = ptoVta;
 	}
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private FERecuperaLastCbteResponse feRecuperaLastCbteResponse;
 	

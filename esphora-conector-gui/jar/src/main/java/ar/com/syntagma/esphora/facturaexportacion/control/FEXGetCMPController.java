@@ -16,7 +16,6 @@ public class FEXGetCMPController {
 	
 	private ClsFEXGetCMP cmp;
 	private long cuit;
-	@SuppressWarnings("unused")
 	@Out(required=false)
 	private ClsFEXGetCMPResponse clsFEXGetCMPResponse;	
 	

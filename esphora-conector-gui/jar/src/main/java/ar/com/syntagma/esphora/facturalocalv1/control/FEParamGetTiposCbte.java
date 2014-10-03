@@ -27,7 +27,6 @@ public class FEParamGetTiposCbte implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private CbteTipoResponse cbteTipoResponse;
 	

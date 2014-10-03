@@ -54,7 +54,6 @@ public class FECompConsultarController implements Serializable{
 		this.nroFactura = nroFactura;
 	}
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private FECompConsultaResponse feCompConsultaResponse;
 	

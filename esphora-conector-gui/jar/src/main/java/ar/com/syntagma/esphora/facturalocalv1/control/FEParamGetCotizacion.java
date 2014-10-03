@@ -37,7 +37,6 @@ public class FEParamGetCotizacion implements Serializable{
 	}
 
 
-	@SuppressWarnings("unused")
 	@Out(required = false)
 	private FECotizacionResponse feCotizacionResponse;
 	
