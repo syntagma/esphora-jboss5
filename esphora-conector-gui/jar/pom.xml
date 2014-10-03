@@ -8,7 +8,6 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<groupId>ar.com.syntagma.seam</groupId>
 	<artifactId>esphora-conector-gui-jar</artifactId> <!-- m2eclipse does not like: ${app.context}-ear -->
 	<name>${project.artifactId} : ${project.version}</name>
 	<description>Modulo JAR de Esphora Gui</description>
