@@ -1,0 +1,91 @@
+<ui:composition xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:m="http://jboss.com/products/seam/mail"
+	xmlns:s="http://jboss.com/products/seam/taglib"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:rich="http://richfaces.org/rich" template="../layout/email.xhtml">
+	<ui:define name="subject">#{subject}</ui:define>
+	<ui:define name="body">
+
+		<html>
+<head>
+
+
+</head>
+<body style="font-family: verdana">
+	<map name="m_00000001">
+		<area shape="rect" coords="7,159,85,178"
+			href="http://www.adecco.com.ar/es-AR/buscas-trabajo/acc/Pages/default.aspx" />
+	</map>
+
+
+
+
+	<!-- START container -->
+	<div id="container">
+		<!-- START header  -->
+		<div id="header"></div>
+		<!-- END   header  -->
+		<!-- START mainMenu  -->
+		<!-- END mainMenu  -->
+
+		<!-- START panel, contains leftcolumn (submenu) and main page -->
+		<div id="panel">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tbody>
+					<tr>
+						<td valign="top">
+							<!-- START LeftColumn  -->
+
+							<div id="leftColumn">
+
+								<!-- START newsPanel -->
+								<!-- END newsPanel -->
+								<!-- START leftMenu.inc  -->
+								<!-- END leftMenu  -->
+							</div> <!-- END LeftColumn  -->
+						</td>
+
+						<td valign="top">
+							<!-- START Main Page  -->
+							<div id="mainPage"
+								style="border: 1px; border-color: #756C63; color: #756C63">
+								<table id="table1" cellspacing="0" frame="void" rules="none"
+									width="100%">
+									<tbody>
+										<tr>
+											<td valign="top"><strong>Estimado Administrador
+													<br /> At. Sr./a. #{toNombre}<br /> </strong> Estan por vencer los
+												siguientes certificados:
+												
+												<ul>
+												<ui:repeat var="_elemento" value="#{lista}">
+													<li><h:outputText value="#{_elemento.subjectDN.name}" /> (<h:outputText value="#{_elemento.notAfter}" />)</li>
+												</ui:repeat>
+												</ul>
+												
+												</td>
+												
+												
+										</tr>
+									</tbody>
+								</table>
+
+								<!-- END Main page indent  -->
+							</div> <!-- END Main Page -->
+						</td>
+						<!-- END content cell -->
+
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<!-- END panel -->
+	</div>
+	<!-- END container -->
+
+</body>
+		</html>
+	</ui:define>
+</ui:composition>

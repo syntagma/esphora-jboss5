@@ -66,6 +66,7 @@ public class ComprobanteLocalBuilder {
 	 * @param response
 	 */
 	public void makeFacturaLocalAnswer (JCoFunction function, FEResponse response) {
+		//TODO definir nombre tabla resultado cabecera
 		JCoTable tableResultCabecera = function.getTableParameterList().getTable(
 																			SapParameter.T_RESULT_CBTE_LOCAL);
 		FECabeceraResponse cabecera = response.getFecResp();
@@ -103,6 +104,7 @@ public class ComprobanteLocalBuilder {
 	 * @param tableDetallesResultado
 	 */
 	private void addDetalle (JCoFunction function, ArrayOfFEDetalleResponse detalles, Long id) {
+		//TODO definir nombre tabla resultado detalles
 		JCoTable tableResultDetalle = function.getTableParameterList().getTable(SapParameter.T_RESULT_DETALLE);
 		//Recorro la lista de detalles pasada por el WS de la AFIP y los seteo en las tablas de retorno de SAP
 		for (FEDetalleResponse elemento: detalles.getFEDetalleResponse()) {

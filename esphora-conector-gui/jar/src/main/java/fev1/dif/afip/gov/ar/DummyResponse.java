@@ -32,9 +32,7 @@ import javax.xml.bind.annotation.XmlType;
 @XmlType(name = "DummyResponse", propOrder = {
     "appServer",
     "dbServer",
-    "authServer",
-    "errorMsg",
-    "fechaVencimientoCertificado"
+    "authServer"
 })
 public class DummyResponse {
 
@@ -44,11 +42,7 @@ public class DummyResponse {
     protected String dbServer;
     @XmlElement(name = "AuthServer")
     protected String authServer;
-    @XmlElement(name = "ErrorMsg")
-    protected String errorMsg;
-    @XmlElement(name = "FechaVencimientoCertificado")
-    protected String fechaVencimientoCertificado;
-    
+
     /**
      * Gets the value of the appServer property.
      * 
@@ -120,21 +114,5 @@ public class DummyResponse {
     public void setAuthServer(String value) {
         this.authServer = value;
     }
-
-	public String getErrorMsg() {
-		return errorMsg;
-	}
-
-	public void setErrorMsg(String errorMsg) {
-		this.errorMsg = errorMsg;
-	}
-
-	public String getFechaVencimientoCertificado() {
-		return fechaVencimientoCertificado;
-	}
-
-	public void setFechaVencimientoCertificado(String fechaVencimientoCertificado) {
-		this.fechaVencimientoCertificado = fechaVencimientoCertificado;
-	}
 
 }

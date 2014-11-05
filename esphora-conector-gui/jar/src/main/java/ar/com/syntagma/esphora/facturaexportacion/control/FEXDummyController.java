@@ -1,68 +1,41 @@
 package ar.com.syntagma.esphora.facturaexportacion.control;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+/**
+ * Modificado: Maximiliano Ferreyra 
+ * Fecha: 13/12/2011 
+ * Descripción: Se modifica el metodo "ejecutarConsulta" Se pasa por parametro el Cuit en forma de String.
+ */
 
-import javax.xml.ws.WebServiceException;
-
-import org.jboss.seam.annotations.Name;
-
+import ar.com.syntagma.esphora.conector.helper.ServicePropertiesHelper;
 import ar.com.syntagma.esphora.conector.servicios.Wsfex;
 import ar.com.syntagma.esphora.conector.servicios.WsfexService;
+
+import org.jboss.seam.annotations.Name;
+import org.jboss.seam.annotations.Out;
+
 import fex.dif.afip.gov.ar.DummyResponse;
 
 @Name("fexDummyController")
 public class FEXDummyController {
-
+	
+	@SuppressWarnings("unused")
+	@Out(required=false)
 	private DummyResponse dummyResponse;
-	private static final Long CUIT = 30629416249L;
-
-	public void ejecutarConsulta() {
-
+	
+	
+	public void ejecutarConsulta(String cuit) {
+	
 		WsfexService service;
 		Wsfex port;
-
-		service = new WsfexService();
+				
+		String servicio = "wsfex";
+		service = new WsfexService(ServicePropertiesHelper.getURL(servicio ),
+				ServicePropertiesHelper.getQName(servicio));
 		port = service.getWsfexPort();
-		try {
-			dummyResponse = port.fexDummy(CUIT);
-		} catch (WebServiceException ex) {
-			dummyResponse = new DummyResponse();
-			dummyResponse.setAppServer("Error");
-			dummyResponse.setAuthServer("NA");
-			dummyResponse.setDbServer("NA");
-			dummyResponse.setErrorMsg(ex.getCause() != null ? ex.getCause()
-					.getMessage() : ex.getMessage());
-		}
-
+		
+		//pasa el valor que ingresa que es un string a un número, con la funcion long.
+		dummyResponse = port.fexDummy(Long.parseLong(cuit.trim()));
+		
 	}
 
-	public DummyResponse getDummyResponse() {
-		if (dummyResponse == null) {
-			ejecutarConsulta();
-		}
-		return dummyResponse;
-	}
-
-	public String getFechaVencimientoCertificado() {
-		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-		return df.format(new Date(Long.valueOf(getDummyResponse()
-				.getFechaVencimientoCertificado())));
-	}
-
-	public Integer getDiasHastaVencimiento() {
-		if (getDummyResponse().getFechaVencimientoCertificado() == null) {
-			return 0;
-		}
-		Long fechaVencimientoMillis = Long.valueOf(getDummyResponse()
-				.getFechaVencimientoCertificado());
-		Long todayMillis = System.currentTimeMillis();
-		Long diffMillis = fechaVencimientoMillis - todayMillis;
-
-		return diffMillis > 0 ? (int) (diffMillis / (24 * 60 * 60 * 1000)) : -1;
-	}
-
-	public boolean isVencimientoProximo() {
-		return getDiasHastaVencimiento() < 30;
-	}
 }

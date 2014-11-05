@@ -10,6 +10,7 @@ import fev1.dif.afip.gov.ar.FECAEDetRequest;
 import fev1.dif.afip.gov.ar.FECAERequest;
 import fev1.dif.afip.gov.ar.FECAEResponse;
 
+import ar.com.syntagma.esphora.conector.helper.ServicePropertiesHelper;
 import ar.com.syntagma.esphora.conector.servicios.Wsfev1;
 import ar.com.syntagma.esphora.conector.servicios.Wsfev1Service;
 
@@ -23,7 +24,7 @@ public class FECAESolicitarController implements Serializable{
 	private int cbteTipo;
 	private int ptoVta;
 	private long nroFactura;
-	
+	@SuppressWarnings("unused")
 	@Out(required = false)
 	private FECAEResponse feResponse;
 	
@@ -31,8 +32,9 @@ public class FECAESolicitarController implements Serializable{
 
 		Wsfev1Service service;
 		Wsfev1 port;
-
-		service = new Wsfev1Service();
+		String servicio = "wsfev1";
+		service = new Wsfev1Service(ServicePropertiesHelper.getURL(servicio),
+				ServicePropertiesHelper.getQName(servicio));
 		port = service.getWsfev1Port();
 
 		//Se crea la variable de entrada al servicio que contiene los datos de la factura a autorizar	

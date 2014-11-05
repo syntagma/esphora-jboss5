@@ -1,6 +1,13 @@
 
 
+import java.util.Date;
+
 import org.apache.log4j.Logger;
+
+import ar.com.syntagma.esphora.conector.sap.proxy.WSFEXProxy;
+
+import fex.dif.afip.gov.ar.CmpAsoc;
+import fex.dif.afip.gov.ar.Permiso;
 
 /**
  * Esta clase testea el envio de un comprobante al WS de Syntagma
@@ -18,7 +25,7 @@ public class WSTest {
 	 */
 	public static void main(String[] args) {
 		
-		/*
+		
 		Date aux = new Date();
 		aux.setTime(3600000);
 		System.out.println(aux);
@@ -72,9 +79,8 @@ public class WSTest {
 	    	System.out.println(response.getFEXErr().getErrMsg());
 	    	String pepe = "a";
 	    	pepe ="b";
-	    	
+	    	*/
 		}
-		*/
 		}
 	
 

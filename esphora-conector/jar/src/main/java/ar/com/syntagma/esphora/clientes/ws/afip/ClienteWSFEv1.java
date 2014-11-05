@@ -90,10 +90,11 @@ public class ClienteWSFEv1 extends ClienteWS {
 
 		try {
 			response = port.feDummy();
-			return response;
+
 		} catch (Exception e) {
-			throw new ConectorException(99999, "Problemas para la verificacion basica del funcionamiento", e);
+			throw new ConectorException(99999, "No se pudo realizar dummy", e);
 		}
+		return response;
 	}
 
 	/**

@@ -1,19 +1,25 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Archivo: viaticos/jar/pom.xml Autor: Diego Balseiro Descripcion: Este 
+		pom describe solo las propiedades del "proyecto de negocio" -->
+
 	<modelVersion>4.0.0</modelVersion>
+
+	<!--Proyecto Padre -->
 	<parent>
 		<groupId>ar.com.syntagma.seam</groupId>
-		<artifactId>esphora-conector-gui</artifactId>
-		<version>1.1</version>
+		<artifactId>esphora-conector-gui</artifactId> <!-- m2eclipse does not like: ${app} -->
+		<version>2.3-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>esphora-conector-gui-jar</artifactId> <!-- m2eclipse does not like: ${app.context}-ear -->
+	<!-- Descripcion del proyecto -->
+	<artifactId>esphora-conector-gui-jar</artifactId> <!-- m2eclipse does not like: ${app.context}-jar -->
 	<name>${project.artifactId} : ${project.version}</name>
-	<description>Modulo JAR de Esphora Gui</description>
+	<description>Syntagma - Esphora Conector Gui</description>
 	<packaging>jar</packaging>
 
-
+	<!-- DEPENDENCIAS PARTICULARES -->
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -21,127 +27,6 @@
 			<version>3.8.1</version>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
-			<groupId>org.jboss.seam</groupId>
-			<artifactId>jboss-seam</artifactId>
-			<version>${version.seam}</version>
-			<scope>compile</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>javax.el</groupId>
-					<artifactId>el-api</artifactId>
-				</exclusion>
-			</exclusions>
-
-		</dependency>
 
 	</dependencies>
-
-	<profiles>
-		<!-- More than one profile can be active at once. Since profiles can contain 
-			the same types of configuration there can be clashes. If two profiles clash 
-			the last to be activated will override configurations in those activated 
-			earlier. Note: Any activeByDefault profile will be deactivated if you activate 
-			another profile. E.g. running "mvn install -Penv-dev" deactivates the "prod" 
-			profile. -->
-		<profile>
-			<id>env-dev</id>
-			<properties>
-				<env>dev</env>
-			</properties>
-		</profile>
-
-		<profile>
-			<id>env-prod</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<env>prod</env>
-			</properties>
-		</profile>
-		<profile>
-			<id>explode</id>
-			<build>
-				<plugins>
-					<plugin>
-						<artifactId>maven-antrun-plugin</artifactId>
-						<version>1.6</version>
-						<executions>
-							<execution>
-								<id>ejb-process-classes</id>
-								<phase>process-classes</phase>
-								<goals>
-									<goal>run</goal>
-								</goals>
-								<configuration>
-									<tasks>
-										<property name="deploy-path" value="${as.deploy}/${app.context}-war.war" />
-										<copy todir="${deploy-path}/${project.build.finalName}.jar"
-											verbose="true">
-											<fileset dir="${project.build.outputDirectory}">
-												<include name="**/*.class" />
-											</fileset>
-										</copy>
-									</tasks>
-								</configuration>
-							</execution>
-						</executions>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
-
-	<build>
-		<!-- Maven filter properties are ony visible to resources and can not be 
-			accessed from the POM. <filters> <filter>../src/main/filters/filter-${env}.properties</filter> 
-			</filters> -->
-
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering> <!-- filtering persistence.xml -->
-			</resource>
-		</resources>
-
-		<plugins>
-			<!-- Maven filter properties are ony visible to resources and can not 
-				be accessed from the POM. This is where the Properties Maven Plugin makes 
-				our life a little easier when dealing with properties that we need to access 
-				inside our POM. It provides goals to read and write properties from and to 
-				files, and also to set system properties. It's main use-case is loading properties 
-				from files instead of declaring them in pom.xml, something that comes in 
-				handy when dealing with different environments. The plugin is configured 
-				to read properties during the "validate" phase and the properties are then 
-				accessible from the pom. -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-					<encoding>ISO-8859-1</encoding>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>properties-maven-plugin</artifactId>
-				<version>1.0-alpha-2</version>
-				<executions>
-					<execution>
-						<configuration>
-							<files>
-								<file>${basedir}/../src/main/filters/filter-${env}.properties</file>
-							</files>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-
-
-		</plugins>
-	</build>
-
 </project>

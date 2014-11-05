@@ -5,6 +5,13 @@ import ar.com.syntagma.esphora.conector.sap.factory.PropertiesFactory;
 import ar.com.syntagma.esphora.conector.sap.parameter.SapParameter;
 
 
+/**
+ * 
+ * 25/06/2010
+ * 
+ * @author E. Balán
+ * 
+ */
 public class Proceso {
 
 	public static void main(String args[]) {

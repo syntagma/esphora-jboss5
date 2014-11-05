@@ -1,15 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
+	<!-- PROPIEDADES GENERALES -->
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ar.com.syntagma.seam</groupId>
-	<artifactId>esphora-conector-gui</artifactId>
-	<version>1.1</version>
-	<name>Esphora Conector GUI</name>
-	<description>Esphora Conector Gui</description>
+	<artifactId>esphora-conector-gui</artifactId> <!-- m2eclipse does not like: ${app.context} -->
+	<version>2.3-SNAPSHOT</version>
+	<name>${project.artifactId} : ${project.version}</name>
+	<description>Syntagma - Esphora Conector GUI</description>
 	<url>http://www.syntagma.com.ar/</url>
 	<packaging>pom</packaging>
-
 
 	<modules>
 		<module>jar</module>
@@ -18,6 +17,7 @@
 	</modules>
 
 
+	<!-- REPOSITORIOS PUBLICOS -->
 	<repositories>
 		<repository>
 			<id>jboss-public-repository-group</id>
@@ -33,7 +33,15 @@
 				<updatePolicy>never</updatePolicy>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>maven2-repository.java.net</id>
+			<name>Java.net Repository for Maven</name>
+			<url>http://download.java.net/maven/2/</url>
+			<layout>default</layout>
+		</repository>
 	</repositories>
+
+	<!-- REPOSITORIOS DE PLUGINS -->
 	<pluginRepositories>
 		<pluginRepository>
 			<id>jboss-public-repository-group</id>
@@ -48,28 +56,29 @@
 		</pluginRepository>
 	</pluginRepositories>
 
+	<!-- PROPIEDADES QUE SE USAN SOLO ADENTRO DEL POM!! -->
 	<properties>
 		<env>dev</env> <!-- The default setting if no profile is specified -->
-
 		<app>esphora-conector-gui</app>
-		<app.context>esphora-email-batch</app.context>  <!-- hint: same value as artifactId -->
+		<app.context>esphora-conector-gui</app.context>  <!-- hint: same value as artifactId -->
 		<app.web.context>${app.context}</app.web.context>
-		<app.display.name>Esphora - Facturacion Electronica - Email Batch</app.display.name>
+		<app.display.name>Syntamga - Esphora Conector GUI</app.display.name>
 		<app.description>
-			Sistema de Facturacion Electronica - Modulo Envio
-			Email Batch
-			Todos los derechos reservados por Syntagma S.A.
-    </app.description>
-		<app.distributable>false</app.distributable>
-		<app.jndi.pattern>${app.context}-ear/#{ejbName}/local</app.jndi.pattern> <!-- JBoss JNDI Pattern -->
-		<app.jndi.pattern.test>/#{ejbName}/Local</app.jndi.pattern.test>         <!-- OpenEJB JNDI Pattern -->
-
+			Centro de Servicios Compartidos (CSC)
+			Todos los
+			derechos reservados por Syntagma S.A.
+    	</app.description>
+		<jboss.server.name>esphoraSsl</jboss.server.name>
+		<ds>${final.name}-ds.xml</ds>
 		<!-- Properties for production are located in src/main/filters/filter-prod.properties 
 			Properties to be modified by developer are located in src/main/filters/filter-dev.properties 
 			To set up your own dev profile: * Copy filter-prod.properties to filter-dev.properties 
 			and add filter-dev.properties to svn:ignore * Execute maven commands with 
 			the dev profile, e.g. mvn install -Penv-dev -->
 		<!-- jar versions, for dependency management -->
+
+
+		<!-- VERSIONES DEL APPLICATION STACK -->
 		<version.seam>2.2.2.Final</version.seam> <!-- MUST correspond w. seam version in parent tag -->
 		<version.richfaces>3.3.3.Final</version.richfaces>
 		<version.drools>5.0.1</version.drools>
@@ -80,6 +89,8 @@
 		<version.gmaven>1.2</version.gmaven>
 		<version.groovy>1.7.2</version.groovy>
 		<version.ant>1.8.1</version.ant>
+		<version.hibernate>3.1.0.GA</version.hibernate>
+
 
 		<jdk.debug>true</jdk.debug>
 		<jdk.optimize>false</jdk.optimize>
@@ -89,53 +100,69 @@
 		<!-- http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
+		<svn.url>http://192.168.8.7/esphora2.0/trunk/esphora-conector-gui</svn.url>
+		
+
+		<nexus.url>http://192.168.8.8:8081/nexus/content/repositories</nexus.url>
+
 	</properties>
 
-	<build>
-		<pluginManagement>
-			<!-- configuracion del plugin para el hard-deploy -->
-			<plugins>
-				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>jboss-maven-plugin</artifactId>
-					<version>1.5.0</version>
-					<configuration>
-						<goal>hard-deploy</goal>
-						<jbossHome>${env.JBOSS_HOME}</jbossHome> <!-- variable de entorno -->
-						<serverName>${jboss.server.name}</serverName><!-- Nombre de la configuracion 
-							del servidor JBoss -->
-						<fileNames>
-							<fileName>target/esphora-conector-gui.war</fileName>
-						</fileNames>
-	
-					</configuration>
-					<executions>
-						<execution>
-							<id>harddeploy</id>
-							<phase>package</phase>
-							<goals>
-								<goal>hard-deploy</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>2.3.2</version>
-				<configuration>
-					<source>${jdk.source}</source>
-					<target>${jdk.target}</target>
-				</configuration>
-			</plugin>
-		</plugins>
-		
-		<finalName>esphora-conector-gui</finalName>
-	</build>
-	
+	<!-- PERFILES -->
+	<profiles>
+		<!-- More than one profile can be active at once. Since profiles can contain 
+			the same types of configuration there can be clashes. If two profiles clash 
+			the last to be activated will override configurations in those activated 
+			earlier. Note: Any activeByDefault profile will be deactivated if you activate 
+			another profile. E.g. running "mvn install -Penv-dev" deactivates the "prod" 
+			profile. -->
+		<profile>
+			<id>development</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>dev</value>
+				</property>
+			</activation>
+			<properties>
+				<env>dev</env>
+				<final.name>${app}</final.name>
+				<svn.tag>http://192.168.8.7/esphora2.0/tags</svn.tag>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>testing</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>test</value>
+				</property>
+			</activation>
+			<properties>
+				<env>test</env>
+				<final.name>test-${app}</final.name>
+				<svn.tag>http://192.168.8.7/esphora2.0/tags/RC</svn.tag>
+			</properties>
+		</profile>
+
+		<profile>
+			<id>production</id>
+			<activation>
+				<property>
+					<name>env</name>
+					<value>prod</value>
+				</property>
+			</activation>
+			<properties>
+				<env>prod</env>
+				<final.name>prod-${app}</final.name>
+				<svn.tag>http://192.168.8.7/esphora2.0/tags/FINAL</svn.tag>
+			</properties>
+		</profile>
+
+
+	</profiles>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- project modules -->
@@ -148,29 +175,32 @@
 
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>${app.context}-war-adecco</artifactId>
+				<artifactId>${app.context}-war-pdm</artifactId>
 				<version>${project.version}</version>
 				<type>war</type>
 			</dependency>
 
 			<dependency>
 				<groupId>${project.groupId}</groupId>
-				<artifactId>${app.context}-war-pdm</artifactId>
+				<artifactId>${app.context}-war-adecco</artifactId>
 				<version>${project.version}</version>
 				<type>war</type>
 			</dependency>
-
-			
 		</dependencies>
 	</dependencyManagement>
 
+	<!-- All provided, shared and test dependencies goes into parent pom -->
 	<dependencies>
+
+		<!-- Expression Language -->
 		<dependency>
 			<groupId>javax.el</groupId>
 			<artifactId>el-api</artifactId>
 			<version>1.0</version>
 			<scope>test</scope>
 		</dependency>
+
+		<!-- SEAM -->
 		<dependency>
 			<groupId>org.jboss.seam</groupId>
 			<artifactId>jboss-seam</artifactId>
@@ -190,6 +220,7 @@
 			<version>${version.seam}</version>
 			<scope>compile</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.jboss.seam</groupId>
 			<artifactId>jboss-seam-ioc</artifactId>
@@ -197,6 +228,101 @@
 			<scope>compile</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam-debug</artifactId>
+			<version>${version.seam}</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam-mail</artifactId>
+			<version>${version.seam}</version>
+			<scope>compile</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>com.sun.facelets</groupId>
+					<artifactId>jsf-facelets</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<!-- JAVAX -->
+		<dependency>
+			<groupId>javax.transaction</groupId>
+			<artifactId>jta</artifactId>
+			<version>1.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.persistence</groupId>
+			<artifactId>persistence-api</artifactId>
+			<version>1.0</version>
+			<scope>provided</scope>
+		</dependency>
+
+
+		<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>${version.hibernate}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-commons-annotations</artifactId>
+			<version>${version.hibernate}</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>3.4.0.GA</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-annotations</artifactId>
+			<version>3.4.0.GA</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-search</artifactId>
+			<version>3.1.1.GA</version>
+			<scope>provided</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 
 		<dependency>
 			<groupId>javax.faces</groupId>
@@ -204,37 +330,26 @@
 			<version>1.2_12</version>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>javax.faces</groupId>
 			<artifactId>jsf-impl</artifactId>
 			<version>1.2_12</version>
 			<scope>provided</scope>
-		</dependency>
-		
-		<dependency>
-			<groupId>org.richfaces.framework</groupId>
-			<artifactId>richfaces-api</artifactId>
-			<version>${version.richfaces}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.richfaces.framework</groupId>
-			<artifactId>richfaces-impl</artifactId>
-			<version>${version.richfaces}</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>org.richfaces.ui</groupId>
-			<artifactId>richfaces-ui</artifactId>
-			<version>${version.richfaces}</version>
-			<scope>compile</scope>
 		</dependency>
 
 		<dependency>
@@ -244,6 +359,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- @author dbalseiro LE SACO DROOLS <dependency> <groupId>org.drools</groupId> 
+			<artifactId>drools-core</artifactId> <version>${version.drools}</version> 
+			</dependency> <dependency> <groupId>org.drools</groupId> <artifactId>drools-api</artifactId> 
+			<version>${version.drools}</version> </dependency> <dependency> <groupId>org.drools</groupId> 
+			<artifactId>drools-compiler</artifactId> <version>${version.drools}</version> 
+			</dependency> -->
 
 		<dependency>
 			<groupId>jboss.jbossws</groupId>
@@ -251,5 +372,177 @@
 			<version>2.0.1.GA</version>
 			<scope>provided</scope>
 		</dependency>
+
+
+
 	</dependencies>
+
+
+	<!-- BUILD -->
+	<build>
+		<!-- En este archivo estan todas las properties de todo el proyecto -->
+		<filters>
+			<filter>../src/main/filters/filter-${env}.properties</filter>
+		</filters>
+
+		<!-- Plugin management se usa para que los hijos puedan ejecutar este plugin -->
+		<pluginManagement>
+			<!-- configuracion del plugin para el hard-deploy -->
+			<plugins>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>jboss-maven-plugin</artifactId>
+					<version>1.5.0</version>
+					<configuration>
+						<goal>hard-deploy</goal>
+						<jbossHome>${env.JBOSS_HOME}</jbossHome> <!-- variable de entorno -->
+						<serverName>${jboss.server.name}</serverName><!-- Nombre de la configuracion 
+							del servidor JBoss -->
+						<fileNames>
+							<!-- <fileName>target/${final.name}/WEB-INF/classes/${ds}</fileName> -->
+							<fileName>target/${final.name}.war</fileName>
+						</fileNames>
+
+					</configuration>
+					<executions>
+						<execution>
+							<id>${app}-hard-deploy</id>
+							<phase>package</phase>
+							<goals>
+								<goal>hard-deploy</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<webResources>
+						<!-- CONFIGURACION DE LA WEB APP -->
+						<resource>
+							<directory>war-adecco/src/main/webapp/WEB-INF</directory>
+							<filtering>true</filtering>
+							<targetPath>WEB-INF</targetPath>
+							<includes>
+								<include>**/components.xml</include>
+								<include>**/web.xml</include>
+								<include>**/pages.xml</include>
+								<include>**/jboss-web.xml</include>
+							</includes>
+						</resource>
+
+						<resource>
+							<directory>war-pdm/src/main/webapp/WEB-INF</directory>
+							<filtering>true</filtering>
+							<targetPath>WEB-INF</targetPath>
+							<includes>
+								<include>**/components.xml</include>
+								<include>**/web.xml</include>
+								<include>**/pages.xml</include>
+								<include>**/jboss-web.xml</include>
+							</includes>
+						</resource>
+
+						<!-- CONFIGURACION DEL PERSISTENCE -->
+						<resource>
+							<directory>war-adecco/src/main/resources/META-INF</directory>
+							<filtering>true</filtering>
+							<targetPath>WEB-INF/classes/META-INF</targetPath>
+							<includes>
+								<include>**/persistence.xml</include>
+							</includes>
+						</resource>
+						<resource>
+							<directory>war-pdm/src/main/resources/META-INF</directory>
+							<filtering>true</filtering>
+							<targetPath>WEB-INF/classes/META-INF</targetPath>
+							<includes>
+								<include>**/persistence.xml</include>
+							</includes>
+						</resource>
+
+					</webResources>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>${jdk.source}</source>
+					<target>${jdk.target}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<tagBase>${svn.tag}</tagBase>
+				</configuration>
+			</plugin>
+
+
+		</plugins>
+
+		<finalName>${final.name}</finalName>
+	</build>
+
+	<!-- INFO ADICIONAL -->
+	<organization>
+		<name>Syntagma SA</name>
+		<url>http://www.syntagma.com.ar/</url>
+	</organization>
+
+	<developers>
+		<developer>
+			<id>sebastian.bromberg@syntagma.com.ar</id>
+			<name>Sebastian Bromberg</name>
+			<email>sebastian.bromberg@syntagma.com.ar</email>
+			<organization>Syntagma SA</organization>
+			<organizationUrl>http://www.syntagma.com.ar/</organizationUrl>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>GMT -3</timezone>
+		</developer>
+
+		<developer>
+			<id>diego.balseiro@syntagma.com.ar</id>
+			<name>Diego Balseiro</name>
+			<email>diego.balseiro@syntagma.com.ar</email>
+			<organization>Syntagma SA</organization>
+			<organizationUrl>http://www.syntagma.com.ar/</organizationUrl>
+			<roles>
+				<role>Developer</role>
+			</roles>
+			<timezone>GMT -3</timezone>
+		</developer>
+	</developers>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Releases</name>
+			<url>${nexus.url}/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>${nexus.url}/snapshots</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:svn:http://192.168.8.7/esphora2.0/trunk/esphora-conector-gui</connection>
+		<developerConnection>scm:svn:http://192.168.8.7/esphora2.0/trunk/esphora-conector-gui</developerConnection>
+	</scm>
+
+
 </project>

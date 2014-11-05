@@ -14,6 +14,7 @@ public class WSFactory {
 	private static QName serviceName = null;
 	
 	public static WsfeService createWSFE (){
+		// TODO Capturar Excepciones
 
 		//LLeno el servicio WSFE
 		serviceName = new QName("http://servicios.conector.esphora.syntagma.com.ar/",

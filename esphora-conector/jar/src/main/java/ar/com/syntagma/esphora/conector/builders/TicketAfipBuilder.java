@@ -52,63 +52,62 @@ public class TicketAfipBuilder {
 	 * @return TicketAfip
 	 * @throws ConectorException
 	 */
-	public TicketAfip getTicketAfip(Ambiente a, ServicioAfip servicioAfip, Long cuit) throws ConectorException {
+	public TicketAfip getTicketAfip(Ambiente a, ServicioAfip servicioAfip,
+			Long cuit) throws ConectorException {
+		TicketAfip ticketAfip = null;
 		String clave = cuit.toString() + servicioAfip;
 		log.info("Ingresamos a GetTicketAfip de TicketAfipBuilder.");
+		/**
+		 * Me fijo si hay un elemento para ese cuit
+		 */
 		try {
-			//obtengo el ticket de la coleccion
-			TicketAfip ticketAfip = obtenerTicketAfipFromCache(clave);
-			
-			if (!isValid(ticketAfip)) {
+			if (!tickets.containsKey(clave)) {
+				/**
+				 * Si el cuit no estaba autorizado, realizamos la autorizacion y
+				 * devolvemos el ticket
+				 */
 				log.info("No se ha encontrado un ticket para esta empresa: "
 						+ cuit);
-				try {
-					ticketAfip = AutorizacionHelper.getTicketAfip(a, servicioAfip, cuit);
-				}
-				catch(ConectorException e) {
-					throw e;
-				}
+				ticketAfip = AutorizacionHelper.getTicketAfip(a, servicioAfip,
+						cuit);
 				tickets.put(clave, ticketAfip);
+				log.info("Ticket obtenido OK para: " + cuit + " Servicio: "
+						+ servicioAfip);
+				return ticketAfip;
 			}
-			
-			return ticketAfip;
-		}
-		catch(ConectorException ce) {
-			ce.printStackTrace();
-			throw ce;
-		}
-		catch(Exception e) {
+		} catch (ConectorException e) {
+			throw e;
+		} catch (Exception e) {
 			e.printStackTrace();
 			throw new ConectorException(
 					99999,
 					"No se ha podido conseguir el ticket de autorizacion para los servicios de AFIP",
 					e);
 		}
-	}
-	private boolean isValid(TicketAfip ticketAfip) {
+
 		try {
-			if (ticketAfip != null) {
-				if (ticketAfip.getValidezHasta().before(new Date())) {
-					log.info("Ticket Vencido");
-					return false;
-				} else {
-					log.info("Ticket Valido");
-					return true;
-				}
-			}
-			return false;
-		} catch (Exception e) {
-			log.info("Ticket Nulo");
-			return false;
-		}
-	}
-	
-	private TicketAfip obtenerTicketAfipFromCache(String clave) {
-		TicketAfip ticketAfip = null;
-		if (tickets.containsKey(clave)) {
+			/**
+			 * Si el cuit ya tiene un ticket, se evalua si esta vencido o no. En
+			 * caso de estar vencido se obtiene un nuevo ticket.
+			 */
 			ticketAfip = tickets.get(clave);
+			log.info("Se ha encontrado un ticket para esta empresa: " + cuit
+					+ " Servicio: " + servicioAfip);
+			log.info("El vencimiento del mismo es: "
+					+ ticketAfip.getValidezHasta());
+
+			if (ticketAfip.getValidezHasta().before(new Date())) {
+				log.info("Ticket Vencido");
+				return AutorizacionHelper.getTicketAfip(a, servicioAfip, cuit);
+			} else {
+				log.info("Ticket Valido");
+				return ticketAfip;
+			}
+		} catch (NullPointerException e) {
+			log.info("Ticket Nulo");
+			return AutorizacionHelper.getTicketAfip(a, servicioAfip, cuit);
 		}
-		return ticketAfip;
+
 	}
 
 }

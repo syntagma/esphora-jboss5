@@ -34,7 +34,7 @@ import fex.dif.afip.gov.ar.FEXResponseUmed;
  * 
  * @author sebastian.bromberg
  */
-@WebService(name = "wsfex")
+@WebService(name="wsfex")
 @SOAPBinding(parameterStyle = ParameterStyle.WRAPPED, style = Style.DOCUMENT)
 public class Wsfex {
 
@@ -121,29 +121,15 @@ public class Wsfex {
 		try {
 			wsfex = ClienteFactory.getClienteWSFEX(cuit);
 			dum = wsfex.FEXDummy();
-			dum.setFechaVencimientoCertificado(wsfex
-					.getFechaVencimientoCertificado() != null ? String
-					.valueOf(wsfex.getFechaVencimientoCertificado().getTime())
-					: null);
-			return dum;
 		} catch (ConectorException e) {
 			dum = new fex.dif.afip.gov.ar.DummyResponse();
-			dum.setAppServer("OK");
 			dum.setAuthServer("Error");
-			if ((wsfex != null && wsfex.getFechaVencimientoCertificado() != null)) {
-				dum.setFechaVencimientoCertificado(String.valueOf(wsfex
-						.getFechaVencimientoCertificado().getTime()));
-			}
-
-			if ("Error".equals(dum.getAuthServer())) {
-				dum.setDbServer("NA");
-			} else {
-				dum.setDbServer("Error");
-			}
-			dum.setErrorMsg(e.getMensaje());
+			dum.setAppServer("Error");
+			dum.setDbServer("Error");
 			return dum;
 		}
 
+		return dum;
 	}
 
 	/**

@@ -8,6 +8,7 @@ import java.util.Properties;
 public class PropertiesFactory {
 
 	public static String getProperty(String key) {
+		// TODO Capturar Excepciones
 		Properties properties = new Properties();
 		InputStream is;
 		try {

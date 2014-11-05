@@ -21,20 +21,18 @@ import ar.com.syntagma.esphora.conector.factories.PropiedadesFactory;
 public class AutorizacionHelper {
 
 	public static TicketAfip getTicketAfip(Ambiente a,
-			ServicioAfip servicioAfip, long cuit) throws ConectorException {
+			ServicioAfip servicioAfip, Long cuit) throws ConectorException {
 		TicketAfip ticketAfip = getTicketCompleto(a, servicioAfip, cuit);
 		return ticketAfip;
 	}
 
 	private static TicketAfip getTicketCompleto(Ambiente a,
-			ServicioAfip servicioAfip, long cuit) throws ConectorException {
+			ServicioAfip servicioAfip, Long cuit) throws ConectorException {
 		Properties propiedades;
-		Properties firmante;
 		TicketAfip ticketAfip = new TicketAfip();
 		try {
 			propiedades = PropiedadesFactory.getArchivoPropiedadesWS(a,
 					ServicioAfip.WSAA);
-			firmante = PropiedadesFactory.getArchivoCuit(a, cuit);
 		}
 		catch (Exception e) {
 			throw new ConectorException(
@@ -53,12 +51,8 @@ public class AutorizacionHelper {
 
 		String dstDN = propiedades.getProperty("dstdn");
 
-		String p12file = firmante.getProperty("keystore");
 
-		String signer = firmante.getProperty("keystore-signer");
-		String p12pass = firmante.getProperty("keystore-password");
-
-		Long TicketTime = new Long(firmante.getProperty("TicketTime"));
+		String signer = Long.toString(cuit);
 
 		byte[] loginTicketRequestXmlCms;
 		/*
@@ -66,15 +60,8 @@ public class AutorizacionHelper {
 		 * LoginTicketRequest
 		 */
 			// Create LoginTicketRequest_xml_cms
-			EncriptacionHelper encriptacionHelper = new EncriptacionHelper();
-			loginTicketRequestXmlCms = encriptacionHelper.crearCms(p12file,
-					p12pass, signer, dstDN, service, TicketTime);
+			loginTicketRequestXmlCms = EncriptacionHelper.crearCms(a,signer, dstDN, service);
 
-			
-			System.out.println("Fec. Vto. Cert. --> " + encriptacionHelper.getFechaVencimientoCertificado());
-			
-			ticketAfip.setFechaVencimientoCertificado(encriptacionHelper.getFechaVencimientoCertificado());
-			
 		ClienteWSAA ws = null;
 			// log.info("LoginTicketCMS: " +
 			// loginTicketRequestXmlCms.toString());

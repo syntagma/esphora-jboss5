@@ -1,74 +1,45 @@
 package ar.com.syntagma.esphora.facturalocalv1.control;
 
-import java.io.Serializable;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+/**
+ * Modificado: Maximiliano Ferreyra 
+ * Fecha: 12/12/2011 
+ * Descripción: Se modifica le metodo "ejecutarConsulta" Se pasa por parametro el Cuit en forma de String.
+ */
 
-import javax.xml.ws.WebServiceException;
+import java.io.Serializable;
 
 import org.jboss.seam.annotations.Name;
+import org.jboss.seam.annotations.Out;
 
-import ar.com.syntagma.esphora.conector.servicios.Wsfev1;
-import ar.com.syntagma.esphora.conector.servicios.Wsfev1Service;
 import fev1.dif.afip.gov.ar.DummyResponse;
 
+import ar.com.syntagma.esphora.conector.helper.ServicePropertiesHelper;
+import ar.com.syntagma.esphora.conector.servicios.Wsfev1;
+import ar.com.syntagma.esphora.conector.servicios.Wsfev1Service;
+
 @Name("feDummy")
-public class FEDummy implements Serializable {
+public class FEDummy implements Serializable{
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 4242458660705333813L;
-	private static final Long CUIT = 30629416249L;
 
+	@SuppressWarnings("unused")
+	@Out(required = false)
 	private DummyResponse dummyResponse;
-
-	public void ejecutarConsulta() {
+	
+	public void ejecutarConsulta(String cuit) {
 
 		Wsfev1Service service;
 		Wsfev1 port;
-
-		service = new Wsfev1Service();
+		String servicio = "wsfev1";
+		service = new Wsfev1Service(ServicePropertiesHelper.getURL(servicio),
+				ServicePropertiesHelper.getQName(servicio));
 		port = service.getWsfev1Port();
 
-		// feResponse.getFedResp().getFEDetalleResponse().get(0).getCbtDesde()
-		try {
-			dummyResponse = port.fev1Dummy(CUIT);
-		} catch (WebServiceException ex) {
-			dummyResponse = new DummyResponse();
-			dummyResponse.setAppServer("Error");
-			dummyResponse.setAuthServer("NA");
-			dummyResponse.setDbServer("NA");
-			dummyResponse.setErrorMsg(ex.getCause() != null ? ex.getCause()
-					.getMessage() : ex.getMessage());
-		}
+		//feResponse.getFedResp().getFEDetalleResponse().get(0).getCbtDesde()
+		//pasa el valor que ingresa que es un string a un número.
+		dummyResponse = port.fev1Dummy(Long.parseLong(cuit.trim()));
 	}
 
-	public DummyResponse getDummyResponse() {
-		if (dummyResponse == null) {
-			ejecutarConsulta();
-		}
-		return dummyResponse;
-	}
-
-	public String getFechaVencimientoCertificado() {
-		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-		return df.format(new Date(Long.valueOf(getDummyResponse()
-				.getFechaVencimientoCertificado())));
-	}
-
-	public Integer getDiasHastaVencimiento() {
-		if (getDummyResponse().getFechaVencimientoCertificado() == null) {
-			return 0;
-		}
-		Long fechaVencimientoMillis = Long.valueOf(getDummyResponse()
-				.getFechaVencimientoCertificado());
-		Long todayMillis = System.currentTimeMillis();
-		Long diffMillis = fechaVencimientoMillis - todayMillis;
-
-		return diffMillis > 0 ? (int) (diffMillis / (24 * 60 * 60 * 1000)) : -1;
-	}
-
-	public boolean isVencimientoProximo() {
-		return getDiasHastaVencimiento() < 30;
-	}
 }

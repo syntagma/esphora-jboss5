@@ -1,3 +1,12 @@
+
+
+
+import ar.com.syntagma.esphora.conector.sap.proxy.WSFEProxy;
+import facturaelectronica.dif.afip.gov.ar.FECabeceraRequest;
+import facturaelectronica.dif.afip.gov.ar.FEDetalleRequest;
+import facturaelectronica.dif.afip.gov.ar.FERequest;
+import facturaelectronica.dif.afip.gov.ar.FEResponse;
+
 public class WSTestFacturaLocal {
 	
 	
@@ -7,7 +16,7 @@ public class WSTestFacturaLocal {
 	public static void main(String[] args) {
 		
 		
-		/*WSFEProxy wsfe = new WSFEProxy();
+		WSFEProxy wsfe = new WSFEProxy();
 		
 		long cuit = 30629416249L;
 		
@@ -15,7 +24,7 @@ public class WSTestFacturaLocal {
 		long id = 10L;
 		int cantidadreg = 1;
 		int presta_serv = 0;
-		
+		/*
 		FECabeceraRequest cabecera = new FECabeceraRequest(id, cantidadreg, presta_serv);
 		//Seteo los valores para detalles
 		FEDetalleRequest[] detalles = new FEDetalleRequest[1]; 

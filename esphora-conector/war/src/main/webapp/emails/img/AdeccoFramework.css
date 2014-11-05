@@ -1,0 +1,361 @@
+ 
+/*
+  Corporate Red		#ea2026
+  Corporate Grey	#a9a18c
+  Grey tint 1		#b6af9d   
+  Grey tint 2		#c3bda3 (195,189,174)   Grey tint 1,  selected main menu
+  Grey tint 3		#d0cbbf   highlight grey , used for the selected tab, graphics and sub heading
+  Grey tint 4		#ddd9d0   
+  Grey tint 5		#e9e7e1  
+ 
+  #A3A18C   main menu
+  #EAE7E2   left menu
+*/
+
+/* specific divs */
+
+html, body {
+	padding:0px;
+	margin:0px;
+	font-size: 100%; /* IE Hack */
+}
+
+/* commented backslash hack \*/
+html, body {height:100%}
+/* end hack */
+
+body {
+	font-family: Verdana, Arial, Sans-serif;
+	color: black;
+	background: white url(../img/Background.gif) top center repeat-y;
+	text-align: center;
+	font-size: /*0.65em*/0.75em;
+}
+
+#container {
+	padding: 0px;  
+	margin: 0px auto;
+	width: 752px;
+	min-height: 100%;
+	height: auto;
+	text-align: left;
+	position: relative;
+}
+
+* html #container {
+	height: 100%;
+	width: 752px;
+}
+
+#header{
+   background: #fff;
+   padding: 10px 0px;
+}
+
+#panel{
+	display: block;
+	padding: 0px;  
+	margin: 0px;
+	clear: both;
+}
+
+
+
+#leftColumn {
+ width: 178px;
+ margin: 0px;
+ padding: 0px;
+}
+
+#leftColumn div.newsPanel {
+ width: 178px;
+ background: #d0cbbf url(../img/noticias.gif) no-repeat top left;
+ margin: 10px 0px 0px 0px;
+ padding: 10px;
+ border: 0px
+}
+
+/* fix box model for IE5 */
+#leftColumn div.news\Panel {width:158px;}
+
+#mainPage {
+ width: 564px;
+ margin: 10px 0px 0px 10px;
+ padding: 0px;
+}
+
+#mainPageIndent {
+ width: 548px;
+ margin: 0px 0px 0px 16px;
+ padding: 0px;
+}
+
+#mainPageIndent div.full {
+  clear: both;
+  width: 548px;
+}
+
+#mainPageIndent div.leftcol {
+  width: 263px;
+  float: left;
+}
+
+#mainPageIndent div.rightcol {
+  width: 263px;
+  float: right;
+}
+
+#mainPageIndent div.withlinks {
+  width: 358px;
+  float: left;
+}
+
+#mainPageIndent div.links{
+  width: 168px;
+  float: right;
+  padding-left:10px;
+  border-left: 1px solid #d0cbbf;
+}
+
+#mainPageIndent div.rule{
+  border-bottom: 1px solid #d0cbbf;
+  padding-bottom:10px;
+  margin-bottom:10px;
+}
+
+/* for image wrapping */
+#mainPageIndent div.right{
+  padding: 0px 0px 1em 10px;
+  float: right;
+}
+
+#mainPageIndent div.left{
+  padding: 0px 10px 10px 0px;
+  float: left;
+}
+
+#mainPageIndent div.center{
+  padding: 0px 0px 10px 0px;
+}
+
+/* footer is outside container and positioned absolute - footerspace clears space */
+#footerspace {
+ clear: both;
+ height: 50px;
+}
+
+#footer {
+ height: 30px;
+ position: absolute;;
+ bottom: 0px;
+ font-size: xx-small;
+ margin: 0px;
+ padding: 0px 0px 0px 216px;
+ color: #a9a18c;
+}
+
+#footer a {
+ color: #a9a18c;
+}
+#footer a:hover {
+ text-decoration: underline;
+ 
+}
+
+#footerBP {
+ height: 30px;
+ position: absolute;;
+ bottom: 0px;
+ font-size: xx-small;
+ margin: 0px;
+ padding: 30px 0px 0px 740px;
+ color: #a9a18c;
+}
+
+#footerBP a {
+ color: #a9a18c;
+}
+#footerBP a:hover {
+ text-decoration: underline;
+ 
+}
+
+/*
+   Main 'Tab' menu
+*/
+
+
+#mainMenu {
+  float:left;
+  width:100%;
+  margin:0px;
+  background:#A9A18C url("../img/right-end.gif") no-repeat right top;
+  line-height:normal;
+  border-bottom :8px solid #D0CBBF;  /* border under main menu */
+  font-size: 0.95em;
+}
+
+#mainMenu ul {
+  margin:0px;
+  padding:0px;
+  list-style:none;
+  }
+
+#mainMenu li {
+  float:left;
+  background:url("../img/left.gif") no-repeat;
+  margin:0px;
+  padding:0px 0px 0px 9px;
+  }
+
+#mainMenu  a {
+  float:left;
+  display:block;
+  background:url("../img/right.gif") no-repeat right top;
+  padding:5px 5px 5px 2px;
+  text-decoration:none;
+  color: #fff;
+  }
+
+/* Commented Backslash Hack
+   hides rule from IE5-Mac \*/
+#mainMenu a {float:none;}
+/* End IE5-Mac hack */
+
+#mainMenu a:hover {
+  color: #000;
+  }
+
+#mainMenu #home {
+  background-image:url("../img/left-home.gif");
+  border-width:0px;
+}
+
+#mainMenu #current {
+  background-image:url("../img/left-on.gif");
+}
+
+#mainMenu #current a {
+  background-image:url("../img/right-on.gif");
+  padding-bottom:5px;
+  color: #000; 
+  }
+
+#mainMenu #home_current {
+  background-image:url("../img/left-home-on.gif");
+  border-width:0px;
+}
+
+#mainMenu #home_current a {
+  background-image:url("../img/right-on.gif");
+  padding-bottom:5px;
+  color: #000; 
+}
+
+#mainMenu #empty {
+  background-image:url("../img/left.gif");
+  border-width:0px;
+  padding:5px 15px 5px 6px;
+  height: 100%;
+}
+
+
+
+
+
+/*
+   Submenu
+*/
+
+#subMenu {
+	color:Black;
+	margin:0px;
+	padding:30px 0px 0px 0px;
+	width:100%;
+}
+
+
+#subMenu  ul {
+	margin: 0px;
+	padding: 0px;
+	list-style:none;
+}
+
+#subMenu  li 
+{
+	display: block;
+	list-style: none;
+	margin: 0px;
+}
+
+#subMenu  a 
+{
+	display: block;
+	Color:Black;
+	margin:0px 0px 0px 0px;
+	text-decoration:none;
+}
+
+
+#subMenu  a.d0
+{
+	padding:7px 12px 7px 12px;
+}
+
+#subMenu  a.open
+{
+	background:#e9e7e1;
+}
+
+
+#subMenu  a.d1 
+{
+	background:#e9e7e1;
+	padding:7px 12px 7px 24px;
+}
+
+
+#subMenu  a.d2 
+{
+	background:#e9e7e1;
+	padding:7px 12px 7px 36px;
+}
+
+
+#subMenu  a.d3 
+{
+	background:#e9e7e1;
+	padding:7px 12px 7px 48px;
+}
+
+#subMenu  a:hover {
+  background:#a9a18c;
+  }
+
+#subMenu  #current  {
+  background:#d0cbbf; 
+  font-weight: bold;
+  }
+  
+  #Noticiaslistado TABLE{
+color:#333;
+text-align:center;
+}
+
+#Noticiaslistado TH, THEAD{
+background-color:#d0cbbf;
+text-align:center;
+font-size: 0.95em;
+font-weight: bold;
+padding:5px;
+}
+
+#Noticiaslistado TD{
+text-align:center;
+font-size: 0.90em;
+border-bottom: 1px solid #d0cbbf;
+padding:5px;
+}
+
+
+ 

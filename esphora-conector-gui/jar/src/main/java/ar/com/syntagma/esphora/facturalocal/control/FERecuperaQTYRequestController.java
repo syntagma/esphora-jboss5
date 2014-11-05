@@ -1,6 +1,7 @@
 package ar.com.syntagma.esphora.facturalocal.control;
 
 
+import ar.com.syntagma.esphora.conector.helper.ServicePropertiesHelper;
 import ar.com.syntagma.esphora.conector.servicios.Wsfe;
 import ar.com.syntagma.esphora.conector.servicios.WsfeService;
 
@@ -27,8 +28,10 @@ public class FERecuperaQTYRequestController {
 	
 		WsfeService service;
 		Wsfe port;
+		String servicio = "wsfe";
 
-		service = new WsfeService();
+		service = new WsfeService(ServicePropertiesHelper.getURL(servicio),
+				ServicePropertiesHelper.getQName(servicio));
 		port = service.getWsfePort();
 		
 		feRecuperaQTYResponse = port.feRecuperaQTYRequest(cuit);

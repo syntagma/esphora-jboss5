@@ -168,6 +168,7 @@ public class ComprobanteLocalv1Builder {
 	 */
 	public void makeFacturaLocalv1Answer(JCoFunction function,
 			FECAEResponse response) {
+		// TODO Cambiar la funcionalidad local por local v1
 		if (response.getFeCabResp() != null) {
 			JCoTable tableResultCabecera = function.getTableParameterList()
 					.getTable(SapParameter.TABLA_T_FECABRESP);
@@ -236,6 +237,7 @@ public class ComprobanteLocalv1Builder {
 	 */
 	private void addDetalle(JCoFunction function,
 			ArrayOfFECAEDetResponse detalles, int puntoVta, int tipoCbte) {
+		// TODO Cambiar la funcionalidad local por local v1
 		JCoTable tableResultDetalle = function.getTableParameterList()
 				.getTable(SapParameter.TABLA_T_FEDETRESP);
 		// Recorro la lista de detalles pasada por el WS de la AFIP y los seteo

@@ -25,8 +25,6 @@ public class TicketAfip implements Serializable {
 	private ServicioAfip servicio;
 	private Ambiente ambiente;
 	private long cuil;
-	
-	private Date fechaVencimientoCertificado;
 
 	public String getToken() {
 		return token;
@@ -82,15 +80,6 @@ public class TicketAfip implements Serializable {
 
 	public long getCuil() {
 		return cuil;
-	}
-
-	public Date getFechaVencimientoCertificado() {
-		return fechaVencimientoCertificado;
-	}
-
-	public void setFechaVencimientoCertificado(
-			Date fechaVencimientoCertificado) {
-		this.fechaVencimientoCertificado = fechaVencimientoCertificado;
 	}
 
 }

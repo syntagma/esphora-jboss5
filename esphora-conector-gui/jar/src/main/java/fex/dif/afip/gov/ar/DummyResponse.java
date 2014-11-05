@@ -1,3 +1,4 @@
+
 package fex.dif.afip.gov.ar;
 
 import javax.xml.bind.annotation.XmlAccessType;
@@ -5,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for DummyResponse complex type.
+ * <p>Java class for DummyResponse complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="DummyResponse">
@@ -30,98 +29,90 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "DummyResponse", propOrder = { "appServer", "dbServer",
-		"authServer", "errorMsg", "fechaVencimientoCertificado" })
+@XmlType(name = "DummyResponse", propOrder = {
+    "appServer",
+    "dbServer",
+    "authServer"
+})
 public class DummyResponse {
 
-	@XmlElement(name = "AppServer")
-	protected String appServer;
-	@XmlElement(name = "DbServer")
-	protected String dbServer;
-	@XmlElement(name = "AuthServer")
-	protected String authServer;
-	@XmlElement(name = "ErrorMsg")
-	protected String errorMsg;
-	@XmlElement(name = "FechaVencimientoCertificado")
-	protected String fechaVencimientoCertificado;
+    @XmlElement(name = "AppServer")
+    protected String appServer;
+    @XmlElement(name = "DbServer")
+    protected String dbServer;
+    @XmlElement(name = "AuthServer")
+    protected String authServer;
 
-	/**
-	 * Gets the value of the appServer property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getAppServer() {
-		return appServer;
-	}
+    /**
+     * Gets the value of the appServer property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAppServer() {
+        return appServer;
+    }
 
-	/**
-	 * Sets the value of the appServer property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setAppServer(String value) {
-		this.appServer = value;
-	}
+    /**
+     * Sets the value of the appServer property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAppServer(String value) {
+        this.appServer = value;
+    }
 
-	/**
-	 * Gets the value of the dbServer property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getDbServer() {
-		return dbServer;
-	}
+    /**
+     * Gets the value of the dbServer property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDbServer() {
+        return dbServer;
+    }
 
-	/**
-	 * Sets the value of the dbServer property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setDbServer(String value) {
-		this.dbServer = value;
-	}
+    /**
+     * Sets the value of the dbServer property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDbServer(String value) {
+        this.dbServer = value;
+    }
 
-	/**
-	 * Gets the value of the authServer property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getAuthServer() {
-		return authServer;
-	}
+    /**
+     * Gets the value of the authServer property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getAuthServer() {
+        return authServer;
+    }
 
-	/**
-	 * Sets the value of the authServer property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setAuthServer(String value) {
-		this.authServer = value;
-	}
-
-	public void setErrorMsg(String message) {
-		this.errorMsg = message;
-	}
-
-	public String getErrorMsg() {
-		return errorMsg;
-	}
-
-	public String getFechaVencimientoCertificado() {
-		return fechaVencimientoCertificado;
-	}
-
-	public void setFechaVencimientoCertificado(String fechaVencimientoCertificado) {
-		this.fechaVencimientoCertificado = fechaVencimientoCertificado;
-	}
+    /**
+     * Sets the value of the authServer property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setAuthServer(String value) {
+        this.authServer = value;
+    }
 
 }

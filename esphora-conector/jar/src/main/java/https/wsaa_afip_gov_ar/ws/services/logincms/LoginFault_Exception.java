@@ -16,10 +16,6 @@ public class LoginFault_Exception
 {
 
     /**
-	 * 
-	 */
-	private static final long serialVersionUID = 2853973938834087085L;
-	/**
      * Java type that goes as soapenv:Fault detail element.
      * 
      */

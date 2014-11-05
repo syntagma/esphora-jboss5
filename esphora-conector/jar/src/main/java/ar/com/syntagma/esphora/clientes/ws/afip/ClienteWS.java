@@ -1,7 +1,6 @@
 package ar.com.syntagma.esphora.clientes.ws.afip;
 
 import java.net.URL;
-import java.util.Date;
 import java.util.Properties;
 
 import ar.com.syntagma.esphora.conector.dominio.afip.TicketAfip;
@@ -25,26 +24,19 @@ public abstract class ClienteWS {
 	protected Properties propiedadesWS;
 	protected long cuit;
 
-	public ClienteWS(ServicioAfip s, long c) throws ConectorException {
+	public ClienteWS(ServicioAfip s, long c) throws ConectorException{
 		this.servicioAfip = s;
 		this.cuit = c;
 		ambiente = getAmbiente();
-		propiedadesWS = PropiedadesFactory.getArchivoPropiedadesWS(ambiente,
-				servicioAfip);
-		// System.out.println("P12File: " +
-		// propiedadesWS.getProperty("keystore"));
+		propiedadesWS = PropiedadesFactory.getArchivoPropiedadesWS(ambiente, servicioAfip);
+		//System.out.println("P12File: " + propiedadesWS.getProperty("keystore"));
 		completarParametros();
 	}
 
 	protected abstract Ambiente completarParametros() throws ConectorException;
 
-	public Date getFechaVencimientoCertificado() {
-		return ticketAfip != null ? ticketAfip.getFechaVencimientoCertificado()
-				: null;
-	}
-
 	private Ambiente getAmbiente() throws ConectorException {
-		String a = PropiedadesFactory.getArchivoAmbiente().getProperty(
+		String a = PropiedadesFactory.getArchivoConector().getProperty(
 				"ambiente");
 
 		if (a.equals("test")) {
@@ -52,10 +44,12 @@ public abstract class ClienteWS {
 		}
 		if (a.equals("produccion")) {
 			return Ambiente.PRODUCCION;
-		} else {
-			return Ambiente.DESARROLLO;
 		}
-
+		else
+		{
+			return Ambiente.DESARROLLO;
+		} 
+		
 	}
 
 }

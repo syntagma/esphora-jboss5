@@ -1,64 +1,72 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<!-- Archivo: csc-ws/pom.xml Autor: Diego Balseiro Descripcion: Este pom 
+		describe solo las propiedades del "proyecto web" -->
+
 	<modelVersion>4.0.0</modelVersion>
+
+	<!--Proyecto Padre -->
 	<parent>
 		<groupId>ar.com.syntagma.seam</groupId>
 		<artifactId>esphora-conector</artifactId>
-		<version>3.1</version>
+		<version>2.4-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
+	<!-- Descripcion del proyecto -->
 	<artifactId>esphora-conector-ws</artifactId> <!-- m2eclipse does not like: ${app.context}-ear -->
 	<name>${project.artifactId} : ${project.version}</name>
-	<description>Modulo WAR de Esphora 3.1 - Facturacion Electronica - Modulo Conector</description>
+	<description>Syntagma - Esphora Conector 3.0</description>
 	<packaging>war</packaging>
 
-	<profiles>
-		<!-- More than one profile can be active at once. Since profiles can contain 
-			the same types of configuration there can be clashes. If two profiles clash 
-			the last to be activated will override configurations in those activated 
-			earlier. Note: Any activeByDefault profile will be deactivated if you activate 
-			another profile. E.g. running "mvn install -Penv-dev" deactivates the "prod" 
-			profile. -->
-		<profile>
-			<id>env-dev</id>
-			<properties>
-				<env>dev</env>
-			</properties>
-		</profile>
-
-		<profile>
-			<id>env-prod</id>
-			<activation>
-				<activeByDefault>true</activeByDefault>
-			</activation>
-			<properties>
-				<env>prod</env>
-			</properties>
-		</profile>
-	</profiles>
-
-
+	<!-- DEPENDENCIAS PARTICULARES -->
 	<dependencies>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-			<scope>provided</scope>
-		</dependency>
 		<dependency>
 			<groupId>jboss</groupId>
 			<artifactId>jbossall-client</artifactId>
 			<version>3.2.1</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- RichFaces libraries -->
+		<dependency>
+			<groupId>org.richfaces.framework</groupId>
+			<artifactId>richfaces-api</artifactId>
+			<version>${version.richfaces}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.richfaces.framework</groupId>
+			<artifactId>richfaces-impl</artifactId>
+			<version>${version.richfaces}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.richfaces.ui</groupId>
+			<artifactId>richfaces-ui</artifactId>
+			<version>${version.richfaces}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jboss.seam</groupId>
+			<artifactId>jboss-seam-excel</artifactId>
+			<version>${version.seam}</version>
+			<scope>provided</scope>
+		</dependency>
+
 		<dependency>
 			<groupId>ar.com.syntagma.seam</groupId>
-			<artifactId>esphora-conector-jar</artifactId>
-			<version>3.1</version>
+			<artifactId>${app}-jar</artifactId>
+			<version>${project.version}</version>
 			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
-	
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jboss-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
 </project>

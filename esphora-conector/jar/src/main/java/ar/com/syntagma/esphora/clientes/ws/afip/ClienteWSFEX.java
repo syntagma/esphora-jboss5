@@ -88,7 +88,7 @@ public class ClienteWSFEX extends ClienteWS {
 
 		DummyResponse response;
 
-		try {			
+		try {
 			response = port.fexDummy();
 			return response;
 

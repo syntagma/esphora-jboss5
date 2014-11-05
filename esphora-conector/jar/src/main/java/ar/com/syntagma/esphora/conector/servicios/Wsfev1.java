@@ -37,7 +37,7 @@ import fev1.dif.afip.gov.ar.OpcionalTipoResponse;
  * 
  * @author sebastian.bromberg
  */
-@WebService(name = "wsfev1")
+@WebService(name="wsfev1")
 @SOAPBinding(parameterStyle = ParameterStyle.WRAPPED, style = Style.DOCUMENT)
 public class Wsfev1 {
 
@@ -120,28 +120,16 @@ public class Wsfev1 {
 		try {
 			wsfev1 = ClienteFactory.getClienteWSFEv1(cuit);
 			resp = wsfev1.FEv1Dummy();
-			resp.setFechaVencimientoCertificado(wsfev1
-					.getFechaVencimientoCertificado() != null ? String
-					.valueOf(wsfev1.getFechaVencimientoCertificado().getTime())
-					: null);
-			return resp;
 		} catch (ConectorException e) {
 			resp = new fev1.dif.afip.gov.ar.DummyResponse();
-			resp.setAppServer("OK");
+			resp.setAppServer("Error");
 			resp.setAuthServer("Error");
-			if ((wsfev1 != null && wsfev1.getFechaVencimientoCertificado() != null)) {
-				resp.setFechaVencimientoCertificado(String.valueOf(wsfev1
-						.getFechaVencimientoCertificado().getTime()));
-			}
-
-			if ("Error".equals(resp.getAuthServer())) {
-				resp.setDbServer("NA");
-			} else {
-				resp.setDbServer("Error");
-			}
-			resp.setErrorMsg(e.getMensaje());
+			resp.setDbServer("Error");
 			return resp;
 		}
+
+		return resp;
+
 	}
 
 	/**
@@ -205,8 +193,8 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}	
+	
 	/**
 	 * Solicitud de Codigo de Autorizacion Electronico Anticipado
 	 * 
@@ -236,13 +224,12 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}	
+	
 	/**
 	 * Rendicion de Comprobantes Asociados a un CAEA
 	 * 
-	 * @param FECAEARequest
-	 *            feCAEARegInfReq
+	 * @param FECAEARequest feCAEARegInfReq
 	 * 
 	 * @return FECAEAResponse
 	 * @throws Exception
@@ -250,7 +237,7 @@ public class Wsfev1 {
 	 */
 	@WebMethod
 	public FECAEAResponse FECAEARegInformativo(
-			@WebParam(name = "feCAEARegInfReq") FECAEARequest feCAEARegInfReq,
+			@WebParam(name = "feCAEARegInfReq")  FECAEARequest feCAEARegInfReq,
 			@WebParam(name = "cuit") long cuit) {
 
 		ClienteWSFEv1 wsfev1 = null;
@@ -267,12 +254,11 @@ public class Wsfev1 {
 
 		return resp;
 	}
-
+	
 	/**
 	 * Consulta CAEA informado como sin movimientos
-	 * 
-	 * @param String
-	 *            caea
+	 *  
+	 * @param String caea
 	 * @param int ptoVta
 	 * 
 	 * @return FECAEASinMovConsResponse
@@ -281,8 +267,8 @@ public class Wsfev1 {
 	 */
 	@WebMethod
 	public FECAEASinMovConsResponse FECAEASinMovimientoConsultar(
-			@WebParam(name = "caea") String caea,
-			@WebParam(name = "ptoVta") int ptoVta,
+			@WebParam(name = "caea")  String caea,
+			@WebParam(name = "ptoVta")  int ptoVta,
 			@WebParam(name = "cuit") long cuit) {
 
 		ClienteWSFEv1 wsfev1 = null;
@@ -298,13 +284,12 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
+	}	
 
 	/**
 	 * Informa CAEA sin movimientos
-	 * 
-	 * @param String
-	 *            caea
+	 *  
+	 * @param String caea
 	 * @param int ptoVta
 	 * 
 	 * @return FECAEASinMovResponse
@@ -313,8 +298,8 @@ public class Wsfev1 {
 	 */
 	@WebMethod
 	public FECAEASinMovResponse FECAEASinMovimientoInformar(
-			@WebParam(name = "caea") String caea,
-			@WebParam(name = "ptoVta") int ptoVta,
+			@WebParam(name = "caea")  String caea,
+			@WebParam(name = "ptoVta")  int ptoVta,
 			@WebParam(name = "cuit") long cuit) {
 
 		ClienteWSFEv1 wsfev1 = null;
@@ -330,14 +315,13 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}		
+	
 	/**
-	 * Retorna la cantidad maxima de registros que puede tener una invocacion al
-	 * metodo FECAESolicitar / FECAEARegInformativo
-	 * 
-	 * @param String
-	 *            caea
+	 * Retorna la cantidad maxima de registros que puede tener una 
+	 * invocacion al metodo FECAESolicitar / FECAEARegInformativo
+	 *  
+	 * @param String caea
 	 * @param int ptoVta
 	 * 
 	 * @return FECAEASinMovConsResponse
@@ -346,8 +330,8 @@ public class Wsfev1 {
 	 */
 	@WebMethod
 	public FERegXReqResponse FECompTotXRequest(
-			@WebParam(name = "caea") String caea,
-			@WebParam(name = "ptoVta") int ptoVta,
+			@WebParam(name = "caea")  String caea,
+			@WebParam(name = "ptoVta")  int ptoVta,
 			@WebParam(name = "cuit") long cuit) {
 
 		ClienteWSFEv1 wsfev1 = null;
@@ -363,13 +347,12 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}	
+	
 	/**
-	 * Recupera la cotizacion de la moneda consultada y su fecha
-	 * 
-	 * @param String
-	 *            monId
+	 * Recupera la cotizacion de la moneda consultada y su fecha 
+	 *  
+	 * @param String monId
 	 * 
 	 * @return FECotizacionResponse
 	 * @throws Exception
@@ -377,7 +360,7 @@ public class Wsfev1 {
 	 */
 	@WebMethod
 	public FECotizacionResponse FEParamGetCotizacion(
-			@WebParam(name = "monId") String monId,
+			@WebParam(name = "monId")  String monId,
 			@WebParam(name = "cuit") long cuit) {
 
 		ClienteWSFEv1 wsfev1 = null;
@@ -393,11 +376,11 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
+	}	
 
 	/**
-	 * Recupera el listado de puntos de venta registrados y su estado
-	 * 
+	 * Recupera el listado de puntos de venta registrados y su estado 
+	 *  
 	 * 
 	 * @return FEPtoVentaResponse
 	 * @throws Exception
@@ -420,12 +403,11 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}	
+	
 	/**
-	 * Recupera el listado de Tipos de Comprobantes utilizables en servicio de
-	 * autorizaci—n
-	 * 
+	 * Recupera el listado de Tipos de Comprobantes utilizables en servicio de autorizaci—n 
+	 *  
 	 * 
 	 * @return CbteTipoResponse
 	 * @throws Exception
@@ -448,11 +430,11 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
+	}		
 
 	/**
-	 * Recupera el listado de identificadores para el campo Concepto
-	 * 
+	 * Recupera el listado de identificadores para el campo Concepto 
+	 *  
 	 * 
 	 * @return ConceptoTipoResponse
 	 * @throws Exception
@@ -475,19 +457,19 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}	
+	
 	/**
-	 * Recupera el listado de Tipos de Documentos utilizables en servicio de
-	 * autorizaci—n
-	 * 
+	 * Recupera el listado de Tipos de Documentos utilizables en servicio de autorizaci—n 
+	 *  
 	 * 
 	 * @return DocTipoResponse
 	 * @throws Exception
 	 *             the exception
 	 */
 	@WebMethod
-	public DocTipoResponse FEParamGetTiposDoc(@WebParam(name = "cuit") long cuit) {
+	public DocTipoResponse FEParamGetTiposDoc(
+			@WebParam(name = "cuit") long cuit) {
 
 		ClienteWSFEv1 wsfev1 = null;
 		DocTipoResponse resp = null;
@@ -502,19 +484,19 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
+	}		
 
 	/**
-	 * Recupera el listado de Tipos de Iva utilizables en servicio de
-	 * autorizaci—n
-	 * 
+	 * Recupera el listado de Tipos de Iva utilizables en servicio de autorizaci—n 
+	 *  
 	 * 
 	 * @return IvaTipoResponse
 	 * @throws Exception
 	 *             the exception
 	 */
 	@WebMethod
-	public IvaTipoResponse FEParamGetTiposIva(@WebParam(name = "cuit") long cuit) {
+	public IvaTipoResponse FEParamGetTiposIva(
+			@WebParam(name = "cuit") long cuit) {
 
 		ClienteWSFEv1 wsfev1 = null;
 		IvaTipoResponse resp = null;
@@ -529,11 +511,11 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
+	}	
 
 	/**
-	 * Recupera el listado de monedas utilizables en servicio de autorizaci—n
-	 * 
+	 * Recupera el listado de monedas utilizables en servicio de autorizaci—n 
+	 *  
 	 * 
 	 * @return MonedaResponse
 	 * @throws Exception
@@ -556,11 +538,11 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
+	}		
 
 	/**
-	 * Recupera el listado de identificadores para los campos Opcionales
-	 * 
+	 * Recupera el listado de identificadores para los campos Opcionales 
+	 *  
 	 * 
 	 * @return OpcionalTipoResponse
 	 * @throws Exception
@@ -583,12 +565,11 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}	
+	
 	/**
-	 * Recupera el listado de los diferente tributos que pueden ser utilizados
-	 * en el servicio de autorizacion
-	 * 
+	 * Recupera el listado de los diferente tributos que pueden ser utilizados en el servicio de autorizacion 
+	 *  
 	 * 
 	 * @return FETributoResponse
 	 * @throws Exception
@@ -611,6 +592,6 @@ public class Wsfev1 {
 		}
 
 		return resp;
-	}
-
+	}	
+	
 }

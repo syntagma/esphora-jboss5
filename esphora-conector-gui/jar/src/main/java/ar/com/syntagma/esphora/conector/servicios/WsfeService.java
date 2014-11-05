@@ -3,15 +3,12 @@ package ar.com.syntagma.esphora.conector.servicios;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.Properties;
 import java.util.logging.Logger;
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
 import javax.xml.ws.WebEndpoint;
 import javax.xml.ws.WebServiceClient;
 import javax.xml.ws.WebServiceFeature;
-
-import ar.com.syntagma.esphora.conector.factories.PropiedadesFactory;
 
 
 /**
@@ -20,7 +17,7 @@ import ar.com.syntagma.esphora.conector.factories.PropiedadesFactory;
  * Generated source version: 2.1
  * 
  */
-@WebServiceClient(name = "WsfeService", targetNamespace = "http://servicios.conector.esphora.syntagma.com.ar/", wsdlLocation = "http://127.0.0.1:8180/esphora-conector/ws/wsfe?wsdl")
+@WebServiceClient(name = "WsfeService", targetNamespace = "http://servicios.conector.esphora.syntagma.com.ar/", wsdlLocation = "http://127.0.0.1:8080/esphora-conector/ws/wsfe?wsdl")
 public class WsfeService
     extends Service
 {
@@ -30,15 +27,12 @@ public class WsfeService
 
     static {
         URL url = null;
-        Properties props = PropiedadesFactory.getConectorProperties();
-		String host = props.getProperty("conector.host");
-		String port = props.getProperty("conector.port");
         try {
             URL baseUrl;
             baseUrl = ar.com.syntagma.esphora.conector.servicios.WsfeService.class.getResource(".");
-            url = new URL(baseUrl, String.format("http://%s:%s/esphora-conector/ws/wsfe?wsdl",host,port));
+            url = new URL(baseUrl, "http://127.0.0.1:8080/esphora-conector/ws/wsfe?wsdl");
         } catch (MalformedURLException e) {
-            logger.warning("Failed to create URL for the wsdl Location: '"+String.format("http://%s:%s/esphora-conector/ws/wsfe?wsdl",host,port)+"', retrying as a local file");
+            logger.warning("Failed to create URL for the wsdl Location: 'http://127.0.0.1:8080/esphora-conector/ws/wsfe?wsdl', retrying as a local file");
             logger.warning(e.getMessage());
         }
         WSFESERVICE_WSDL_LOCATION = url;
