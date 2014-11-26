@@ -407,7 +407,7 @@
 					<executions>
 						<execution>
 							<id>${app}-hard-deploy</id>
-							<phase>package</phase>
+							<phase>install</phase>
 							<goals>
 								<goal>hard-deploy</goal>
 							</goals>
