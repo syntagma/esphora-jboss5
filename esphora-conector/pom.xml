@@ -266,24 +266,6 @@
 		<!-- <version>1.1.14</version> -->
 		<!-- <scope>compile</scope> -->
 		<!-- </dependency> -->
-		<dependency>
-			<groupId>org.richfaces.framework</groupId>
-			<artifactId>richfaces-api</artifactId>
-			<version>${version.richfaces}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.richfaces.framework</groupId>
-			<artifactId>richfaces-impl</artifactId>
-			<version>${version.richfaces}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.richfaces.ui</groupId>
-			<artifactId>richfaces-ui</artifactId>
-			<version>${version.richfaces}</version>
-			<scope>compile</scope>
-		</dependency>
 
 		<dependency>
 			<groupId>org.testng</groupId>
