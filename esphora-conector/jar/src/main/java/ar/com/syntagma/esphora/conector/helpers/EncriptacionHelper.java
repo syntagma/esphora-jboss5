@@ -1,6 +1,5 @@
 package ar.com.syntagma.esphora.conector.helpers;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -17,6 +16,7 @@ import java.security.cert.CertStoreException;
 import java.security.cert.CertificateException;
 import java.security.cert.CollectionCertStoreParameters;
 import java.security.cert.X509Certificate;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -28,11 +28,9 @@ import org.bouncycastle.cms.CMSSignedData;
 import org.bouncycastle.cms.CMSSignedDataGenerator;
 import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.jboss.seam.annotations.Name;
-import org.jboss.seam.core.ResourceLoader;
 
 import ar.com.syntagma.esphora.conector.exceptions.ConectorException;
 
-import com.sun.org.apache.xerces.internal.jaxp.datatype.XMLGregorianCalendarImpl;
 
 @SuppressWarnings("restriction")
 @Name("encriptacionHelper")
@@ -228,10 +226,16 @@ public class EncriptacionHelper {
 
         exptime.setTime(new Date(GenTime.getTime() + TicketTime));
 
-        XMLGregorianCalendarImpl XMLGenTime = new XMLGregorianCalendarImpl(
-                gentime);
-        XMLGregorianCalendarImpl XMLExpTime = new XMLGregorianCalendarImpl(
-                exptime);
+        //String date = "2009-07-16T19:20:30-05:00";
+        String pattern = "yyyy-MM-dd'T'HH:mm:ss.SSSz";
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+
+
+        //XMLGregorianCalendarImpl XMLGenTime = new XMLGregorianCalendarImpl(gentime);
+
+        //XMLGregorianCalendarImpl XMLExpTime = new XMLGregorianCalendarImpl(exptime);
+        System.out.println("Fecha: " + sdf.format(gentime.getTime()).replace("GMT",""));
+
         loginTicketRequestXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
                 + "<loginTicketRequest version=\"1.0\">"
                 + "<header>"
@@ -245,16 +249,18 @@ public class EncriptacionHelper {
                 + UniqueId
                 + "</uniqueId>"
                 + "<generationTime>"
-                + XMLGenTime
+                + sdf.format(gentime.getTime()).replace("GMT","") //+ XMLGenTime
                 + "</generationTime>"
                 + "<expirationTime>"
-                + XMLExpTime
+                + sdf.format(exptime.getTime()).replace("GMT","")//+ XMLExpTime
                 + "</expirationTime>"
                 + "</header>"
                 + "<service>"
                 + service
                 + "</service>"
                 + "</loginTicketRequest>";
+
+        System.out.println("Ticket: " + loginTicketRequestXml);
 
         return (loginTicketRequestXml);
     }
