@@ -206,7 +206,7 @@ public class EncriptacionHelper {
             e.printStackTrace();
         }
         // log.info("signed: " + signed.getSignerInfos().getSigners() );
-        // log.info("asn: " +asn1Cms.toString());
+        System.out.println("asn: " + asn1Cms.toString());
 
         return (asn1Cms);
     }
