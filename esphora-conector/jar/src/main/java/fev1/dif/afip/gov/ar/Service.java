@@ -1,6 +1,8 @@
 
 package fev1.dif.afip.gov.ar;
 
+import ar.com.syntagma.esphora.conector.helpers.SSLUtilities;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Logger;
@@ -37,6 +39,9 @@ public class Service
             logger.warning(e.getMessage());
         }
         SERVICE_WSDL_LOCATION = url;
+//        SSLUtilities.trustAllHostnames();
+//        SSLUtilities.trustAllHttpsCertificates();
+
     }
 
     public Service(URL wsdlLocation, QName serviceName) {

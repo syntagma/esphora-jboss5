@@ -39,8 +39,8 @@ public class Service
             logger.warning(e.getMessage());
         }
         SERVICE_WSDL_LOCATION = url;
-        SSLUtilities.trustAllHostnames();
-        SSLUtilities.trustAllHttpsCertificates();
+//        SSLUtilities.trustAllHostnames();
+//        SSLUtilities.trustAllHttpsCertificates();
     }
 
     public Service(URL wsdlLocation, QName serviceName) {
