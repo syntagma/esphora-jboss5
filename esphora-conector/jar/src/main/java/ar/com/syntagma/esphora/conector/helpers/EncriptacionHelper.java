@@ -75,16 +75,14 @@ public class EncriptacionHelper {
             throw new ConectorException(99999, "No se ha podido leer el archivo " + path, e);
         }
 
-        //InputStream p12stream = ResourceLoader.instance().getResourceAsStream(path); //InputStream.class.getResourceAsStream(p12file);
-        //Thread.currentThread().getContextClassLoader().getResourceAsStream(p12file);
-        System.out.println("Certificado Leido!: " + path);
-        System.out.println("P12 Stream!: " + p12stream.toString());
+        //System.out.println("Certificado Leido!: " + path);
+        //System.out.println("P12 Stream!: " + p12stream.toString());
 
         try {
             ks.load(p12stream, p12pass.toCharArray());
 
 
-            System.out.println("Certificado Cargado! " + ks.getProvider());
+            //System.out.println("Certificado Cargado! " + ks.getProvider());
         } catch (NoSuchAlgorithmException e) {
             throw new ConectorException(99999,
                     "No se puede interpretar el algoritmo de encriptacion", e);
@@ -94,6 +92,7 @@ public class EncriptacionHelper {
         } catch (IOException e) {
             throw new ConectorException(99999, "Error de I/O al cargar el archivo de certificados", e);
         }
+        /*
         try {
             System.out.println("Certificado Cargado! " + ks.size() + "-" + ks.getType()
                     + "-" + ks.toString());
@@ -101,8 +100,9 @@ public class EncriptacionHelper {
             throw new ConectorException(99999,
                     "No se puede leer el certificado .p12", e4);
         }
+        */
         try {
-            System.out.println("Cerrando p12stream");
+            //System.out.println("Cerrando p12stream");
             p12stream.close();
         } catch (IOException e3) {
             e3.printStackTrace();
@@ -114,7 +114,7 @@ public class EncriptacionHelper {
 
         // Get Certificate & Private key from KeyStore
         try {
-            System.out.println("Obtengo clave privada " + signer + " " + p12pass);
+            //System.out.println("Obtengo clave privada " + signer + " " + p12pass);
             pKey = (PrivateKey) ks.getKey(signer, p12pass.toCharArray());
 
         } catch (UnrecoverableKeyException e2) {
@@ -128,9 +128,9 @@ public class EncriptacionHelper {
                     "No se encuentra el algoritmo", e2);
         }
         try {
-            System.out.println("Obtengo certificado X509");
+            //System.out.println("Obtengo certificado X509");
             pCertificate = (X509Certificate) ks.getCertificate(signer);
-            System.out.println("Certificado X509 Obtenido: " + pCertificate.getType() );
+            //System.out.println("Certificado X509 Obtenido: " + pCertificate.getType() );
             fechaVencimientoCertificado = pCertificate.getNotAfter();
         } catch (KeyStoreException e2) {
             e2.printStackTrace();
@@ -191,6 +191,8 @@ public class EncriptacionHelper {
         CMSSignedData signed = null;
         try {
             signed = gen.generate(data, true, "BC");
+            //System.out.println(" data: " + data);
+            //System.out.println("signed data: " + signed.getContentInfo().getContent());
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         } catch (NoSuchProviderException e) {
@@ -206,7 +208,7 @@ public class EncriptacionHelper {
             e.printStackTrace();
         }
         // log.info("signed: " + signed.getSignerInfos().getSigners() );
-        System.out.println("asn: " + asn1Cms.toString());
+        //System.out.println("asn: " + asn1Cms);
 
         return (asn1Cms);
     }
@@ -224,6 +226,7 @@ public class EncriptacionHelper {
         GregorianCalendar exptime = new GregorianCalendar();
         String UniqueId = new Long(GenTime.getTime() / 1000).toString();
 
+        gentime.setTime(new Date(GenTime.getTime() - TicketTime));
         exptime.setTime(new Date(GenTime.getTime() + TicketTime));
 
         //String date = "2009-07-16T19:20:30-05:00";
@@ -234,7 +237,7 @@ public class EncriptacionHelper {
         //XMLGregorianCalendarImpl XMLGenTime = new XMLGregorianCalendarImpl(gentime);
 
         //XMLGregorianCalendarImpl XMLExpTime = new XMLGregorianCalendarImpl(exptime);
-        System.out.println("Fecha: " + sdf.format(gentime.getTime()).replace("GMT",""));
+        //System.out.println("Fecha: " + sdf.format(gentime.getTime()).replace("GMT",""));
 
         loginTicketRequestXml = "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
                 + "<loginTicketRequest version=\"1.0\">"
@@ -249,10 +252,10 @@ public class EncriptacionHelper {
                 + UniqueId
                 + "</uniqueId>"
                 + "<generationTime>"
-                + sdf.format(gentime.getTime()).replace("GMT","") //+ XMLGenTime
+                + sdf.format(gentime.getTime()).replace("GMT", "").replace("ART","-03:00") //+ XMLGenTime
                 + "</generationTime>"
                 + "<expirationTime>"
-                + sdf.format(exptime.getTime()).replace("GMT","")//+ XMLExpTime
+                + sdf.format(exptime.getTime()).replace("GMT","").replace("ART","-03:00")//+ XMLExpTime
                 + "</expirationTime>"
                 + "</header>"
                 + "<service>"

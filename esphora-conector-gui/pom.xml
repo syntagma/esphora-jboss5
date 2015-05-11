@@ -86,6 +86,7 @@
 		<jdk.source>1.6</jdk.source>
 		<jdk.target>1.6</jdk.target>
 
+		<nexus.url>http://192.168.8.8:8081/nexus/content/repositories</nexus.url>
 		<!-- http://docs.codehaus.org/display/MAVENUSER/POM+Element+for+Source+File+Encoding -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
@@ -252,4 +253,18 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<name>Releases</name>
+			<url>${nexus.url}/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Snapshots</name>
+			<url>${nexus.url}/snapshots</url>
+			<uniqueVersion>true</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
 </project>

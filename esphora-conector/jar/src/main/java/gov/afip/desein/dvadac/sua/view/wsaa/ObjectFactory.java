@@ -30,19 +30,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link LoginCmsResponse }
-     * 
-     */
-    public LoginCmsResponse createLoginCmsResponse() {
-        return new LoginCmsResponse();
-    }
-
-    /**
      * Create an instance of {@link LoginCms }
      * 
      */
     public LoginCms createLoginCms() {
         return new LoginCms();
+    }
+
+    /**
+     * Create an instance of {@link LoginCmsResponse }
+     * 
+     */
+    public LoginCmsResponse createLoginCmsResponse() {
+        return new LoginCmsResponse();
     }
 
 }

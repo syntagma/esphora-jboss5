@@ -1,6 +1,8 @@
 
 package https.wsaa_afip_gov_ar.ws.services.logincms;
 
+import ar.com.syntagma.esphora.conector.helpers.SSLUtilities;
+
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.logging.Logger;
@@ -36,6 +38,9 @@ public class LoginCMSService
             logger.warning(e.getMessage());
         }
         LOGINCMSSERVICE_WSDL_LOCATION = url;
+        SSLUtilities.trustAllHostnames();
+        SSLUtilities.trustAllHttpsCertificates();
+
     }
 
     public LoginCMSService(URL wsdlLocation, QName serviceName) {
