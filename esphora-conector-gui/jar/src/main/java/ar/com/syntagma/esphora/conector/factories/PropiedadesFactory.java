@@ -23,16 +23,16 @@ public class PropiedadesFactory {
     public static Properties getConectorProperties() {
         Properties propiedades = new Properties();
 
-        String path = System.getProperty("jboss.server.config.url") + "ambiente.properties";
+        String path = System.getProperty("jboss.server.config.url");
 
         String a = PropiedadesFactory.getArchivoAmbiente().getProperty(
                 "ambiente");
 
         if (a.equals("test")) {
-            path = path + "test/";
+            path +=  "test/";
         }
         if (a.equals("produccion")) {
-            path = path + "prod/";
+            path +=  "prod/";
         }
 
         String fileName = path + "conector.properties";
