@@ -1,0 +1,10 @@
+**/target/
+**/bin/
+#Ignore eclipse specific files
+**/.classpath
+**/.project
+**/.settings/
+**/.forge_settings
+#Ignore Intellij IDEA specific files
+**/.idea
+**/*.iml
