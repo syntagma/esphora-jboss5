@@ -20,6 +20,8 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="AppServer" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="DbServer" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *         &lt;element name="AuthServer" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="ErrorMsg" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
+ *         &lt;element name="FechaVencimientoCertificado" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
  *       &lt;/sequence>
  *     &lt;/restriction>
  *   &lt;/complexContent>
@@ -48,7 +50,7 @@ public class DummyResponse {
     protected String errorMsg;
     @XmlElement(name = "FechaVencimientoCertificado")
     protected String fechaVencimientoCertificado;
-    
+
     /**
      * Gets the value of the appServer property.
      * 
@@ -121,20 +123,52 @@ public class DummyResponse {
         this.authServer = value;
     }
 
-	public String getErrorMsg() {
-		return errorMsg;
-	}
+    /**
+     * Gets the value of the errorMsg property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getErrorMsg() {
+        return errorMsg;
+    }
 
-	public void setErrorMsg(String errorMsg) {
-		this.errorMsg = errorMsg;
-	}
+    /**
+     * Sets the value of the errorMsg property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setErrorMsg(String value) {
+        this.errorMsg = value;
+    }
 
-	public String getFechaVencimientoCertificado() {
-		return fechaVencimientoCertificado;
-	}
+    /**
+     * Gets the value of the fechaVencimientoCertificado property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getFechaVencimientoCertificado() {
+        return fechaVencimientoCertificado;
+    }
 
-	public void setFechaVencimientoCertificado(String fechaVencimientoCertificado) {
-		this.fechaVencimientoCertificado = fechaVencimientoCertificado;
-	}
+    /**
+     * Sets the value of the fechaVencimientoCertificado property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setFechaVencimientoCertificado(String value) {
+        this.fechaVencimientoCertificado = value;
+    }
 
 }

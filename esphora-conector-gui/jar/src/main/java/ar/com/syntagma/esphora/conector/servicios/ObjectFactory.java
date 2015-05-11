@@ -71,94 +71,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FEParamGetTiposCbte }
-     * 
-     */
-    public FEParamGetTiposCbte createFEParamGetTiposCbte() {
-        return new FEParamGetTiposCbte();
-    }
-
-    /**
-     * Create an instance of {@link FECompUltimoAutorizadoResponse }
-     * 
-     */
-    public FECompUltimoAutorizadoResponse createFECompUltimoAutorizadoResponse() {
-        return new FECompUltimoAutorizadoResponse();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposConcepto }
-     * 
-     */
-    public FEParamGetTiposConcepto createFEParamGetTiposConcepto() {
-        return new FEParamGetTiposConcepto();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposIvaResponse }
-     * 
-     */
-    public FEParamGetTiposIvaResponse createFEParamGetTiposIvaResponse() {
-        return new FEParamGetTiposIvaResponse();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposDoc }
-     * 
-     */
-    public FEParamGetTiposDoc createFEParamGetTiposDoc() {
-        return new FEParamGetTiposDoc();
-    }
-
-    /**
-     * Create an instance of {@link FECAESolicitar }
-     * 
-     */
-    public FECAESolicitar createFECAESolicitar() {
-        return new FECAESolicitar();
-    }
-
-    /**
-     * Create an instance of {@link FECAEASolicitar }
-     * 
-     */
-    public FECAEASolicitar createFECAEASolicitar() {
-        return new FECAEASolicitar();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposDocResponse }
-     * 
-     */
-    public FEParamGetTiposDocResponse createFEParamGetTiposDocResponse() {
-        return new FEParamGetTiposDocResponse();
-    }
-
-    /**
-     * Create an instance of {@link FECAEASinMovimientoInformarResponse }
-     * 
-     */
-    public FECAEASinMovimientoInformarResponse createFECAEASinMovimientoInformarResponse() {
-        return new FECAEASinMovimientoInformarResponse();
-    }
-
-    /**
-     * Create an instance of {@link FECAEASinMovimientoConsultar }
-     * 
-     */
-    public FECAEASinMovimientoConsultar createFECAEASinMovimientoConsultar() {
-        return new FECAEASinMovimientoConsultar();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposConceptoResponse }
-     * 
-     */
-    public FEParamGetTiposConceptoResponse createFEParamGetTiposConceptoResponse() {
-        return new FEParamGetTiposConceptoResponse();
-    }
-
-    /**
      * Create an instance of {@link FEParamGetTiposMonedasResponse }
      * 
      */
@@ -167,155 +79,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FECAEARegInformativoResponse }
+     * Create an instance of {@link FEParamGetPtosVentaResponse }
      * 
      */
-    public FECAEARegInformativoResponse createFECAEARegInformativoResponse() {
-        return new FECAEARegInformativoResponse();
+    public FEParamGetPtosVentaResponse createFEParamGetPtosVentaResponse() {
+        return new FEParamGetPtosVentaResponse();
     }
 
     /**
-     * Create an instance of {@link FECompTotXRequest }
+     * Create an instance of {@link FEParamGetTiposConceptoResponse }
      * 
      */
-    public FECompTotXRequest createFECompTotXRequest() {
-        return new FECompTotXRequest();
-    }
-
-    /**
-     * Create an instance of {@link FECompConsultarResponse }
-     * 
-     */
-    public FECompConsultarResponse createFECompConsultarResponse() {
-        return new FECompConsultarResponse();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposOpcionalResponse }
-     * 
-     */
-    public FEParamGetTiposOpcionalResponse createFEParamGetTiposOpcionalResponse() {
-        return new FEParamGetTiposOpcionalResponse();
-    }
-
-    /**
-     * Create an instance of {@link FECompTotXRequestResponse }
-     * 
-     */
-    public FECompTotXRequestResponse createFECompTotXRequestResponse() {
-        return new FECompTotXRequestResponse();
-    }
-
-    /**
-     * Create an instance of {@link FECAEAConsultarResponse }
-     * 
-     */
-    public FECAEAConsultarResponse createFECAEAConsultarResponse() {
-        return new FECAEAConsultarResponse();
-    }
-
-    /**
-     * Create an instance of {@link FECAEASinMovimientoInformar }
-     * 
-     */
-    public FECAEASinMovimientoInformar createFECAEASinMovimientoInformar() {
-        return new FECAEASinMovimientoInformar();
-    }
-
-    /**
-     * Create an instance of {@link FEV1DummyResponse }
-     * 
-     */
-    public FEV1DummyResponse createFEV1DummyResponse() {
-        return new FEV1DummyResponse();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposCbteResponse }
-     * 
-     */
-    public FEParamGetTiposCbteResponse createFEParamGetTiposCbteResponse() {
-        return new FEParamGetTiposCbteResponse();
-    }
-
-    /**
-     * Create an instance of {@link FECompConsultar }
-     * 
-     */
-    public FECompConsultar createFECompConsultar() {
-        return new FECompConsultar();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetCotizacionResponse }
-     * 
-     */
-    public FEParamGetCotizacionResponse createFEParamGetCotizacionResponse() {
-        return new FEParamGetCotizacionResponse();
-    }
-
-    /**
-     * Create an instance of {@link FEV1Dummy }
-     * 
-     */
-    public FEV1Dummy createFEV1Dummy() {
-        return new FEV1Dummy();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposOpcional }
-     * 
-     */
-    public FEParamGetTiposOpcional createFEParamGetTiposOpcional() {
-        return new FEParamGetTiposOpcional();
-    }
-
-    /**
-     * Create an instance of {@link FECAESolicitarResponse }
-     * 
-     */
-    public FECAESolicitarResponse createFECAESolicitarResponse() {
-        return new FECAESolicitarResponse();
-    }
-
-    /**
-     * Create an instance of {@link FECAEASolicitarResponse }
-     * 
-     */
-    public FECAEASolicitarResponse createFECAEASolicitarResponse() {
-        return new FECAEASolicitarResponse();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposMonedas }
-     * 
-     */
-    public FEParamGetTiposMonedas createFEParamGetTiposMonedas() {
-        return new FEParamGetTiposMonedas();
-    }
-
-    /**
-     * Create an instance of {@link FECAEASinMovimientoConsultarResponse }
-     * 
-     */
-    public FECAEASinMovimientoConsultarResponse createFECAEASinMovimientoConsultarResponse() {
-        return new FECAEASinMovimientoConsultarResponse();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetCotizacion }
-     * 
-     */
-    public FEParamGetCotizacion createFEParamGetCotizacion() {
-        return new FEParamGetCotizacion();
-    }
-
-    /**
-     * Create an instance of {@link FEParamGetTiposTributoResponse }
-     * 
-     */
-    public FEParamGetTiposTributoResponse createFEParamGetTiposTributoResponse() {
-        return new FEParamGetTiposTributoResponse();
+    public FEParamGetTiposConceptoResponse createFEParamGetTiposConceptoResponse() {
+        return new FEParamGetTiposConceptoResponse();
     }
 
     /**
@@ -335,27 +111,59 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FECAEAConsultar }
+     * Create an instance of {@link FECAEASinMovimientoConsultar }
      * 
      */
-    public FECAEAConsultar createFECAEAConsultar() {
-        return new FECAEAConsultar();
+    public FECAEASinMovimientoConsultar createFECAEASinMovimientoConsultar() {
+        return new FECAEASinMovimientoConsultar();
     }
 
     /**
-     * Create an instance of {@link FEParamGetTiposTributo }
+     * Create an instance of {@link FECAESolicitar }
      * 
      */
-    public FEParamGetTiposTributo createFEParamGetTiposTributo() {
-        return new FEParamGetTiposTributo();
+    public FECAESolicitar createFECAESolicitar() {
+        return new FECAESolicitar();
     }
 
     /**
-     * Create an instance of {@link FECompUltimoAutorizado }
+     * Create an instance of {@link FECAEASolicitarResponse }
      * 
      */
-    public FECompUltimoAutorizado createFECompUltimoAutorizado() {
-        return new FECompUltimoAutorizado();
+    public FECAEASolicitarResponse createFECAEASolicitarResponse() {
+        return new FECAEASolicitarResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposMonedas }
+     * 
+     */
+    public FEParamGetTiposMonedas createFEParamGetTiposMonedas() {
+        return new FEParamGetTiposMonedas();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetCotizacion }
+     * 
+     */
+    public FEParamGetCotizacion createFEParamGetCotizacion() {
+        return new FEParamGetCotizacion();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposDoc }
+     * 
+     */
+    public FEParamGetTiposDoc createFEParamGetTiposDoc() {
+        return new FEParamGetTiposDoc();
+    }
+
+    /**
+     * Create an instance of {@link FECompUltimoAutorizadoResponse }
+     * 
+     */
+    public FECompUltimoAutorizadoResponse createFECompUltimoAutorizadoResponse() {
+        return new FECompUltimoAutorizadoResponse();
     }
 
     /**
@@ -367,11 +175,203 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link FEParamGetPtosVentaResponse }
+     * Create an instance of {@link FECompTotXRequestResponse }
      * 
      */
-    public FEParamGetPtosVentaResponse createFEParamGetPtosVentaResponse() {
-        return new FEParamGetPtosVentaResponse();
+    public FECompTotXRequestResponse createFECompTotXRequestResponse() {
+        return new FECompTotXRequestResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetCotizacionResponse }
+     * 
+     */
+    public FEParamGetCotizacionResponse createFEParamGetCotizacionResponse() {
+        return new FEParamGetCotizacionResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposIvaResponse }
+     * 
+     */
+    public FEParamGetTiposIvaResponse createFEParamGetTiposIvaResponse() {
+        return new FEParamGetTiposIvaResponse();
+    }
+
+    /**
+     * Create an instance of {@link FECAEASolicitar }
+     * 
+     */
+    public FECAEASolicitar createFECAEASolicitar() {
+        return new FECAEASolicitar();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposDocResponse }
+     * 
+     */
+    public FEParamGetTiposDocResponse createFEParamGetTiposDocResponse() {
+        return new FEParamGetTiposDocResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposCbte }
+     * 
+     */
+    public FEParamGetTiposCbte createFEParamGetTiposCbte() {
+        return new FEParamGetTiposCbte();
+    }
+
+    /**
+     * Create an instance of {@link FECAEASinMovimientoConsultarResponse }
+     * 
+     */
+    public FECAEASinMovimientoConsultarResponse createFECAEASinMovimientoConsultarResponse() {
+        return new FECAEASinMovimientoConsultarResponse();
+    }
+
+    /**
+     * Create an instance of {@link FECAEAConsultar }
+     * 
+     */
+    public FECAEAConsultar createFECAEAConsultar() {
+        return new FECAEAConsultar();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposTributoResponse }
+     * 
+     */
+    public FEParamGetTiposTributoResponse createFEParamGetTiposTributoResponse() {
+        return new FEParamGetTiposTributoResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposOpcionalResponse }
+     * 
+     */
+    public FEParamGetTiposOpcionalResponse createFEParamGetTiposOpcionalResponse() {
+        return new FEParamGetTiposOpcionalResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEV1Dummy }
+     * 
+     */
+    public FEV1Dummy createFEV1Dummy() {
+        return new FEV1Dummy();
+    }
+
+    /**
+     * Create an instance of {@link FECAEAConsultarResponse }
+     * 
+     */
+    public FECAEAConsultarResponse createFECAEAConsultarResponse() {
+        return new FECAEAConsultarResponse();
+    }
+
+    /**
+     * Create an instance of {@link FECompUltimoAutorizado }
+     * 
+     */
+    public FECompUltimoAutorizado createFECompUltimoAutorizado() {
+        return new FECompUltimoAutorizado();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposConcepto }
+     * 
+     */
+    public FEParamGetTiposConcepto createFEParamGetTiposConcepto() {
+        return new FEParamGetTiposConcepto();
+    }
+
+    /**
+     * Create an instance of {@link FEV1DummyResponse }
+     * 
+     */
+    public FEV1DummyResponse createFEV1DummyResponse() {
+        return new FEV1DummyResponse();
+    }
+
+    /**
+     * Create an instance of {@link FECAEARegInformativoResponse }
+     * 
+     */
+    public FECAEARegInformativoResponse createFECAEARegInformativoResponse() {
+        return new FECAEARegInformativoResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposOpcional }
+     * 
+     */
+    public FEParamGetTiposOpcional createFEParamGetTiposOpcional() {
+        return new FEParamGetTiposOpcional();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposCbteResponse }
+     * 
+     */
+    public FEParamGetTiposCbteResponse createFEParamGetTiposCbteResponse() {
+        return new FEParamGetTiposCbteResponse();
+    }
+
+    /**
+     * Create an instance of {@link FECompConsultar }
+     * 
+     */
+    public FECompConsultar createFECompConsultar() {
+        return new FECompConsultar();
+    }
+
+    /**
+     * Create an instance of {@link FECAESolicitarResponse }
+     * 
+     */
+    public FECAESolicitarResponse createFECAESolicitarResponse() {
+        return new FECAESolicitarResponse();
+    }
+
+    /**
+     * Create an instance of {@link FECompTotXRequest }
+     * 
+     */
+    public FECompTotXRequest createFECompTotXRequest() {
+        return new FECompTotXRequest();
+    }
+
+    /**
+     * Create an instance of {@link FECAEASinMovimientoInformar }
+     * 
+     */
+    public FECAEASinMovimientoInformar createFECAEASinMovimientoInformar() {
+        return new FECAEASinMovimientoInformar();
+    }
+
+    /**
+     * Create an instance of {@link FECompConsultarResponse }
+     * 
+     */
+    public FECompConsultarResponse createFECompConsultarResponse() {
+        return new FECompConsultarResponse();
+    }
+
+    /**
+     * Create an instance of {@link FEParamGetTiposTributo }
+     * 
+     */
+    public FEParamGetTiposTributo createFEParamGetTiposTributo() {
+        return new FEParamGetTiposTributo();
+    }
+
+    /**
+     * Create an instance of {@link FECAEASinMovimientoInformarResponse }
+     * 
+     */
+    public FECAEASinMovimientoInformarResponse createFECAEASinMovimientoInformarResponse() {
+        return new FECAEASinMovimientoInformarResponse();
     }
 
     /**
