@@ -1,4 +1,20 @@
-<<<<<<< HEAD
+**/target/
+
+#Ignore eclipse specific files
+**/.classpath
+**/.project
+**/.settings/
+**/.forge_settings
+#Ignore Intellij IDEA specific files
+.idea/*
+**/.idea
+**/*.iml
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
 .project
 .settings/
 esphora-conector/.classpath
@@ -33,17 +49,14 @@ esphora-conector-sap/.settings
 esphora-conector-sap/target
 esphora-conector-sap/.classpath
 esphora-conector-sap/.project
-=======
+
 *.class
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.ear
+
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
->>>>>>> aab847343b068edd8b06780ae7a8c56d6b45a351
+
