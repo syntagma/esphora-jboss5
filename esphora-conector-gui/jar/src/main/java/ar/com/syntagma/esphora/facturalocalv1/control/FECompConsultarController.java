@@ -57,7 +57,7 @@ public class FECompConsultarController implements Serializable{
 	@Out(required = false)
 	private FECompConsultaResponse feCompConsultaResponse;
 	
-	public void ejecutarConsulta() {
+	public void ejecutarConsulta(Long cuit) {
 
 		Wsfev1Service service;
 		Wsfev1 port;
