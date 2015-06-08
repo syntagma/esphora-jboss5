@@ -23,7 +23,7 @@ public class FEXGetPARAM_UMedController {
 		this.cuit = cuit;
 	}
 	
-	public void ejecutarConsulta() {
+	public void ejecutarConsulta(Long cuit) {
 	
 		WsfexService service;
 		Wsfex port;

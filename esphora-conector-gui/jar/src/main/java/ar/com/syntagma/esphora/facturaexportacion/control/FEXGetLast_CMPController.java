@@ -37,7 +37,7 @@ public class FEXGetLast_CMPController {
 		this.cuit = cuit;
 	}
 	
-	public void ejecutarConsulta() {
+	public void ejecutarConsulta(Long cuit) {
 	
 		WsfexService service;
 		Wsfex port;

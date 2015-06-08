@@ -30,7 +30,7 @@ public class FEXGetPARAM_CtzController {
 		this.idMoneda = idMoneda;
 	}
 	
-	public void ejecutarConsulta() {
+	public void ejecutarConsulta(Long cuit) {
 	
 		WsfexService service;
 		Wsfex port;

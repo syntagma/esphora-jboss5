@@ -47,7 +47,7 @@ public class FECompUltimoAutorizado implements Serializable{
 	@Out(required = false)
 	private FERecuperaLastCbteResponse feRecuperaLastCbteResponse;
 	
-	public void ejecutarConsulta() {
+	public void ejecutarConsulta(Long cuit) {
 
 		Wsfev1Service service;
 		Wsfev1 port;

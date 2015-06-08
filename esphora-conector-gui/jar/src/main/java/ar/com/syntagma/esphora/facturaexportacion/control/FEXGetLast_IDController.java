@@ -23,7 +23,7 @@ public class FEXGetLast_IDController {
 		this.cuit = cuit;
 	}
 	
-	public void ejecutarConsulta() {
+	public void ejecutarConsulta(Long cuit) {
 	
 		WsfexService service;
 		Wsfex port;
