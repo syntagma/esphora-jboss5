@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ar.com.syntagma.seam</groupId>
 	<artifactId>esphora-conector-gui</artifactId>
-	<version>1.2.2-SNAPSHOT</version>
+	<version>1.2.3-SNAPSHOT</version>
 	<name>Esphora Conector GUI</name>
 	<description>Esphora Conector Gui</description>
 	<url>http://www.syntagma.com.ar/</url>
